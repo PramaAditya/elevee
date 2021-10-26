@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26.925" height="28.657" viewBox="0 0 26.925 28.657">
+  <g id="icon_360" transform="translate(0.75 0.75)">
+    <path id="Path_73" data-name="Path 73" d="M6.711,57.3C3.248,57.926,1,59,1,60.211c0,1.916,5.711,3.5,12.713,3.5,7.038,0,12.713-1.548,12.713-3.5,0-1.216-2.248-2.285-5.711-2.911" transform="translate(-1 -36.554)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    <g id="Group_159" data-name="Group 159" transform="translate(7.112 0)">
+      <circle id="Ellipse_7" data-name="Ellipse 7" cx="2.616" cy="2.616" r="2.616" transform="translate(2.985)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="Path_74" data-name="Path 74" d="M28.333,15.5a3.16,3.16,0,0,1-4.864,0c-1.879.921-3.169,2.064-3.169,4.274v3.759a1.306,1.306,0,0,0,1.29,1.29h.553a.811.811,0,0,0,.295-.037v7.443a1.6,1.6,0,0,0,1.584,1.584h0a1.6,1.6,0,0,0,1.584-1.584V27.144c.111,0,.221.037.332.037a1.02,1.02,0,0,0,.332-.037v5.085a1.584,1.584,0,0,0,3.169,0V24.786a.718.718,0,0,0,.295.037h.553a1.306,1.306,0,0,0,1.29-1.29V19.774C31.5,17.564,30.212,16.421,28.333,15.5Z" transform="translate(-20.3 -10.157)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,49 @@
+.hero-slider
+    position: relative
+    .slide
+        width: 100vw
+        height: 80vh
+        min-height: 800px
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    .slide-nav
+        padding: 1em 0
+        position: absolute
+        bottom: 20px
+        width: 100%
+        filter: brightness(100)
+        .position
+            font-family: 'Gotham'
+            font-weight: 500
+            letter-spacing: 15px
+            font-size: 20px
+    @media screen and ( max-width: $tablet )
+        .slide
+            height: 60vw !important
+            min-height: 0
+
+.slide-nav
+    display: flex
+    align-items: center
+    justify-content: center
+    font-family: 'Gotham'
+    font-weight: 500
+    color: $brown
+    .position
+        width: 20%
+        text-align: center
+        margin-left: 15px
+        @media screen and ( max-width: $tablet )
+            margin-left: 5px
+    .next
+        transform: rotate(180deg)
+    .next, .prev
+        cursor: pointer
+        @media screen and ( max-width: $tablet )
+            height: 12px
+            padding: 0 20px
+
+    &.is-right
+        justify-content: flex-end

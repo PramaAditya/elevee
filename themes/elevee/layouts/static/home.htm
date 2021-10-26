@@ -1,0 +1,135 @@
+layout = "default"
+
+[staticPage]
+useContent = 0
+default = 0
+
+[Agent]
+==
+
+{repeater name="slides" tab="Slide Images" prompt="Add a section"}
+  {variable name="img" label="Image" type="mediafinder" span="auto"}{/variable}
+  {variable name="url" label="Link to URL (optional)" type="text" span="auto"}{/variable}
+{/repeater}
+
+{variable name="aboutText" label="Alam Sutera Content" type="richeditor" size="large" span="full" tab="About"}{/variable}
+{variable name="aboutButtonText" label="Button Text" type="text" span="auto" tab="About"}{/variable}
+{variable name="aboutButtonURL" label="Button URL" type="text" span="auto" tab="About"}{/variable}
+{variable name="aboutVideoD" label="Alam Sutera Video Desktop" type="mediafinder" span="auto" tab="About"}{/variable}
+{# {variable name="aboutVideoM" label="Alam Sutera Video Mobile" type="mediafinder" span="auto" tab="About"}{/variable} #}
+
+{repeater name="aboutBoxes" tab="About" prompt="Add a Box"}
+  {variable name="title" label="Box Title" type="text" span="full"}{/variable}
+  {variable name="content" label="Box Text" type="richeditor" size="large" span="left"}{/variable}
+  {variable name="w" label="width" type="number" span="right"}{/variable}
+  {variable name="h" label="height" type="number" span="right"}{/variable}
+  {variable name="url" label="Link to URL (optional)" type="text" span="right"}{/variable}
+  {variable name="img" label="Image (Optional)" type="mediafinder" span="right"}{/variable}
+  {variable name="class" label="Custom CSS class (Optional)" type="text" span="right"}{/variable}
+  {variable name="order" label="Mobile Order" type="number" span="auto"}{/variable}
+  {variable name="wM" label="Mobile width" type="number" span="right"}{/variable}
+  {variable name="hM" label="Mobile height" type="number" span="right"}{/variable}
+{/repeater}
+
+{repeater name="facilitiesBoxes" tab="Facilities Boxes" prompt="Add a Box"}
+  {variable name="title" label="Box Title" type="text" span="full"}{/variable}
+  {variable name="content" label="Box Text" type="richeditor" size="large" span="left"}{/variable}
+  {variable name="w" label="width" type="number" span="right"}{/variable}
+  {variable name="h" label="height" type="number" span="right"}{/variable}
+  {variable name="url" label="Link to URL (optional)" type="text" span="right"}{/variable}
+  {variable name="img" label="Image (Optional)" type="mediafinder" span="right"}{/variable}
+  {variable name="class" label="Custom CSS class (Optional)" type="text" span="right"}{/variable}
+  {variable name="order" label="Mobile Order" type="number" span="auto"}{/variable}
+  {variable name="wM" label="Mobile width" type="number" span="right"}{/variable}
+  {variable name="hM" label="Mobile height" type="number" span="right"}{/variable}
+{/repeater}
+{repeater name="unitBoxes" tab="Units Boxes" prompt="Add a Box"}
+  {variable name="title" label="Box Title" type="text" span="full"}{/variable}
+  {variable name="content" label="Box Text" type="richeditor" size="large" span="left"}{/variable}
+  {variable name="w" label="width" type="number" span="right"}{/variable}
+  {variable name="h" label="height" type="number" span="right"}{/variable}
+  {variable name="url" label="Link to URL (optional)" type="text" span="right"}{/variable}
+  {variable name="img" label="Image (Optional)" type="mediafinder" span="right"}{/variable}
+  {variable name="class" label="Custom CSS class (Optional)" type="text" span="right"}{/variable}
+  {variable name="order" label="Mobile Order" type="number" span="auto"}{/variable}
+  {variable name="wM" label="Mobile width" type="number" span="right"}{/variable}
+  {variable name="hM" label="Mobile height" type="number" span="right"}{/variable}
+{/repeater}
+
+{variable name="newsEventsTitle" label="Title" type="text" span="full" tab="News & Events"}{/variable}
+{variable name="newsEventsSubtitle" label="Subtitle" type="richeditor" size="large" span="full" tab="News & Events"}{/variable}
+
+
+{% partial "htmlHeader" %}
+<div id="homePadding"></div>
+{% partial 'heroSlider' slides=slides %}
+<section class="section" id="aboutAlamSutera">
+    <div class="container is-narrow">
+        <div class="columns is-vcentered">
+            {% if Agent.isMobile()%}
+            <div class="column mobile-player">
+                <video class="player" playsinline controls>
+                    <source src="{{aboutVideoD | media}}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            {% endif %}
+            <div class="column is-half has-bg">
+                
+                <div class="content">
+                    <div class="mobile2col">
+                    <img src="{{'assets/images/alam_sutera_white_small.svg' | theme}}" alt="Alam Sutera" height="147" width="204">
+                    <div class="le-content">{{aboutText | raw}}</div>
+                    </div>
+                    <a href="{{aboutButtonURL}}" class="button">{{aboutButtonText}}</a>
+                </div>
+                           
+            </div>
+            <div class="column is-8 video">
+                {% if Agent.isDesktop()%}
+                    <video class="player" playsinline controls>
+                        <source src="{{aboutVideoD | media}}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                {% endif %}     
+            </div>
+            
+        </div>
+    </div>
+</section>
+<section class="section" id="aboutBoxes">
+    <div class="container is-fluid">
+        {% partial 'gridBoxes' boxes=aboutBoxes %}
+    </div>
+</section>
+<section class="section" id="facilitiesBoxes">
+    <div class="container is-fluid">
+        {% partial 'gridBoxes' boxes=facilitiesBoxes %}
+    </div>
+</section>
+{% partial 'masterplan' header="Project Masterplan" %}
+<section class="section" id="unitBoxes">
+    <div class="container is-fluid">
+        {% partial 'gridBoxes' boxes=unitBoxes %}
+    </div>
+</section>
+<section class="section" id="newsEventsWidget">
+    <div class="container is-narrow">
+        <div class="columns is-variable is-0">
+            <div class="column is-half">
+                <h1 class="section__title">
+                {{newsEventsTitle}}
+                </h1>
+                <div class="section__subtitle">
+                    {{newsEventsSubtitle | raw}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container is-fluid">
+        {% partial 'newsSlider' %}
+    </div>
+</section>
+{% partial 'floatingButton' %}
+{% partial "htmlFooter" %}

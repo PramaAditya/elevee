@@ -1,0 +1,41 @@
+layout = "default"
+url = "/building"
+title = "Building"
+[Agent]
+==
+{% set hierarchy=['Inside Elevee', this.page.title]%}
+{% put scripts %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+{% endput %}
+{% partial 'breadcrumbs' links = hierarchy %}
+<section class="section" id="buildingSelector">
+    <img src="{{'assets/images/building-placeholder-2.jpg' | theme}}" alt="Building Placeholder" class="image" id="buildingPlaceholder">
+</section>
+
+<section class="section" id="availableUnits">
+    <div class="container is-narrow">
+        <h2 class="section__title">
+            Available Units
+        </h2>
+    </div>
+    {% partial 'unitSummary'%}
+</section>
+<section class="section" id="BuildingSpec">
+    <div class="container is-narrow">
+        <h2 class="section__title">
+            Building Specifications
+        </h2>
+        {% partial 'buildingSpecs' spec=[] %}
+    </div>
+</section>
+
+
+
+
+
+
+
+
+{% partial 'floatingButton' %}
+
+

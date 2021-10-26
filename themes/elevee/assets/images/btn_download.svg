@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49">
+  <g id="btn_download" transform="translate(-13430 374)">
+    <path id="Path_14101" data-name="Path 14101" d="M32.586,12.924l-.264-.264h-6.23V2.1a1.893,1.893,0,0,0-1.9-1.9h-4.8a1.893,1.893,0,0,0-1.9,1.9V12.66H11.2l-.264.264a1.817,1.817,0,0,0,0,2.534L20.5,25.014a1.817,1.817,0,0,0,2.534,0l9.556-9.556A1.817,1.817,0,0,0,32.586,12.924Z" transform="translate(13433.001 -366.7)" fill="none" stroke="#582931" stroke-miterlimit="10" stroke-width="1.5"/>
+    <path id="Path_14102" data-name="Path 14102" d="M31.2,44.1H22.486L18.42,48.165a2.1,2.1,0,0,1-3.009,0L11.346,44.1H2.529A2.457,2.457,0,0,0,.1,46.529v5.808a2.457,2.457,0,0,0,2.429,2.429H31.2a2.457,2.457,0,0,0,2.429-2.429V46.529A2.39,2.39,0,0,0,31.2,44.1Zm-6.811,8.289A1.109,1.109,0,1,1,25.5,51.28,1.115,1.115,0,0,1,24.386,52.389Zm4.277,0a1.109,1.109,0,1,1,1.109-1.109A1.082,1.082,0,0,1,28.663,52.389Z" transform="translate(13437.875 -384.665)" fill="none" stroke="#582931" stroke-miterlimit="10" stroke-width="1.5"/>
+    <rect id="Rectangle_2107" data-name="Rectangle 2107" width="49" height="49" transform="translate(13430 -374)" fill="none"/>
+  </g>
+</svg>

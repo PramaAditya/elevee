@@ -1,0 +1,71 @@
+[Agent]
+==
+{% if Agent.isDesktop() %}
+<div class="grid-boxes">
+	{% for box in boxes %}
+        {% if box.url %}
+		<a href="{{box.url}}" class="box w-{{box.w}} h-{{box.h}} {{box.class}}">
+        {% else %}
+        <div class="box w-{{box.w}} h-{{box.h}} {{box.class}}">
+        {% endif %}
+                {% if box.img %}
+                    <h1 class="box__title">{{box.title}}</h1>
+                    <div class="box__content_hover">
+                        <h1>{{box.title}}</h1>
+                        {{box.content | raw}}
+                    </div>
+                    <div class="box__overlay"></div>
+                    <img src="{{box.img | media}}" alt="Background" class="box__bg">
+                {% else %}
+                    <div class="box__content">
+                        <h1>{{box.title}}</h1>
+                        {{box.content | raw}}
+                    </div>
+                    <img src="{{'assets/images/bg.jpg' | theme}}" alt="Background" class="box__bg_default">
+                {% endif %}
+		{% if box.url %}
+		</a>
+        {% else %}
+        </div>
+        {% endif %}
+	{% endfor %}
+</div>
+{% else %}
+{% set totalH = 0 %}
+
+{% for box in boxes %}
+
+{% set totalH = totalH + box.hM %}
+
+{% endfor %}
+
+<div class="grid-boxes grids-h-{{totalH}}">
+	{% for box in boxes %}
+        {% if box.url %}
+		<a href="{{box.url}}" class="box w-{{box.wM}} h-{{box.hM}} {{box.class}} no-hover" style="order: {{box.order}}">
+        {% else %}
+        <div class="box w-{{box.wM}} h-{{box.hM}} {{box.class}} no-hover" style="order: {{box.order}}">
+        {% endif %}
+                {% if box.img %}
+                    <h1 class="box__title">{{box.title}}</h1>
+                    <div class="box__content_hover">
+                        <h1>{{box.title}}</h1>
+                        {{box.content | raw}}
+                    </div>
+                    <div class="box__overlay"></div>
+                    <img src="{{box.img | media}}" alt="Background" class="box__bg">
+                {% else %}
+                    <div class="box__content">
+                        <h1>{{box.title}}</h1>
+                        {{box.content | raw}}
+                    </div>
+                    <img src="{{'assets/images/bg.jpg' | theme}}" alt="Background" class="box__bg_default">
+                {% endif %}
+		{% if box.url %}
+		</a>
+        {% else %}
+        </div>
+        {% endif %}
+	{% endfor %}
+</div>
+{% endif %}

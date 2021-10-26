@@ -1,0 +1,77 @@
+#aboutElevee
+    margin-top: 8em
+    .body-text
+        font-family: 'Gotham Book'
+    
+    .features
+        margin-top: 8em
+        justify-content: space-around
+        margin-bottom: 6em
+        .feature
+            &__label
+                max-width: 200px
+                margin: auto
+                padding-top: 1em
+
+#aboutAlamSutera
+    h2
+        font-size: 1em
+        font-weight: bold
+        letter-spacing: 2px
+    .image
+        height: 100%
+    .has-bg .image
+        max-width: 50%
+        margin: auto
+    .the-content
+        padding: 3*$gap $gap !important
+
+#aboutBroadwayMalyan
+    font-family: 'Gotham'
+
+#aboutVideo
+    font-family: 'Quiche Sans'
+    font-weight: 500
+    color: $maroon
+    font-size: 60px
+    video
+        max-width: 100%
+    .the-content
+        padding-left: 3em
+
+@media screen and ( max-width: $tablet )
+    #aboutElevee
+        margin-top: 3em
+        .container
+            padding: 0 $gap
+        .body-text
+            // font-size: 12px
+        .about-logo
+            height: 122px
+            width: 217px
+        .features
+            margin: 2em $gap
+        .feature
+            &__img
+                width: 40px
+                height: 40px
+            &__label
+                font-size: 10px
+                max-width: 200px
+                font-weight: 500
+    #aboutAlamSutera
+        margin-bottom: 0em!important
+        .column
+            font-size: 16px !important
+        .alam-sutera-logo
+            padding: 1.5em 2em !important
+        .the-content
+            padding: 1.5*$gap $gap !important
+    #aboutVideo
+        background-color: #F9F9F9
+        padding: 3rem 0 1rem
+        font-size: 30px
+        margin-bottom: 1rem
+        .the-content
+            padding: 0 $gap
+            text-align: center

@@ -1,0 +1,92 @@
+layout = "default"
+
+[staticPage]
+useContent = 0
+default = 0
+
+[Agent]
+
+[googleMap]
+latitude = -6.222979438521718
+longitude = 106.65531028054122
+zoom = 17
+width = "100%"
+height = "800px"
+mapTypeId = "ROADMAP"
+showMarker = "true"
+==
+{variable name="heroImage" label="Image" type="mediafinder" span="auto" tab="Hero Section"}{/variable}
+{variable name="heroText" label="Text" type="textarea" size="huge" span="auto" tab="Hero Section"}{/variable}
+
+{variable name="contactText" label="Contact Text" type="richeditor" size="huge" span="full" tab="Contact Form"}{/variable}
+
+
+
+{% partial "htmlHeader" %}
+{% set hierarchy=[this.page.title]%}
+{% partial 'breadcrumbs' links = hierarchy %}
+<section class="section" id="contactHero" style="background-image: url({{heroImage | media}})">
+    <div class="hero-text">
+        {{heroText | raw}}
+    </div>
+</section>
+<section class="section" id="contactContent">
+    <div class="container is-narrow">
+        <div class="columns is-variable is-8">
+            <div class="column" id="contactForm">
+                {{contactText | raw}}
+                <div class="foot__contacts">
+                    <div class="phone">{{this.theme.phone}}</div>
+                    <div class="whatsapp">{{this.theme.whatsapp}}</div>
+                    <div class="email">{{this.theme.email}}</div>
+                </div>
+                <div class="social-links">
+                    {% for social in this.theme.social_medias %}
+                        <a href="{{social.url}}"><img src="{{social.icon | media}}" alt=""></a>    
+                    {% endfor %}
+                </div>
+                <form class="form" action="">
+                
+                    <div class="field">
+                        <div class="control name">
+                            <input class="input" type="text" placeholder="Enter your name" name="Name">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control email">
+                            <input class="input" type="email" placeholder="Your Email" name="Email">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control phone">
+                            <input class="input" type="tel" placeholder="Enter your phone number" name="Phone">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            <div class="select">
+                            <select name="subject">
+                                <option value="" disabled selected>Select your subject</option>
+                                <option value="">Subject 1</option>
+                            </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control message">
+                            <textarea class="textarea" name="Message" placeholder="Enter your message"></textarea>
+                        </div>
+                    </div>
+                    <div class="has-text-right">
+                        <input type="submit" class="button is-line" value="SUBMIT">
+                    </div>
+                </form>
+            </div>
+            <div class="column" id="contactMap">
+                {% component 'googleMap' %}
+            </div>
+        </div>
+    </div>
+</section>
+{% partial 'floatingButton' %}
+{% partial "htmlFooter" %}

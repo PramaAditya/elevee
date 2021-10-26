@@ -1,0 +1,58 @@
+name: Elevee
+description: 'Elevee theme by Balkat'
+author: Balkat
+homepage: balkat.com
+author_code: balkat
+code: bulma-starter
+parent: ''
+database: '0'
+
+form:
+  tabs:
+    fields:
+      email:
+        tab: Site Information
+        label: Email
+        type: email
+        span: auto
+      phone:
+        tab: Site Information
+        label: Phone
+        type: text
+        span: auto
+      whatsapp:
+        tab: Site Information
+        label: Whatsapp
+        type: text
+        span: auto
+      address:
+        tab: Site Information
+        label: Address
+        type: richeditor
+        size: large
+        span: auto
+      about:
+        tab: Site Information
+        label: About
+        type: richeditor
+        size: large
+        span: auto
+      social_medias:
+        tab: Site Information
+        label: Social Medias
+        type: repeater
+        titleFrom: url
+        form:
+          fields:
+            icon:
+              label: Social Media Icon
+              type: mediafinder
+              mode: image
+              imageHeight: 260
+              imageWidth: 260
+              span: auto
+            url:
+              label: Social Media URL
+              span: auto
+
+      

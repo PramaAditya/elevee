@@ -1,0 +1,67 @@
+.news-box
+    position: relative
+    overflow: hidden
+    cursor: pointer
+    display: block
+    &:hover
+        .news-detail
+            opacity: 1
+    .news-img
+        margin: auto
+        width: 100%
+        object-fit: cover
+    .news-detail
+        position: absolute
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        top: 0
+        left: 0
+        width: 80%
+        height: 80%
+        padding: 10%
+        color: white
+        text-decoration: none
+        opacity: 0
+        transition: all .25s ease-out
+        font-family: 'Gotham Book'
+        *
+            display: block
+        .news-excerpt
+            flex-grow: 1
+        .news-date, .news-time
+            display: flex
+            align-items: center
+        .news-date
+            margin-bottom: 1em
+        .icon
+            width: 18px
+            height: 18px
+            margin-right: .25em
+
+#newsList
+    .news-box
+        margin: 1em
+
+@media screen and ( max-width: $tablet )
+    .news-detail
+        padding: 5% 5% !important
+        width: 90% !important
+        height: 90% !important 
+        opacity: 1 !important
+        transform: translateY(120%)
+        transition: all .5s ease-in-out
+        .icon
+            width: 8px !important
+            height: 8px !important
+    .is-open
+        .news-detail
+            transform: translateY(0%)
+    .news-title
+        font-size: 12px
+        margin: .5em 0
+        margin-top: 0 !important
+    .news-excerpt
+        font-size: 8px
+    .news-date, .news-time
+        font-size: 8px

@@ -1,0 +1,79 @@
+.navDesktop
+    &.nav-index, &.nav-sticky
+        color: white
+        @extend .has-bg
+        .logo
+            filter: brightness(0) invert(1)
+        .navDesktop__button
+            filter: brightness(0) invert(1)
+
+    &.nav-index, &.nav-sticky
+        position: fixed
+        top: 0
+        left: 0
+        width: 100vw
+        z-index: 400
+        transform: translateY(-30vh)
+        transition: all .5s ease-out
+        &.is-active
+            transform: translateY(0vh)
+    &.nav-index
+        transform: translateY(0)
+    &__menu
+        display: flex
+        justify-content: flex-end
+        font-family: 'Quiche Sans'
+        font-size: 29px
+        font-weight: 500
+        align-items: center
+    &__button
+        cursor: pointer
+        margin-left: 30px
+        margin-top: -15px
+
+.navMobile
+    height: 60px
+    display: flex
+    align-items: center
+    >.container
+        width: 100%!important
+        // >.columns
+        //     .column
+        //         display: flex
+        //         align-items: center
+    .logo
+        height: 70px
+        margin-bottom: -10px
+        width: auto
+    &.nav-index, &.nav-sticky
+        color: white
+        @extend .has-bg
+        .logo
+            filter: brightness(0) invert(1)
+            // padding: 20px 0
+
+        .navMobile__button
+            filter: brightness(0) invert(1)
+
+    &.nav-index, &.nav-sticky
+        position: fixed
+        top: 0
+        left: 0
+        width: 100vw
+        z-index: 400
+        transform: translateY(-30vh)
+        transition: all .5s ease-out
+        &.is-active
+            transform: translateY(0vh)
+    &.nav-index
+        transform: translateY(0)
+    &__menu
+        display: flex
+        justify-content: flex-end
+        font-family: 'Quiche Sans'
+        font-size: 20px
+        font-weight: 500
+        align-items: center
+    &__button
+        cursor: pointer
+        margin-left: 30px

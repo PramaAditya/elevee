@@ -1,0 +1,151 @@
+$gGap: 5px
+$w: calc(((100vw - #{2*$gap})/4) - #{2*$gGap})
+$wM: calc((50vw - #{$gGap}) - #{$gap/2} + 2.5px)
+.grid-boxes
+    display: grid
+
+    grid-template-columns: $w $w $w $w
+    grid-template-rows: auto auto auto
+    grid-gap: $gGap
+    width: 100%
+
+    .w-2
+        grid-column-end: span 2
+    .w-3
+        grid-column-end: span 3
+    .w-4
+        grid-column-end: span 4
+    .h-2
+        grid-row-end: span 2
+        min-height: calc(2 * #{$w})
+    .h-3
+        grid-row-end: span 3
+        min-height: calc(3 * #{$w}) 
+
+    @media screen and ( max-width: $tablet )
+        
+        grid-template-columns: $wM $wM
+        grid-template-rows: $wM $wM $wM $wM
+.box
+    position: relative
+    color: white
+    overflow: hidden
+    text-decoration: none
+    min-height: $w
+    &.vcentered
+        display: flex
+        align-items: center
+        .box__content
+            padding: 5em
+    *
+        position: relative
+        z-index: 70
+        transition: all .4s ease-out
+    h1
+        font-family: $font-heading
+        font-weight: 500
+    p
+        font-family: $font-body
+        font-size: 16px
+        line-height: 1.5
+        letter-spacing: 1px
+    &__content
+        padding: calc(4em - 5px) 2em
+        h1
+            margin-bottom: 1.5em
+        @media screen and ( min-width: $tablet  )    
+            width: 60%
+    &__overlay
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        z-index: 60
+        background: transparent linear-gradient(180deg, #31171B 0%, #31171B00 50%) 0% 0% no-repeat padding-box
+    &__bg, &__bg_default
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        object-fit: cover
+        z-index: 50
+        
+    &.no-hover
+        .box__title
+            display: none
+        .box__overlay
+            background: transparent linear-gradient(180deg, #58293100 0%, #582931 100%) 0% 0% no-repeat padding-box
+        .box__content_hover
+            opacity: 1 !important
+    &__title
+        position: absolute
+        top: 0
+        left: 0
+        padding: 2rem
+        font-size: 40px
+        max-width: 500px
+        text-shadow: 0px 3px 6px #00000099
+        opacity: 1
+    &__content_hover
+        position: absolute
+        bottom: 0
+        padding: 2rem
+        opacity: 0
+        transition-delay: .1s
+    &:not(.no-hover)
+        .box__bg
+            filter: grayscale(100%)
+        &:hover
+            .box__bg
+                filter: grayscale(0%)
+            .box__title
+                opacity: 0
+            .box__content_hover
+                opacity: 1
+            .box__overlay
+                background: transparent linear-gradient(180deg, #58293100 0%, #582931 100%) 0% 0% no-repeat padding-box
+
+.box.img-only
+    .box__overlay
+        background: none !important
+
+@media screen and ( max-width: $tablet )
+    .box
+        display: flex
+        align-items: center
+        &__content, &__content_hover
+            padding: 1em !important
+            *
+                font-size: 14px !important
+                letter-spacing: 0 !important
+                line-height: 1.4 !important
+            h1
+                margin: 0
+                font-size: 15px !important
+    .grid-boxes
+            grid-template-rows: $wM $wM $wM $wM $wM $wM $wM
+    
+    .grids-h-1
+        grid-template-rows: $wM
+    .grids-h-2
+        grid-template-rows: $wM $wM
+    .grids-h-3
+        grid-template-rows: $wM $wM $wM
+    .grids-h-4
+        grid-template-rows: $wM $wM $wM $wM
+    .grids-h-5
+        grid-template-rows: $wM $wM $wM $wM $wM
+    .grids-h-6
+        grid-template-rows: $wM $wM $wM $wM $wM $wM
+    .grids-h-7
+        grid-template-rows: $wM $wM $wM $wM $wM $wM $wM
+    .grids-h-8
+        grid-template-rows: $wM $wM $wM $wM $wM $wM $wM $wM
+    .grids-h-9
+        grid-template-rows: $wM $wM $wM $wM $wM $wM $wM $wM $wM
+    .grids-h-10
+        grid-template-rows: $wM $wM $wM $wM $wM $wM $wM $wM $wM $wM
+    .grids-h-11
+        grid-template-rows: $wM $wM $wM $wM $wM $wM $wM $wM $wM $wM $wM

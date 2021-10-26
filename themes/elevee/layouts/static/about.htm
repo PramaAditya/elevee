@@ -1,0 +1,187 @@
+layout = "default"
+
+[staticPage]
+useContent = 0
+
+[Agent]
+==
+{repeater name="slides" tab="Slide Images" prompt="Add a section"}
+  {variable name="img" label="Image" type="mediafinder" span="auto"}{/variable}
+  {variable name="url" label="Link to URL (optional)" type="text" span="auto"}{/variable}
+{/repeater}
+
+{variable name="aboutElevee" label="About Elevee" type="richeditor" size="huge" span="full" tab="About Elevee"}{/variable}
+
+{repeater name="features" label="Feature Icons" span="full" tab="About Elevee" prompt="Add a Feature Icon"}
+  {variable name="img" label="Feature Image" type="mediafinder" span="full"}{/variable}
+  {variable name="label" label="Feature Label" type="text" span="full"}{/variable}
+{/repeater}
+
+{variable name="aboutImage1" label="About Image 1" type="mediafinder" span="auto" tab="About Alam Sutera"}{/variable}
+{variable name="aboutImage2" label="About Image 2" type="mediafinder" span="auto" tab="About Alam Sutera"}{/variable}
+{variable name="aboutImage3" label="About Image 3" type="mediafinder" span="auto" tab="About Alam Sutera"}{/variable}
+{variable name="aboutImage4" label="About Image 4" type="mediafinder" span="auto" tab="About Alam Sutera"}{/variable}
+{variable name="aboutAlamSuteraImg" label="About Alam Sutera Image" type="mediafinder" span="left" tab="About Alam Sutera"}{/variable}
+{variable name="aboutAlamSutera" label="About Alam Sutera" type="richeditor" size="huge" span="right" tab="About Alam Sutera"}{/variable}
+
+{repeater name="boxes" label="About Boxes" tab="About Boxes" prompt="Add a Box"}
+  {variable name="title" label="Box Title" type="text" span="full"}{/variable}
+  {variable name="content" label="Box Text" type="richeditor" size="large" span="left"}{/variable}
+  {variable name="w" label="width" type="number" span="right"}{/variable}
+  {variable name="h" label="height" type="number" span="right"}{/variable}
+  {variable name="url" label="Link to URL (optional)" type="text" span="right"}{/variable}
+  {variable name="img" label="Image (Optional)" type="mediafinder" span="right"}{/variable}
+  {variable name="class" label="Custom CSS class (Optional)" type="text" span="right"}{/variable}
+  {variable name="order" label="Mobile Order" type="number" span="auto"}{/variable}
+  {variable name="wM" label="Mobile width" type="number" span="right"}{/variable}
+  {variable name="hM" label="Mobile height" type="number" span="right"}{/variable}
+{/repeater}
+
+{variable name="imageDesigner" label="Designer Image" type="mediafinder" mode="image" span="left" tab="About Broadway Malyan"}{/variable}
+{variable name="aboutDesigner" label="About Designer" type="richeditor" size="huge" span="right" tab="About Broadway Malyan"}{/variable}
+
+{variable name="videoText" label="Video Text" type="richeditor" size="large" span="left" tab="Video"}{/variable}
+{variable name="videoFile" label="Video File" type="mediafinder" span="right" tab="Video"}{/variable}
+
+{% partial "htmlHeader" %}
+{% set hierarchy=['Inside Elevee', this.page.title]%}
+{% partial 'breadcrumbs' links = hierarchy %}
+{% partial 'heroSlider' slides=slides %}
+<section class="section" id="aboutElevee">
+    <div class="container is-narrow">
+        <div class="columns is-vcentered">
+            <div class="column has-text-centered">
+                <img src="{{'assets/images/elevee.png' | theme}}" class="about-logo" height="200" width="355" alt="">
+            </div>
+            <div class="column body-text">
+                {{aboutElevee | raw}}
+            </div>
+        </div>
+    </div>
+    {% if Agent.isDesktop() %}
+        <ul class="features is-horizontal">
+            {% for feature in features %}
+                <div class="feature has-text-centered ">
+                    <img src="{{feature.img | media}}" width="70" height="70" class="feature__img" alt="">
+                    <div class="feature__label">{{feature.label}}</div>
+                </div>
+            {% endfor %}
+        </ul>
+    {% else %}
+            <div class="features columns is-mobile is-multiline">
+            {% for feature in features %}
+                <div class="feature has-text-centered column is-3">
+                    <img src="{{feature.img | media}}" width="70" height="70" class="feature__img" alt="">
+                    <div class="feature__label">{{feature.label}}</div>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+</section>
+
+<section class="section" id="aboutAlamSutera">
+<div class="container is-fluid">
+    {% if Agent.isDesktop() %}
+        <div class="columns is-mobile is-gapless" style="margin-bottom: 0">
+            <div class="column">
+                <img src="{{aboutImage1 | media}}" alt="" class="image">
+            </div>
+            <div class="column">
+                <img src="{{aboutImage2 | media}}" alt="" class="image">
+            </div>
+            <div class="column">
+                <img src="{{aboutImage3 | media}}" alt="" class="image">
+            </div>
+            <div class="column">
+                <img src="{{aboutImage4 | media}}" alt="" class="image">
+            </div>
+        </div>
+        <div class="columns has-bg is-gapless is-vcentered">
+            <div class="column has-text-centered">
+                <img src="{{aboutAlamSuteraImg | media}}" class="image" alt="Alam Sutera" >
+            </div>
+            <div class="column the-content">
+                {{aboutAlamSutera | raw}}
+            </div>
+        </div>
+    {% else %}
+        <div class="columns has-bg is-gapless is-vcentered mb-0">
+            <div class="column has-text-centered alam-sutera-logo">
+                <img src="{{aboutAlamSuteraImg | media}}" class="image" alt="Alam Sutera" >
+            </div>
+        </div>
+        <div class="columns is-mobile is-gapless" style="margin-bottom: 0">
+            <div class="column">
+                <img src="{{aboutImage1 | media}}" alt="" class="image">
+            </div>
+            <div class="column">
+                <img src="{{aboutImage2 | media}}" alt="" class="image">
+            </div>
+            <div class="column">
+                <img src="{{aboutImage3 | media}}" alt="" class="image">
+            </div>
+            <div class="column">
+                <img src="{{aboutImage4 | media}}" alt="" class="image">
+            </div>
+        </div>
+        <div class="columns has-bg is-gapless is-vcentered">
+            <div class="column the-content">
+                {{aboutAlamSutera | raw}}
+            </div>
+        </div>
+    {% endif %}
+    
+</div>
+</section>
+<section class="section" id="aboutBoxes">
+
+    <div class="container is-fluid">
+        {% partial 'gridBoxes' boxes=boxes %}
+    </div>
+    
+</section>
+<section class="section" id="aboutBroadwayMalyan">
+    <div class="container is-narrow">
+        <div class="columns is-variable is-8 is-vcentered">
+            <div class="column">
+                <img src="{{imageDesigner | media}}" alt="" class="image">
+            </div>
+            <div class="column">
+                {{aboutDesigner | raw}}
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="aboutVideo">
+    <div class="container is-narrow">
+        <div class="columns is-variable is-8 is-vcentered">
+            {% if Agent.isDesktop() %}
+                <div class="column the-content">
+                    {{videoText | raw}}
+                </div>
+                <div class="column">
+                    <video class="image player" playsinline controls>
+                        <source src="{{videoFile | media}}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            {% else %}
+                <div class="column">
+                    <video class="image player" playsinline controls>
+                        <source src="{{videoFile | media}}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="column the-content">
+                    {{videoText | raw}}
+                </div>
+                
+            {% endif %}
+            
+        </div>
+    </div>
+</section>
+
+{% partial 'floatingButton' %}
+{% partial "htmlFooter" %}

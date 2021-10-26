@@ -1,0 +1,60 @@
+.breadcrumbs
+    list-style: none
+    display: flex
+    position: relative
+    color: $gold
+    font-family: 'Gotham'
+    font-weight: bold
+    font-size: 18px
+    text-transform: uppercase
+    padding: 2em 2*$gap 0em
+    // margin-bottom: -2em
+    letter-spacing: 2px
+    &::before
+        content: "•"
+        font-size: 2em
+        margin-top: -.3em
+        margin-right: .75em
+    a
+        color: inherit
+        text-decoration: none
+    li
+        position: relative
+        &:not(:last-child):after
+            content: ""
+            height: 2px
+            width: 20px
+            background: #C5A264
+            margin: 0 13px
+            display: inline-block
+            top: -20%
+            position: relative
+    .current
+        font-size: 35px
+        font-family: $font-heading
+        font-weight: 500
+        text-transform: capitalize
+        position: relative
+        margin-top: -13px
+        letter-spacing: 0
+    @media screen and ( max-width: $tablet )
+        &::before
+            margin-right: .25em
+        padding: 3em $gap/2 0
+        font-size: 10px
+        letter-spacing: 1px
+        .current
+            font-size: 15px
+            padding-top: 10px
+        li
+            padding-top: 2px
+            position: relative
+            &:not(:last-child):after
+                content: ""
+                height: 2px
+                width: 15px
+                background: #C5A264
+                margin: 0 7px
+                display: inline-block
+                top: -10%
+                position: relative

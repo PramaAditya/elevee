@@ -1,0 +1,171 @@
+.foot
+    padding-top: 80px
+    min-height: 500px
+    display: flex
+    flex-direction: column
+    color: white
+    font-family: 'Gotham Book'
+    // align-items: center
+    .accordian-arrow
+        display: none
+    @media screen and ( max-width: $tablet )
+        padding-top: 20px
+        .accordian-arrow
+            display: inline-block
+            float: right
+            margin-top: 10px
+        .has-dropdown+.foot__content
+            max-height: 0px
+            overflow: hidden
+            transition: all .5s ease-in-out
+        .has-dropdown.is-open
+            &+.foot__content
+                max-height: 1000px
+
+    &__logos
+        @media screen and ( max-width: $tablet )
+            display: flex
+            align-items: center
+            img
+                width:  50%
+            img:first-of-type
+                width:  calc(50% - 40px)
+                padding-right: 40px
+    &__logo
+        margin-bottom: 30px
+    &__container
+        padding-top: 2em
+        padding-bottom: 3em
+        width: auto !important
+
+        >.columns
+            margin: 0
+            width: 100%
+    &__title
+        border-bottom: 1px solid white
+        padding-bottom: 38px
+        font-family: $font-heading
+        font-weight: 500
+        font-size: 20px
+        @media screen and ( min-width: $tablet )
+            height: 150px
+            display: flex
+            align-items: flex-end
+        @media screen and ( max-width: $tablet )
+            padding-bottom: 10px
+
+    &__content
+        line-height: 1.5
+    &__newsletter_container
+        @media screen and ( max-width: $tablet )
+            border-bottom: 1px solid white
+            
+    &__copyright
+        justify-items: flex-end
+        width: 100%
+        text-align: center
+        padding: 2em 0
+        border-top: solid 2px white
+        @media screen and ( max-width: $tablet )
+            text-align: left
+            font-size: 15px
+            width: 50%
+            border: 0
+            margin-left: $gap
+    &__contacts
+        >div
+            padding-left: 33px
+            margin-bottom: 1em
+            position: relative
+            &::before
+                content: ""
+                height: 20px
+                width: 20px
+                position: absolute
+                top: 0px
+                left: 3px
+                background-size: contain
+                background-position: center center
+                background-repeat: no-repeat
+        .address
+            &::before
+                background-image: url(../images/icon_address.svg)
+        .phone
+            &::before
+                background-image: url(../images/icon_phone.svg)
+        .email
+            &::before
+                background-image: url(../images/icon_email.svg)
+        .whatsapp
+            &::before
+                background-image: url(../images/icon_whatsapp.svg)
+        @media screen and ( max-width: $tablet )
+            div:not(.address)
+                margin-bottom: 2em
+    &__sitemap
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        align-content: flex-start
+        list-style: none
+        margin: 0
+        padding: 0
+        padding-top: 1em
+
+        $menu-h: 3em
+        height: $menu-h * 4
+        li
+            width: calc(50% - .5em)
+            height: $menu-h
+            margin-right: .5em
+            a
+                color: white
+                text-decoration: none
+            &:hover
+                text-decoration: underline
+
+    &__newsletter
+        .control
+            position: relative
+            input
+                height: 45px
+                width: calc(100% - 50px - 1em)
+                background-color: rgba(white,.5)
+                box-shadow: 0 0 0 0
+                border: 0
+                padding-left: 1em
+                padding-right: 50px
+                color: white
+                font-family: $font-body
+                z-index: 40
+                &::placeholder
+                    color: white
+
+            button
+                background: rgba(0,0,0,0)
+                box-shadow: 0 0 0 0
+                border: 0
+                width: 40px
+                position: absolute
+                right: 10px
+                top: 50%
+                transform: translateY(-50%)
+                z-index: 50
+                cursor: pointer
+    &__social
+        margin-top: 7em
+        a
+            margin-left: 10px
+        img
+            filter: brightness(100)
+        @media screen and ( max-width: $tablet  )
+            margin-top: 2em
+            display: flex
+            align-items: center
+            justify-content: center
+            margin-bottom: 4em
+
+    @media screen and ( max-width: $tablet )
+        p
+            margin-block-start: 2em
+            margin-block-end: 2em

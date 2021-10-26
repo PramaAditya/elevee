@@ -1,0 +1,108 @@
+.unitsum
+    margin: 0 !important
+    background: #F9F9F9
+    margin-bottom: 5px !important
+    &__detail
+        padding: 4em !important
+        font-family: $font-body
+        line-height: 1.5
+        @media screen and ( min-width: $tablet )
+            max-width: 580px
+            padding: 4em 0 !important
+            margin-left: 3*$gap
+            margin-right: 45px
+        .amenities
+            list-style: none
+            margin: 0
+            padding: 0
+            margin-top: 4em
+            text-transform: uppercase
+            font-weight: bold
+            letter-spacing: 1.25px
+            sup
+                margin-top: -5px
+            li
+                display: flex
+                align-items: center
+                margin-bottom: 3em
+                img
+                    margin-right: 30px
+                    object-fit: contain
+                    height: 50px
+    &__gallery
+        position: relative
+        font-family: 'Gotham'
+        font-weight: 500
+        letter-spacing: 2px
+        font-size: 14px
+        a
+            color: white !important
+            text-decoration: none
+        .roomTourButton
+            position: absolute
+            right: 30px
+            top: 30px
+            z-index: 60
+            cursor: pointer
+            transition: all .3s ease-out
+            &:hover
+                transform: scale(1.05)
+    &__slides
+        img
+            width: 100%
+            height: 800px
+            object-fit: cover
+    &__nav
+        padding: 4em 3em
+        display: flex
+        justify-content: space-between
+        .slide-nav
+            filter: invert(1)
+            .position
+                margin: 0 4em
+
+    @media screen and ( max-width: $tablet )
+        &:last-child
+            padding-bottom: 50px
+        &__detail
+            padding: 2em $gap/2 !important
+            p
+                padding: $gap/2 $gap/2 !important
+            .amenities
+                display: flex
+                justify-content: center
+                margin-top: 2em
+                li
+                    display: block
+                    text-align: center
+                    font-size: 10px
+                    margin: 0 10px
+                img
+                    width: 35px
+                    height: 40px
+                    display: block
+                    object-fit: contain
+                    margin: auto !important
+        &__links
+            padding: 4em 0
+            padding-bottom: 0em
+            a
+                color: $maroon !important
+                max-width: 80px
+            #roomTourBtn
+                display: flex
+                align-items: center
+                color: $maroon
+                span
+                    margin-right: 10px
+        .slide-nav
+            margin-top: 5em
+        &__slides
+            transform: scale(1.2)
+            transform-origin: left top
+            margin-left: 1em
+            img
+                width: 100%
+                height: 50vw
+                object-fit: cover
+                padding-right: 2px

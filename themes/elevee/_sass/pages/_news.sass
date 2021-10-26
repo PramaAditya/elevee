@@ -1,0 +1,64 @@
+#newsIntro
+    margin-top: -2em
+#newsFilter
+    display: flex
+    justify-content: center
+    .filter
+        cursor: pointer
+        font-family: $font-heading
+        font-size: 30px
+        padding: 0 2em
+        margin-bottom: 2em
+        font-weight: 500
+        border-left: 2px solid $gold
+        color: $gold
+        &:first-child
+            border-left: 0px
+        &.is-active
+            color: $maroon
+        @media screen and ( max-width: $tablet )
+            font-size: 3.5vw
+
+.nDetail
+    line-height: 1.5
+    &__image
+        max-height: 92vh
+        object-fit: cover
+
+    h3
+        color: $maroon
+    &__title
+        font-family: $font-heading
+        color: $maroon
+        font-weight: 500
+        font-size: 40px
+        margin-top: 0px
+    &__date, &__time
+        font-family: "Gotham Book"
+        font-weight: 600
+        letter-spacing: .5px
+        font-size: 1.1em
+        margin-top: 2em
+        margin-bottom: 2em
+        display: flex
+        align-items: center
+        color: $maroon
+        position: relative
+        &::before
+            content: ""
+            width: 1.2em
+            height: 1.2em
+            padding: 2px
+            display: inline-block
+            margin-right: 10px
+            margin-top: 2px
+            background-image: url(../images/icon_date_color.svg)
+            background-size: cover
+            background-position: center center
+    &__time
+        margin-top: -1em
+        &::before
+            background-image: url(../images/icon_time_color.svg)
+    &__vThumbnail
+        max-width: 300px
+        @extend .video-thumbnail

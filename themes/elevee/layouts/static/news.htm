@@ -1,0 +1,55 @@
+layout = "default"
+
+[staticPage]
+useContent = 0
+default = 0
+
+[Agent]
+
+==
+{variable name="intro" label="Intro" type="richeditor" size="huge" span="full" tab="Content"}{/variable}
+
+{% partial "htmlHeader" %}
+{% set hierarchy=["UPDATES",this.page.title]%}
+{% partial 'breadcrumbs' links = hierarchy %}
+
+<section class="section" id="newsIntro">
+    <div class="container is-narrow">
+        <div class="columns">
+            <div class="column is-half">
+                {{intro | raw}}
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="newsList">
+    <div class="container is-narrow">
+        <div id="newsFilter">
+            <div class="filter is-active" data-filter="all">
+                All Category
+            </div>
+            <div class="filter" data-filter="news">
+                News
+            </div>
+            <div class="filter" data-filter="news">
+                Events
+            </div>
+        </div>
+        <div class="columns is-multiline is-gapless news">
+            {% for news in 1..6 %}
+                <div class="column is-4">
+                    {% partial 'newsBox'%}
+                </div>
+            {% endfor %}
+        </div>
+        <div class="has-text-centered">
+            <button id="loadMore" class="button is-line">LOAD MORE</button>
+        </div>
+        
+    </div>
+
+</section>
+
+{% partial 'floatingButton' %}
+{% partial "htmlFooter" %}

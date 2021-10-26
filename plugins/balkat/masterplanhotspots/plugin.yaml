@@ -1,0 +1,16 @@
+plugin:
+    name: 'balkat.masterplanhotspots::lang.plugin.name'
+    description: 'balkat.masterplanhotspots::lang.plugin.description'
+    author: Balkat
+    icon: oc-icon-building-o
+    homepage: ''
+navigation:
+    hotspots:
+        label: Hotspots
+        url: /
+        icon: icon-circle
+        sideMenu:
+            'Masterplan Hotspots':
+                label: 'balkat.masterplanhotspots::lang.plugin.name'
+                url: balkat/masterplanhotspots/hotspots
+                icon: icon-building-o

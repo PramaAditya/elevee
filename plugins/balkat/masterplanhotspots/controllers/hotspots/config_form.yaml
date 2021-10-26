@@ -1,0 +1,10 @@
+name: Hotspots
+form: $/balkat/masterplanhotspots/models/hotspot/fields.yaml
+modelClass: Balkat\MasterplanHotspots\Models\Hotspot
+defaultRedirect: balkat/masterplanhotspots/hotspots
+create:
+    redirect: 'balkat/masterplanhotspots/hotspots/update/:id'
+    redirectClose: balkat/masterplanhotspots/hotspots
+update:
+    redirect: balkat/masterplanhotspots/hotspots
+    redirectClose: balkat/masterplanhotspots/hotspots

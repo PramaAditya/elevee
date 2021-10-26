@@ -1,0 +1,98 @@
+layout = "default"
+
+[staticPage]
+useContent = 0
+
+[Agent]
+==
+
+{repeater name="fAbout" tab="About" prompt="Add a Box"}
+  {variable name="title" label="Box Title" type="text" span="full"}{/variable}
+  {variable name="content" label="Box Text" type="richeditor" size="large" span="left"}{/variable}
+  {variable name="w" label="width" type="number" span="right"}{/variable}
+  {variable name="h" label="height" type="number" span="right"}{/variable}
+  {variable name="url" label="Link to URL (optional)" type="text" span="right"}{/variable}
+  {variable name="img" label="Image (Optional)" type="mediafinder" span="right"}{/variable}
+  {variable name="class" label="Custom CSS class (Optional)" type="text" span="right"}{/variable}
+  {variable name="order" label="Mobile Order" type="number" span="auto"}{/variable}
+  {variable name="wM" label="Mobile width" type="number" span="right"}{/variable}
+  {variable name="hM" label="Mobile height" type="number" span="right"}{/variable}
+{/repeater}
+{variable name="fAboutText" label="About" type="textarea" size="large" span="full" tab="About"}{/variable}
+
+{repeater name="fGroup1" tab="Facilities Group 1" prompt="Add a Box"}
+  {variable name="title" label="Box Title" type="text" span="full"}{/variable}
+  {variable name="content" label="Box Text" type="richeditor" size="large" span="left"}{/variable}
+  {variable name="w" label="width" type="number" span="right"}{/variable}
+  {variable name="h" label="height" type="number" span="right"}{/variable}
+  {variable name="url" label="Link to URL (optional)" type="text" span="right"}{/variable}
+  {variable name="img" label="Image (Optional)" type="mediafinder" span="right"}{/variable}
+  {variable name="class" label="Custom CSS class (Optional)" type="text" span="right"}{/variable}
+  {variable name="order" label="Mobile Order" type="number" span="auto"}{/variable}
+  {variable name="wM" label="Mobile width" type="number" span="right"}{/variable}
+  {variable name="hM" label="Mobile height" type="number" span="right"}{/variable}
+{/repeater}
+{repeater name="fGroup2" tab="Facilities Group 2" prompt="Add a Box"}
+  {variable name="title" label="Box Title" type="text" span="full"}{/variable}
+  {variable name="content" label="Box Text" type="richeditor" size="large" span="left"}{/variable}
+  {variable name="w" label="width" type="number" span="right"}{/variable}
+  {variable name="h" label="height" type="number" span="right"}{/variable}
+  {variable name="url" label="Link to URL (optional)" type="text" span="right"}{/variable}
+  {variable name="img" label="Image (Optional)" type="mediafinder" span="right"}{/variable}
+  {variable name="class" label="Custom CSS class (Optional)" type="text" span="right"}{/variable}
+  {variable name="order" label="Mobile Order" type="number" span="auto"}{/variable}
+  {variable name="wM" label="Mobile width" type="number" span="right"}{/variable}
+  {variable name="hM" label="Mobile height" type="number" span="right"}{/variable}
+{/repeater}
+{repeater name="fGroup3" tab="Facilities Group 3" prompt="Add a Box"}
+  {variable name="title" label="Box Title" type="text" span="full"}{/variable}
+  {variable name="content" label="Box Text" type="richeditor" size="large" span="left"}{/variable}
+  {variable name="w" label="width" type="number" span="right"}{/variable}
+  {variable name="h" label="height" type="number" span="right"}{/variable}
+  {variable name="url" label="Link to URL (optional)" type="text" span="right"}{/variable}
+  {variable name="img" label="Image (Optional)" type="mediafinder" span="right"}{/variable}
+  {variable name="class" label="Custom CSS class (Optional)" type="text" span="right"}{/variable}
+  {variable name="order" label="Mobile Order" type="number" span="auto"}{/variable}
+  {variable name="wM" label="Mobile width" type="number" span="right"}{/variable}
+  {variable name="hM" label="Mobile height" type="number" span="right"}{/variable}
+{/repeater}
+
+
+
+{% partial "htmlHeader" %}
+{% set hierarchy=['Inside Elevee', this.page.title]%}
+{% partial 'breadcrumbs' links = hierarchy %}
+<section class="section" id="fAbout">
+    <div class="container is-fluid">
+        {% partial 'gridBoxes' boxes=fAbout %}
+    </div>
+    <div class="container is-narrow">
+        <p class="section__title">
+            {{fAboutText}}
+        </p>
+    </div>
+</section>
+<section class="section" id="facilitiesMap">
+    <div class="container is-fluid">
+    {% partial 'facilitiesMap' %}
+    </div>
+</section>
+
+<section class="section" id="fGroup1">
+    <div class="container is-fluid">
+        {% partial 'gridBoxes' boxes=fGroup1 %}
+    </div>
+</section>
+<section class="section" id="fGroup2">
+    <div class="container is-fluid">
+        {% partial 'gridBoxes' boxes=fGroup2 %}
+    </div>
+</section>
+<section class="section" id="fGroup3">
+    <div class="container is-fluid">
+        {% partial 'gridBoxes' boxes=fGroup3 %}
+    </div>
+</section>
+
+{% partial 'floatingButton' %}
+{% partial "htmlFooter" %}

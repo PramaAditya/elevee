@@ -1,0 +1,10 @@
+fields:
+    name:
+        label: 'Unit Name'
+        span: auto
+        type: text
+    image:
+        label: Image
+        mode: file
+        span: auto
+        type: mediafinder

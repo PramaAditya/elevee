@@ -1,0 +1,42 @@
+<div class="hero-slider">
+	<div class="slides-container">
+		{% for slide in slides %}
+			<div class="slide">
+				<img src="{{slide.img | media}}" width="1920" height="940" alt="">
+			</div>
+		{% endfor %}
+        
+	</div>
+    <div class="slide-nav">
+        <img src="{{'assets/images/long_arrow.svg' | theme}}" width="50" height="17" class="prev" alt="prev">
+        <div class="position"><span class="currSlide">1</span>/{{slides | length}}</div>
+        <img src="{{'assets/images/long_arrow.svg' | theme}}" width="50" height="17" class="next" alt="next">
+    </div>
+</div>
+
+
+{% put scripts %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+$(document).ready(function () {
+    $('.hero-slider').each(function () {
+        var $slickElement = $(this).find('.slides-container')
+        var $status = $(this).find('.currSlide')
+        
+        $slickElement.on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
+            //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+            var i = (currentSlide ? currentSlide : 0) + 1;
+            $status.text(i);
+        })
+
+        $slickElement.slick({
+            autoplay: true,
+            autplaySpeed: 3000,
+            nextArrow: $(this).find('.next'),
+            prevArrow: $(this).find('.prev')
+        })
+        
+    });
+});
+</script>
+{% endput %}

@@ -1,0 +1,50 @@
+.masterplan-slider
+    transform: translateX(1*$gap)
+    width: 120vw
+    .image-slide
+        height: 550px
+        img
+            object-fit: cover
+            object-position: center bottom
+
+    @media screen and ( min-width: $tablet )
+        .slide-nav
+            margin-right: calc( 4*#{$gap} + 20vw )
+            margin-top: 4em !important
+
+#slideText
+    font-family: 'Gotham Book'
+    font-size: 1em
+    margin-top: -4.5em
+    h2
+        font-family: $font-heading
+        color: $gold
+        font-size: 2em
+        font-weight: 500
+
+#masterplanHero
+    .masterplan
+        margin-top: 3rem
+        margin-bottom: 15rem
+    .masterplan__text
+        margin-bottom: -3rem
+.masterplan-slider
+    transform: translateX(0)
+    width: 100vw
+    .slide img
+        max-width: none
+        height: 500px
+        object-fit: cover
+    .slide-nav
+        margin-top: 20px
+            
+@media screen and ( max-width: $tablet )
+    // #masterplanAbout
+    //     .grid-boxes
+    //         grid-template-rows: $wM $wM $wM !important
+
+    #slideText
+        margin-top: 1em
+        margin-bottom: 2em
+        padding: 0 $gap
+        

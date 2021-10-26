@@ -1,0 +1,11 @@
+plugin:
+    name: 'balkat.unit::lang.plugin.name'
+    description: 'balkat.unit::lang.plugin.description'
+    author: Balkat
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    apartments:
+        label: Apartments
+        url: balkat/unit/units
+        icon: icon-life-ring

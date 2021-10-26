@@ -1,0 +1,10 @@
+name: Units
+form: $/balkat/unit/models/unit/fields.yaml
+modelClass: Balkat\Unit\Models\Unit
+defaultRedirect: balkat/unit/units
+create:
+    redirect: 'balkat/unit/units/update/:id'
+    redirectClose: balkat/unit/units
+update:
+    redirect: balkat/unit/units
+    redirectClose: balkat/unit/units

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32.184" height="32.184" viewBox="0 0 32.184 32.184">
+  <g id="room_tour_icon" transform="translate(0.603 0.603)">
+    <circle id="Ellipse_8" data-name="Ellipse 8" cx="4.087" cy="4.087" r="4.087" transform="translate(11.402 11.402)" fill="#953142"/>
+    <g id="Group_162" data-name="Group 162" transform="translate(0 0)">
+      <path id="Path_75" data-name="Path 75" d="M52.6,24.1l3.066,3.066L52.6,30.231" transform="translate(-24.849 -11.677)" fill="none" stroke="#953142" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Path_76" data-name="Path 76" d="M4.366,30.231,1.3,27.166,4.366,24.1" transform="translate(-1.139 -11.677)" fill="none" stroke="#953142" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Path_77" data-name="Path 77" d="M30.231,52.6l-3.066,3.066L24.1,52.6" transform="translate(-11.677 -24.849)" fill="none" stroke="#953142" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Path_78" data-name="Path 78" d="M24.1,4.366,27.166,1.3l3.066,3.066" transform="translate(-11.677 -1.139)" fill="none" stroke="#953142" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <g id="Group_161" data-name="Group 161">
+        <path id="Path_79" data-name="Path 79" d="M12.778,1A16,16,0,0,0,1,12.778" transform="translate(-1 -1)" fill="none" stroke="#953142" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+        <path id="Path_80" data-name="Path 80" d="M48.478,12.778A16,16,0,0,0,36.7,1" transform="translate(-17.5 -1)" fill="none" stroke="#953142" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+        <path id="Path_81" data-name="Path 81" d="M1,36.7A16,16,0,0,0,12.778,48.478" transform="translate(-1 -17.5)" fill="none" stroke="#953142" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+        <path id="Path_82" data-name="Path 82" d="M36.7,48.478A16,16,0,0,0,48.478,36.7" transform="translate(-17.5 -17.5)" fill="none" stroke="#953142" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

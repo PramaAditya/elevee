@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="70.773" height="99.566" viewBox="0 0 70.773 99.566">
+  <g id="icon_360_2" transform="translate(-713.277 -1825.96)">
+    <g id="Group_10780" data-name="Group 10780" transform="translate(714.277 1826.96)">
+      <path id="Path_73" data-name="Path 73" d="M16.449,57.3C7.08,58.994,1,61.885,1,65.174c0,5.183,15.449,9.469,34.387,9.469,19.037,0,34.387-4.186,34.387-9.469,0-3.289-6.08-6.18-15.449-7.874" transform="translate(-1 -1.185)" fill="none" stroke="#953142" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+      <g id="Group_159" data-name="Group 159" transform="translate(19.237 0)">
+        <circle id="Ellipse_7" data-name="Ellipse 7" cx="7.077" cy="7.077" r="7.077" transform="translate(8.073)" fill="none" stroke="#953142" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+        <path id="Path_74" data-name="Path 74" d="M42.028,15.5a8.548,8.548,0,0,1-13.157,0C23.789,17.992,20.3,21.082,20.3,27.062V37.228a3.531,3.531,0,0,0,3.488,3.489h1.5a2.195,2.195,0,0,0,.8-.1V60.751a4.318,4.318,0,0,0,4.286,4.286h0a4.318,4.318,0,0,0,4.286-4.286V47c.3,0,.6.1.9.1a2.76,2.76,0,0,0,.9-.1V60.751a4.286,4.286,0,0,0,8.572,0V40.617a1.943,1.943,0,0,0,.8.1h1.5A3.531,3.531,0,0,0,50.8,37.228V27.062C50.6,21.082,47.112,17.992,42.028,15.5Z" transform="translate(-20.3 -1.048)" fill="none" stroke="#953142" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+      </g>
+    </g>
+    <text id="_360_" data-name="360°" transform="translate(729.053 1922.526)" fill="#953142" font-size="19" font-family="Gotham-Bold, Gotham" font-weight="700"><tspan x="0" y="0">360°</tspan></text>
+  </g>
+</svg>

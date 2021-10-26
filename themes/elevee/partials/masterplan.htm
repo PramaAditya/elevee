@@ -1,0 +1,218 @@
+[Agent]
+
+[builderList locationList]
+modelClass = "Balkat\MasterplanHotspots\Models\Hotspot"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "id"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+{% set locations = locationList.records %}
+
+<div class="masterplan">
+    <div class="masterplan__text">
+        {% if header %}
+        <h1 class="section__title">
+            {{header}}
+        </h1>
+        {% endif %}
+        <p class="section__subtitle">
+            The project is located within one of the most prospective area in Alam Sutera, surrounded by many trees that create a green lifestyle, easy access, close to shopping malls, universities, and offices.
+        </p>
+    </div>
+    <div class="masterplan__scroll">
+        <div class="masterplan__container">
+            <div class="masterplan__interaction">
+                <img src="{{'assets/images/floating_button.png' | theme}}" width="80" height="80" alt="" id="siteButton">
+                <img src="{{'assets/images/masterplan/bg.jpg' | theme}}" width="1920" height="1080" alt="masterplan" class="full masterplan__bg">
+                <div class="masterplan__hotspots">
+                    {% for location in locations %}
+                        <img src="{{location.button_img | media}}" data-popup="{{location.index}}" id="hp-{{location.index}}" style="width:{{location.button_width / 1920 * 100}}%; left: {{location.button_left / 1920 * 100}}%; top: {{location.button_top / 1080 * 100}}%;">
+                    {% endfor %}
+                    
+                </div>
+                <div class="masterplan__popups">
+                    {% for location in locations %}
+                        <div id="pop-{{location.index}}" class="masterplan__popup">
+                            <h3 class="title">
+                                {{location.tooltip_title}}
+                            </h3>
+                            <div class="content">
+                                {{location.tooltip_content | raw}}
+                            </div>
+                        </div>
+                    {% endfor %}
+                    
+                </div>
+            </div>
+            
+        </div>
+        {% if Agent.isMobile %}
+        <div class="masterplan__lists columns is-variable is-8 is-mobile">
+            {% for loc_batches in locations | batch(3) %}
+                <div class="column is-third">
+                    {% for location in loc_batches %}
+                        <div class="masterplan__loc">
+                            <div class="title">
+                                {{location.tooltip_title}}
+                            </div>
+                            <div class="content">
+                                {{location.tooltip_content | raw}}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endfor %}
+
+            {# <div class="column is-third">
+                
+                <div class="masterplan__loc">
+                    <div class="title">
+                        Prominence Tower
+                    </div>
+                    <div class="content">
+                        <p>
+                        The Prominence Office Tower is a modern office concept, which surrounded by integrated business and residential community areas with healthy and green environment.
+                        </p>
+                    </div>
+                </div>
+                <div class="masterplan__loc">
+                    <div class="title">
+                        BCA Office Alam Sutera
+                    </div>
+                    <div class="content">
+                        <p>
+                        One of the BCA branch offices in Alam Sutera region and can be reached in just 15 minutes.
+                        </p>
+                    </div>
+                </div>
+                <div class="masterplan__loc">
+                    <div class="title">
+                        Flavor Bliss
+                    </div>
+                    <div class="content">
+                        <p>
+                        Here is the center of the place to eat that you will find from a number of quality restaurant choices that are suitable for families or friends.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-third">
+                <div class="masterplan__loc" data-popup="1">
+                    <div class="title">
+                        Mall at Alam Sutera
+                    </div>
+                    <div class="content">
+                        <p>
+                        One shopping mall that close to EleVee is around 1 minute and also complete with supermarkets and cinemas
+                        </p>
+                    </div>
+                </div>
+                <div class="masterplan__loc">
+                    <div class="title">
+                        Binus University
+                    </div>
+                    <div class="content">
+                        <p>
+                        One of the world-class universities closest to Elevee
+                        </p>
+                    </div>
+                </div>
+                <div class="masterplan__loc">
+                    <div class="title">
+                        Synergy Building
+                    </div>
+                    <div class="content">
+                        <p>
+                        This building functions as the headquarters of PT Alam Sutera Realty Tbk and also becomes an office building.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-third">
+                <div class="masterplan__loc">
+                    <div class="title">
+                        Alfa Tower
+                    </div>
+                    <div class="content">
+                        <p>
+                        This building functions as the Headquarters of all subsidiaries under the auspices of Alfa Corp
+                        </p>
+                    </div>
+                </div>
+                <div class="masterplan__loc">
+                    <div class="title">
+                        Decathlon
+                    </div>
+                    <div class="content">
+                        <p>
+                        You can find your sporting needs by visiting the most complete shopping center that is only devoted to sports equipment.
+                        </p>
+                    </div>
+                </div>
+                <div class="masterplan__loc">
+                    <div class="title">
+                        IKEA
+                    </div>
+                    <div class="content">
+                        <p>
+                        You can fulfill your furniture needs with close access to EleVee
+                        </p>
+                    </div>
+                </div>
+            </div> #}
+        </div>
+        {% endif %}
+    </div>
+    
+</div>
+
+{% put scripts %}
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+
+
+<script>
+
+var is_pop_up_active = false
+$( ".masterplan__hotspots>img" ).each(function( index ) {
+    $(this).click(function() {
+
+        
+        $button = $(this)
+        $tooltip = $("#pop-" + $button.data("popup")) 
+        
+        //close all other tooltips
+        
+        
+
+        if ($button.hasClass("is-active")){
+            $button.removeClass("is-active")
+            $tooltip.removeClass("is-active")
+            $("#siteButton").removeClass("is-hidden")
+            
+        }
+        else{
+            $button.addClass("is-active")
+            $tooltip.addClass("is-active")
+            $("#siteButton").addClass("is-hidden")
+            $(".masterplan__hotspots>img").not(this).removeClass("is-active")
+            $(".masterplan__popup").not("#pop-" + $button.data("popup")).removeClass("is-active")
+        }
+        
+        
+        
+        var offset = $button.position()
+        
+        
+        Popper.createPopper($button.get(0), $tooltip.get(0), {
+            placement: 'auto',
+        });
+    });
+});
+ 
+
+</script>
+{% endput %}

@@ -1,0 +1,12 @@
+<ul class="breadcrumbs">
+    <li>
+        <a href="{{url | app}}">
+        Home
+        </a>    
+    </li>
+    {% for link in links %}
+    <li {% if loop.last %}class="current"{% endif %}>
+        {{link}}   
+    </li>    
+    {% endfor %}
+</ul>

@@ -1,0 +1,49 @@
+<div class="news-slider">
+	<div class="slides-container">
+		{% for i in 1..5 %}
+			{% partial 'newsBox'%}
+		{% endfor %}
+        
+	</div>
+    <div class="slide-nav">
+        <img src="{{'assets/images/long_arrow.svg' | theme}}" width="50" height="17" class="prev" alt="prev">
+        <div class="position"></div>
+        <img src="{{'assets/images/long_arrow.svg' | theme}}" width="50" height="17" class="next" alt="next">
+    </div>
+</div>
+
+{% put scripts %}
+<script>
+$('.news-slider').each(function () {
+    var $slickElement = $(this).find('.slides-container')
+    var $status = $(this).find('.position')
+    
+    $slickElement.on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
+        //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+        var i = (currentSlide ? currentSlide : 0) + 1;
+        $status.text(i + '/' + slick.slideCount);
+    })
+
+    $slickElement.slick({
+        nextArrow: $(this).find('.next'),
+        prevArrow: $(this).find('.prev'),
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        lazyLoad: 'ondemand',
+        responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false
+            }
+        }
+        ]
+    })
+    
+});
+</script>
+{% endput %}

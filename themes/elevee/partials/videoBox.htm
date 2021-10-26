@@ -1,0 +1,39 @@
+[Agent]
+==
+{% if Agent.isDesktop() %}
+<div class="vBox">
+    <div class="vBox__content">
+        <a href="https://www.youtube.com/watch?v=QrxqMo_N-LE" class="glightbox vBox__thumbnail">
+            <img src="https://img.youtube.com/vi/QrxqMo_N-LE/0.jpg" alt="">
+            <span class="play-btn"></span>
+        </a>
+        <div class="vBox__title">
+            Have Fun with Your Family
+        </div>
+        <div class="vBox__info">
+            145 views - 1 weeks ago
+        </div>
+    </div>
+    
+</div>
+{% else %}
+<div class="vBox">
+    <div class="vBox__content columns is-mobile">
+        <div class="column is-4">
+            <a href="https://www.youtube.com/watch?v=QrxqMo_N-LE" class="glightbox vBox__thumbnail">
+            <img src="https://img.youtube.com/vi/QrxqMo_N-LE/0.jpg" alt="">
+            <span class="play-btn"></span>
+            </a>
+        </div>
+        <div class="column">
+            <div class="vBox__title">
+                Have Fun with Your Family
+            </div>
+            <div class="vBox__info">
+                145 views - 1 weeks ago
+            </div>
+        </div>
+    </div>
+    
+</div>    
+{% endif %}

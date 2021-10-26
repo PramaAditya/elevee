@@ -1,0 +1,45 @@
+#contactHero
+    min-height: 80vh
+    height: 800px
+    background: grey
+    position: relative
+    display: flex
+    padding: 8em 5em
+    align-items: flex-end
+    justify-content: flex-start
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+    .hero-text
+        font-family: $font-heading
+        color: white
+        font-weight: 500
+        font-size: 50px
+        min-width: 500px
+        width: 50%
+#contactForm
+    font-family: $font-body
+    .social-links
+        margin-top: 2em
+        a
+            margin-right: 10px
+    .foot__contacts
+        margin: 3em 0 2em
+        ::before
+            filter: invert(1)
+    form
+        margin-top: 5em
+
+@media screen and ( max-width: $tablet )
+    #contactHero
+        min-height: 0
+        height: 50vw
+        padding: 1.5em
+        .hero-text
+            font-size: 1em
+            min-width: 0
+            width: 80%
+    #contactForm
+        margin-bottom: 5rem
+    .google-map
+        height: 400px !important

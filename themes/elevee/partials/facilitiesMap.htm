@@ -1,0 +1,82 @@
+<div class="facilitiesMap" id="facilitiesMap">
+    
+        {% if is_popup %}
+        <div class="facilitiesMap__text">
+            <h1 class="section__title">
+                {{header}}
+            </h1>
+            <p class="section__subtitle">
+                {{subheader}}
+            </p>
+        </div>
+        {% else %}
+            <img src="{{'assets/images/facilites_virtual_tour_btn.svg' | theme}}" alt="Virtual Tour" id="facilityVirtualTourBtn">
+        {% endif %}
+        
+    
+    <div class="facilitiesMap__overlays">
+        <img src="{{'assets/images/hotspot_circle.svg' | theme}}" width="24" height="24" class="hotspot" data-popup="1" style="top:64.2%;left:8.75%;">
+        <div class="popup" id="pop-1">
+            <div class="popup__category">
+                Sky Facilities
+            </div>
+            <div class="popup__box">
+                <img src="" alt="" class="popup__img">
+                <div class="popup__navs"></div>
+                <div class="popup__details">
+                    <h4 class="popup__title">
+                        Rooftop Lounge
+                    </h4>
+                    <div class="popup__content">
+                        <p>
+                            An exclusive lounge is provided for you at the peak of the tower. Maybe a particular proposal is needed too.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="{{'assets/images/facilities_map_bg.svg' | theme }}" height="1080" width="1920" alt="Facilities Map" class="facilitiesMap__bg">
+
+</div>
+
+
+{% put scripts %}
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+
+
+<script>
+
+var is_pop_up_active = false
+
+function activateHotspot($hotspot) {
+    $button = $hotspot
+    $tooltip = $("#pop-" + $button.data("popup")) 
+    
+    //close all other tooltips
+    
+
+    $(".facilitiesMap__overlays>.hotspot").not(this).removeClass("is-active")
+    $(".facilitiesMap__overlays>.popup").not("#pop-" + $button.data("popup")).removeClass("is-active")
+    $button.toggleClass("is-active")
+    $tooltip.toggleClass("is-active")
+    
+    var offset = $button.position()
+    
+    
+    Popper.createPopper($button.get(0), $tooltip.get(0), {
+        placement: 'auto',
+    });
+}
+
+$( ".facilitiesMap__overlays>.hotspot" ).each(function( index ) {
+    $(this).click(function() {
+
+        activateHotspot($(this))
+        
+    });
+});
+ 
+
+</script>
+{% endput %}

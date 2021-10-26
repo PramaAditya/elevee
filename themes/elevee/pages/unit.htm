@@ -1,0 +1,179 @@
+layout = "default"
+url = "/unit"
+title = "Unit"
+[Agent]
+==
+{% set placeholderSlides = [
+            {
+            'img' : "joe_taslim/DSC07802.jpg",
+            'url' : ""
+            },
+            {
+            'img' : "joe_taslim/DSC08024.jpg",
+            'url' : ""
+            },
+            {
+            'img' : "joe_taslim/DSC07802.jpg",
+            'url' : ""
+            },
+            {
+            'img' : "joe_taslim/DSC08024.jpg",
+            'url' : ""
+            }
+        ]
+%}
+
+{% set placeholderFloors = [
+            {
+            'img' : "floor_1.jpg",
+            'url' : ""
+            },
+            {
+            'img' : "floor_2.jpg",
+            'url' : ""
+            }
+        ]
+%}
+{% set hierarchy=['Inside Elevee', this.page.title]%}
+{% put scripts %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+{% endput %}
+{% partial 'breadcrumbs' links = hierarchy %}
+
+{% partial 'heroSlider' slides=placeholderSlides %}
+
+<section class="section" id="unitDetails">
+    <div class="container is-narrow">
+        {% if Agent.isDesktop() %}
+            <div class="columns">
+                <div class="column is-4" id="unitVariants">
+                    <div class="select is-big">
+                        <select>
+                            <option>Vivre 1</option>
+                            <option>Vivre 2</option>
+                        </select>
+                    </div>
+                    <p>
+                        EleVee’s two-bedroom units have ample space for a couple or small family. The arrangement of each room is even designed with natural light exposure throughout the unit so you can live comfortably, feel nature, and feel at home. If you need more space, we provide choices of various unit sizes as well as various directions unit facing. Because for us, your needs are our priority.
+                    </p>
+                </div>
+                <div class="column is-4" id="unitAgent">
+                    <img src="https://via.placeholder.com/100" alt="" class="agent-img">
+                    <div class="agent-info">
+                        <div>Hi I'm</div>
+                        <div class="agent-name">Ellen Aretha</div>
+                        <div>How can I help you</div>
+                        <div class="agent-links">
+                            <a href="">
+                                <img src="{{'assets/images/icon_wa_color.svg' | theme}}" height="35" width="35" alt="">
+                            </a>
+                            <a href="">
+                                <img src="{{'assets/images/icon_email_color.svg' | theme}}" height="35" width="35" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-4" id="unitButtons">
+                    <div class="btn">
+                        <span>Watch Video</span>
+                        <img src="{{'assets/images/icon_youtube.svg' | theme}}" width="72" height="100" alt="">
+                    </div>
+                    <div class="btn">
+                        <span>Virtual Tour</span>
+                        <img src="{{'assets/images/icon_360_2.svg' | theme}}" width="72" height="100" alt="">
+                    </div>
+                </div>
+            </div>
+        {% else %}
+            <div class="columns is-mobile is-multiline">
+                <div class="column is-6" id="unitAgent">
+                    <img src="https://via.placeholder.com/100" alt="" class="agent-img">
+                    <div class="agent-info">
+                        <div>Hi I'm</div>
+                        <div class="agent-name">Ellen Aretha</div>
+                        <div>How can I help you</div>
+                        <div class="agent-links">
+                            <a href="">
+                                <img src="{{'assets/images/icon_wa_color.svg' | theme}}" height="35" width="35" alt="">
+                            </a>
+                            <a href="">
+                                <img src="{{'assets/images/icon_email_color.svg' | theme}}" height="35" width="35" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column" id="unitButtons">
+                    <div class="btn">
+                        <span>Watch Video</span>
+                        <img src="{{'assets/images/icon_youtube.svg' | theme}}" width="72" height="100" alt="">
+                    </div>
+                    <div class="btn">
+                        <span>Virtual Tour</span>
+                        <img src="{{'assets/images/icon_360_2.svg' | theme}}" width="72" height="100" alt="">
+                    </div>
+                </div>
+                <div class="column is-11" id="unitVariants">
+                    <div class="select is-big">
+                        <select>
+                            <option>Vivre 1</option>
+                            <option>Vivre 2</option>
+                        </select>
+                    </div>
+                    <p>
+                        EleVee’s two-bedroom units have ample space for a couple or small family. The arrangement of each room is even designed with natural light exposure throughout the unit so you can live comfortably, feel nature, and feel at home. If you need more space, we provide choices of various unit sizes as well as various directions unit facing. Because for us, your needs are our priority.
+                    </p>
+                </div>
+                
+            </div>
+        {% endif %}
+    </div>
+</section>
+
+<section class="section" id="floorPlans">
+    <div class="container is-narrow">
+        {% partial 'heroSlider' slides=placeholderFloors %}
+    </div>
+    <ul class="amenities is-horizontal">
+        <li>
+            <img src="{{'assets/images/icon_bed.svg' | theme}}" width="60" height="60" alt="Icon">
+            <span>{{'3'}} BR</span>
+        </li>
+        <li>
+            <img src="{{'assets/images/icon_bath.svg' | theme}}" width="60" height="60" alt="Icon">
+            <span>{{'3'}} BR</span>
+        </li>
+        <li>
+            <img src="{{'assets/images/icon_area.svg' | theme}}" width="60" height="60" alt="Icon">
+            <span>{{'138'}}-{{'138'}}m<sup>2</sup></span>
+        </li>
+        <li>
+            <img src="{{'assets/images/icon_floor.svg' | theme}}" width="60" height="60" alt="Icon">
+            <span>FL: {{'3'}}-{{'50'}}</span>
+        </li>
+        <li>
+            <img src="{{'assets/images/icon_pet.svg' | theme}}" width="60" height="60" alt="Icon">
+            <span>PET</span>
+        </li>
+    </ul>
+</section>
+<div class="section" id="unitImages">
+    {% partial "imageSlider" slides=placeholderSlides %}
+</div>
+<section class="section" id="unitSpec">
+    <div class="container is-narrow">
+        <h2 class="section__title">
+            Specifications
+        </h2>
+        {% partial 'unitSpecs' spec=[] %}
+    </div>
+    
+</section>
+
+
+
+
+
+
+
+
+{% partial 'floatingButton' %}

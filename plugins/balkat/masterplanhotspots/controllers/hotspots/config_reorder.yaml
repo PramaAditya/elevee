@@ -1,0 +1,4 @@
+title: Hotspots
+modelClass: Balkat\MasterplanHotspots\Models\Hotspot
+toolbar:
+    buttons: reorder_toolbar

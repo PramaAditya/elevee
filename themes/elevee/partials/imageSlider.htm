@@ -1,0 +1,30 @@
+<div class="image-slider">
+	<div class="slides-container">
+		{% for slide in slides %}
+			<a href="{{slide.img | media}}" class="glightbox slide" data-gallery="gallery1">
+				<img src="{{slide.img | media}}" alt="">
+			</a>
+		{% endfor %}
+	</div>
+</div>
+
+{% put scripts %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+$(document).ready(function () {
+    $('.image-slider').each(function () {
+        var $slickElement = $(this).find('.slides-container')
+        $slickElement.slick({
+			infinite: true,
+			variableWidth: true,
+			arrows: false,
+			autoplay: true,
+			autoplaySpeed: 0,
+			speed: 10000,
+			cssEase: 'linear'
+		})
+    });
+	
+});
+</script>
+{% endput %}

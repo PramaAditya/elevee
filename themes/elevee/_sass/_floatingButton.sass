@@ -1,0 +1,92 @@
+#floatingButton
+    position: fixed
+    bottom: 40px
+    left: 40px
+    z-index: 900
+    *
+        transition: all .25s ease-out
+    .theButton
+        cursor: pointer
+        display: block
+    .agent-popup
+        position: absolute
+        bottom: 0
+        left: 0
+        @media screen and ( max-width: $tablet )
+            bottom: auto   
+            top: 0
+        #closeAgent
+            margin-bottom: 20px
+            cursor: pointer
+        .agent-body
+            position: relative
+            min-width: 300px
+            min-height: 100px
+            padding: 40px 30px 20px 40px
+            font-family: $font-heading
+            font-weight: 400
+            color: white
+            letter-spacing: 1px
+            &::after
+                content: ""
+                background: url(../images/bg.jpg)
+                background-size: cover
+                opacity: 0.95
+                top: 0
+                left: 0
+                bottom: 0
+                right: 0
+                position: absolute
+                z-index: -1
+            .agent-image
+                border-radius: 100px
+                object-fit: cover
+                margin-right: 150px
+            .agent-name
+                font-size: 30px
+            .agent-links
+                margin-top: 30px
+                a
+                    margin-right: 15px
+    &.is-active
+        .agent-popup
+            transform: translateY(0)
+        .theButton
+            transform: translateY(100vw)
+        @media screen and ( max-width: $tablet )
+            .agent-popup
+                transform: translateX(0)
+            .theButton
+                transform: translateX(-150vh)
+    &:not(.is-active)
+        .agent-popup
+            transform: translateY(200vw)
+        .theButton
+            transform: translateY(0)
+        @media screen and ( max-width: $tablet )
+            .agent-popup
+                transform: translateX(-150vh)
+            .theButton
+                transform: translateX(0)
+
+    @media screen and ( max-width: $tablet )
+        left: 15px
+        top: 5px
+        bottom: auto
+        .theButton
+            width: 45px
+            height: 45px
+        .agent-body
+            position: relative
+            min-width: 0px!important
+            width: calc(100vw - 100px) !important
+            min-height: 100px
+            padding: 40px 30px 20px 40px
+            font-family: $font-heading
+            font-weight: 400
+            color: white
+            letter-spacing: 1px
+        #closeAgent
+            width: 45px
+            height: 45px
+            

@@ -1,0 +1,80 @@
+[menu menuFooter]
+start = "id-14"
+activeNode = 0
+listItemClasses = "item"
+primaryClasses = "nav nav-pills"
+secondaryClasses = "dropdown-menu"
+numberOfLevels = 1
+
+[Agent]
+==
+<footer id="footer" class="foot has-bg">
+		<div class="foot__container container is-fluid">
+			<div class="columns">
+				<div class="column">
+                    <div class="foot__title foot__logos">
+                        <img src="{{'assets/images/logo_white.svg' | theme}}" alt="Elevee" height="140" width="250" class="">
+                        {% if Agent.isMobile() %}
+                        <img src="{{'assets/images/alam_sutera_white.svg' | theme}}" alt="Alam Sutera" height="75" width="281" class="foot__logo">
+                        {% endif %}
+                    </div>
+                    <div class="foot__content">
+                        <p>
+                            Eleven Penthouses & Residences is a premium residential apartment surrounded by a lush expanse of urban forest offered by Alam Sutera Group. Eleven came from the concept of a balance between nature and humans to manifest the high quality of life.
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="foot__title has-dropdown">
+                        Contact
+                        <img src="{{'assets/images/accordian_arrow.svg' | theme}}" alt="arrow" class="accordian-arrow">
+                    </div>
+                    <div class="foot__content foot__contacts">
+                        <div class="address">{{this.theme.address | raw}}</div>
+                        <div class="email">{{this.theme.email}}</div>
+                        <div class="phone">{{this.theme.phone}}</div>
+                        <div class="whatsapp">{{this.theme.whatsapp}}</div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="foot__title has-dropdown">
+                        Sitemap
+                        <img src="{{'assets/images/accordian_arrow.svg' | theme}}" alt="arrow" class="accordian-arrow">
+                    </div>
+                    <div class="foot__content">
+                        {% component 'menuFooter' %}
+                    </div>
+                </div>
+                <div class="column foot__newsletter_container">
+                    <div class="foot__title">
+                        Subscribe to Our Newsletter
+                    </div>
+                    <div class="foot__content">
+                        <p>Sign up to our newsletter to get more updates and news about our products and activities.</p>
+                        <form class="foot__newsletter">
+                            <div class="control">
+                                <input type="email" placeholder="Enter Your email address">
+                                <button type="submit"><img src="{{'assets/images/icon_send.svg' | theme}}" alt="Send"></button>
+                            </div>
+                            
+                        </form>
+                        <div class="foot__social">
+                            {% for social in this.theme.social_medias %}
+                                <a href="{{social.url}}"><img src="{{social.icon | media}}" alt=""></a>    
+                            {% endfor %}
+                            
+                        </div>
+                    </div>
+                </div>
+			</div>
+            {% if Agent.isDesktop() %}
+            <img src="{{'assets/images/alam_sutera_white.svg' | theme}}" alt="Alam Sutera" height="75" width="281" class="foot__logo">
+            {% endif %}
+		</div>
+        
+	
+    
+	<div class="foot__copyright">
+		Copyright © 2021 EleVee Penthouses & Residences. All Rights Reserved.
+	</div>
+</footer>

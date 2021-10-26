@@ -1,0 +1,34 @@
+tabs:
+    fields:
+        button_img:
+            label: 'Hotspot Button Image'
+            mode: image
+            span: left
+            type: mediafinder
+            tab: Button
+        button_width:
+            label: 'Button Width (px)'
+            span: auto
+            type: number
+            tab: Button
+        button_top:
+            label: 'Button Top Position (px)'
+            span: auto
+            type: number
+            tab: Button
+        button_left:
+            label: 'Button Left Position (px)'
+            span: left
+            type: number
+            tab: Button
+        tooltip_title:
+            label: 'Tooltip Title'
+            span: full
+            type: text
+            tab: Tooltip
+        tooltip_content:
+            label: 'Tooltip Content'
+            size: huge
+            span: full
+            type: richeditor
+            tab: Tooltip

@@ -1,0 +1,37 @@
+<div id="floatingButton" class="">
+	<div class="agent-popup">
+		<img src="{{'assets/images/close_agent.svg' | theme}}" alt="close" width="35" height="35" id="closeAgent">
+        <div class="agent-body">
+            <div class="columns">
+                <div class="column is-3">
+                    <img src="https://via.placeholder.com/100" alt="Agent" class="agent-image">
+                </div>
+                <div class="column">
+                    <div>Schedule a Tour with</div>
+                    <div class="agent-name">
+                        {{'Ellen Aretha'}}
+                    </div>
+                    <div class="agent-links">
+                        <a href="{{''}}"><img src="{{'assets/images/icon_whatsapp.svg' | theme }}" width="27" height="27"></a>
+                        <a href="{{''}}"><img src="{{'assets/images/icon_phone.svg' | theme }}" width="27" height="27"></a>
+                        <a href="{{''}}"><img src="{{'assets/images/icon_email.svg' | theme }}" width="27" height="27"></a>
+                        <a href="{{''}}"><img src="{{'assets/images/icon_360.svg' | theme }}" width="27" height="27"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<img src="{{'assets/images/floating_button.png' | theme}}" alt="Contact Us" height="100" width="100" class="theButton">
+
+</div>
+
+{% put scripts %}
+<script>
+    $('#floatingButton .theButton').on('click',function(){
+        $('#floatingButton').addClass('is-active')
+    });
+    $('#floatingButton #closeAgent').on('click',function(){
+        $('#floatingButton').removeClass('is-active')
+    });
+</script>
+{% endput %}

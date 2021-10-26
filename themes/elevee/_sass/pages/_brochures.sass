@@ -1,0 +1,87 @@
+#brochureIntro
+    @media screen and ( max-width: $tablet )
+        .slides-container
+            margin-top: 60px
+            transform: scale(1.5) !important
+        .slide-nav
+            margin-top: 100px
+        
+
+.brochure
+    position: relative
+    cursor: pointer
+    margin-right: 1em
+    img
+        margin: auto
+        width: 100%
+        z-index: 90
+    &__button
+        width: 50px
+        height: 50px
+        border-radius: 1000px
+        z-index: 100
+        position: absolute
+        background: $gold
+        bottom: 40px
+        left: 50%
+        transform: translateX(-50%)
+        transition: all .25s ease-out
+        display: flex
+        align-items: center
+        justify-content: center
+        img
+            filter: brightness(100)
+            width: 30px
+        @media screen and ( max-width: $tablet )
+            transform: scale(.7) translateX(-60%)
+    &:hover
+        .brochure__button
+            background: $maroon
+
+#featuredVideo
+    margin: 1em 0 3em
+
+.video-thumbnail
+    padding-left: 0 !important
+.video-title
+    font-family: $font-heading
+    font-size: 30px
+    color: $maroon
+    font-weight: 500
+    margin-bottom: .5em
+
+.video-description
+    margin-top: 2em
+
+.vBox
+    &__content
+        margin-right: $gap
+    &__title
+        margin-top: 1em
+    &__info
+        margin-top: .5em
+        font-size: 14px
+    &__thumbnail
+        @extend .video-thumbnail
+
+.slider-title
+    font-family: $font-heading
+    font-size: 24px
+    font-weight: 500
+.videos-slider
+    .slide-nav
+        margin-top: 2em
+
+#videoIntro
+    @media screen and ( max-width: $tablet )
+        .slider-title
+            color: $maroon
+            border-bottom: 1px solid $maroon     
+        .slides-container
+            height: 400px
+            overflow-y: scroll
+            overflow-x: hidden
+        .vBox__content
+            margin-right: 0
+        .slide-nav
+            display: none

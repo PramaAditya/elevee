@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49">
+  <g id="btn_360" transform="translate(4.277 3.559)">
+    <path id="Path_73" data-name="Path 73" d="M10.014,57.3C4.547,58.289,1,59.975,1,61.894c0,3.024,9.014,5.525,20.063,5.525,11.107,0,20.063-2.442,20.063-5.525,0-1.919-3.547-3.606-9.014-4.594" transform="translate(-1 -24.559)" fill="none" stroke="#582931" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    <g id="Group_159" data-name="Group 159" transform="translate(11.224 0)">
+      <circle id="Ellipse_7" data-name="Ellipse 7" cx="4.129" cy="4.129" r="4.129" transform="translate(4.71)" fill="none" stroke="#582931" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="Path_74" data-name="Path 74" d="M32.978,15.5a4.987,4.987,0,0,1-7.676,0c-2.966,1.454-5,3.257-5,6.746v5.932a2.06,2.06,0,0,0,2.035,2.035h.872a1.28,1.28,0,0,0,.465-.058V41.9a2.519,2.519,0,0,0,2.5,2.5h0a2.519,2.519,0,0,0,2.5-2.5V33.877c.174,0,.349.058.523.058a1.61,1.61,0,0,0,.523-.058V41.9a2.5,2.5,0,0,0,5,0V30.155a1.134,1.134,0,0,0,.465.058h.872A2.06,2.06,0,0,0,38.1,28.178V22.246C37.979,18.757,35.943,16.954,32.978,15.5Z" transform="translate(-20.3 -7.068)" fill="none" stroke="#582931" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+    <rect id="Rectangle_2105" data-name="Rectangle 2105" width="49" height="49" transform="translate(-4.277 -3.559)" fill="none"/>
+  </g>
+</svg>

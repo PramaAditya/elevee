@@ -1,0 +1,233 @@
+@charset "utf-8"
+
+// Customization
+
+// You can easily customize Bulma with your own variables.
+// Just uncomment the following block to see the result.
+
+// 1. Import the initial variables
+@import "../node_modules/bulma/sass/utilities/initial-variables"
+
+// 4. Import the rest of Bulma
+@import "./node_modules/bulma/sass/utilities/_all.sass"
+@import "../node_modules/bulma/sass/grid/columns.sass"
+@import "../node_modules/bulma/sass/base/helpers.sass"
+@import "../node_modules/bulma/sass/components/_all.sass"
+// @import "../node_modules/bulma/sass/components/level.sass"
+// @import "../node_modules/bulma/sass/components/modal.sass"
+@import "../node_modules/bulma/sass/form/_all.sass"
+
+// @import "../node_modules/bulma/sass/elements/container.sass"
+@import "../node_modules/bulma/sass/elements/notification.sass"
+@import "../node_modules/bulma/sass/elements/other.sass"
+
+$font-heading: 'Quiche Sans'
+$font-body: 'Gotham'
+$gold: #C5A264
+$maroon: #953142
+$brown: #582931
+@import fonts
+@import menu
+@import footer
+@import heroSlider
+@import floatingButton
+@import masterplan
+@import gridBox
+@import breadcrumbs
+@import unitSummary
+@import facilitiesMap
+@import newsBox
+@import newsSlider
+@import imageSlider
+@import specifications
+@import nav
+@import forms
+
+// Pages SASS
+@import pages/home
+@import pages/about
+@import pages/building
+@import pages/facilities
+@import pages/masterplan
+@import pages/unit
+@import pages/contact
+@import pages/news
+@import pages/brochures
+$container-gap: $gap/2
+.container
+    padding: 0 $container-gap
+    width: auto !important
+    &.is-narrow
+        @media screen and ( min-width: $tablet )
+            padding: 0 3*$gap
+            padding: 0 $gap
+.container
+html, body
+    padding: 0
+    margin: 0
+    max-width: 100vw
+    overflow-x: hidden
+    // font-size: 14px
+    line-height: 1.5
+    font-family: $font-body
+
+.m-only
+    @media screen and ( min-width: $tablet )
+        display: none
+
+.d-only
+    @media screen and ( max-width: $tablet )
+        display: none
+
+.has-bg
+    background-image: url(../images/bg.jpg)
+    background-size: cover
+    background-repeat: no-repeat
+
+.section
+    margin-top: 5rem
+    margin-bottom: 5rem
+    &__title
+        font-family: $font-heading
+        font-size: 42px
+        color: #C5A264
+        font-weight: 500
+    &__subtitle
+        font-family: 'Gotham Book'
+        font-size: 22px
+        letter-spacing: 1.3px
+        font-family: $font-body
+    @media screen and ( max-width: $tablet )
+        margin-top: 2rem
+        margin-bottom: 2rem
+        &__title
+            font-size: 20px
+        &__subtitle
+            font-size: 16px
+            letter-spacing: 0
+
+.button
+    color: white
+    text-decoration: none
+    padding: .75em 1.5em
+    border-radius: 10em
+    border: 1px solid white
+    background: none
+    text-transform: uppercase
+    font-family: 'Gotham'
+    font-weight: bold
+    letter-spacing: 1.5px
+    margin-top: 1em
+    display: inline-block
+    text-align: center
+
+.is-bold
+    font-weight: bold
+
+.select.is-big
+    height: 100% !important
+    max-height: 4.5em !important
+    display: block
+    border-bottom: 2px solid $maroon !important
+    select
+        color: $maroon
+        font-family: $font-heading
+        font-weight: 500 !important
+        font-size: 32px
+        border-radius: 0
+        border: 0px
+        background: rgba(0,0,0,0)
+        padding: .5em .2em
+        width: 100%
+    option
+        font-family: $font-heading !important
+    &::after
+        border-color: $maroon !important
+
+img.image
+    width: 100%
+
+ul.is-horizontal
+    display: flex
+    list-style: none
+    justify-content: center
+    font-family: $font-body
+    font-weight: bold
+    letter-spacing: 1.25px
+    padding: 0
+    li
+        margin: 0 3em
+        display: flex
+        flex-direction: column
+        align-items: center
+    >img
+        display: block
+        width: 120%
+        margin-bottom: 30px
+
+.button
+    cursor: pointer
+    &.is-line
+        color: $maroon
+        border: 2px solid $maroon
+        &:hover
+            color: white
+            background: $maroon
+    &.is-centered
+        margin: auto
+    &:hover
+        color: $maroon
+        background: white
+
+.video-thumbnail
+    cursor: pointer
+    position: relative
+    z-index: 90
+    display: block
+    *
+        transition: all .25s ease-out
+    &:hover
+        img
+            filter: brightness(.8)
+    img
+        width: 100%
+        filter: brightness(.95)
+        object-fit: cover
+    .play-btn
+        content: ""
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        width: 30px
+        height: 30px
+        background-position: center center
+        background-size: cover
+        background-image: url(../images/icon_play.svg)
+        z-index: 100
+        filter: drop-shadow(0 0 1rem black)
+
+#overlay
+    transition: all .5s ease-out
+    display: none
+    opacity: 0
+    &.is-active
+        display: block
+        opacity: 1
+        background-color: rgba(black, .6)
+        position: fixed
+        z-index: 500
+        width: 100vw
+        height: 100vh
+        left: 0
+        top: 0
+
+.has-text-right
+    text-align: right
+
+.is-open
+    .accordian-arrow
+        transform: rotate(180deg)
+
+.mb-0
+    margin-bottom: 0!important

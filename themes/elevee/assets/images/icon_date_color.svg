@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20.74" height="20.74" viewBox="0 0 20.74 20.74">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="20.74" height="20.74" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="icon_date_color" clip-path="url(#clip-path)">
+    <g id="icon_date">
+      <g id="Group_10481" data-name="Group 10481" transform="translate(3.653)">
+        <path id="Path_14108" data-name="Path 14108" d="M13.9,4.478h0a1.509,1.509,0,0,1-1.5-1.5V1.5A1.509,1.509,0,0,1,13.9,0h0a1.509,1.509,0,0,1,1.5,1.5V3A1.5,1.5,0,0,1,13.9,4.478Z" transform="translate(-12.4 0)" fill="#953142"/>
+        <path id="Path_14109" data-name="Path 14109" d="M49.2,4.478h0a1.509,1.509,0,0,1-1.5-1.5V1.5A1.509,1.509,0,0,1,49.2,0h0a1.509,1.509,0,0,1,1.5,1.5V3A1.5,1.5,0,0,1,49.2,4.478Z" transform="translate(-37.301 0)" fill="#953142"/>
+      </g>
+      <g id="Group_10485" data-name="Group 10485" transform="translate(3.624 8.956)">
+        <g id="Group_10482" data-name="Group 10482" transform="translate(3.741)">
+          <rect id="Rectangle_1979" data-name="Rectangle 1979" width="2.268" height="2.092" fill="#953142"/>
+          <rect id="Rectangle_1980" data-name="Rectangle 1980" width="2.268" height="2.092" transform="translate(3.741)" fill="#953142"/>
+          <rect id="Rectangle_1981" data-name="Rectangle 1981" width="2.268" height="2.092" transform="translate(7.453)" fill="#953142"/>
+        </g>
+        <g id="Group_10483" data-name="Group 10483" transform="translate(0 3.417)">
+          <rect id="Rectangle_1982" data-name="Rectangle 1982" width="2.268" height="2.092" fill="#953142"/>
+          <rect id="Rectangle_1983" data-name="Rectangle 1983" width="2.268" height="2.092" transform="translate(3.741)" fill="#953142"/>
+          <rect id="Rectangle_1984" data-name="Rectangle 1984" width="2.268" height="2.092" transform="translate(7.483)" fill="#953142"/>
+          <rect id="Rectangle_1985" data-name="Rectangle 1985" width="2.268" height="2.092" transform="translate(11.195)" fill="#953142"/>
+        </g>
+        <g id="Group_10484" data-name="Group 10484" transform="translate(0 6.835)">
+          <rect id="Rectangle_1986" data-name="Rectangle 1986" width="2.268" height="2.092" fill="#953142"/>
+          <rect id="Rectangle_1987" data-name="Rectangle 1987" width="2.268" height="2.092" transform="translate(3.741)" fill="#953142"/>
+          <rect id="Rectangle_1988" data-name="Rectangle 1988" width="2.268" height="2.092" transform="translate(7.483)" fill="#953142"/>
+          <rect id="Rectangle_1989" data-name="Rectangle 1989" width="2.268" height="2.092" transform="translate(11.195)" fill="#953142"/>
+        </g>
+      </g>
+      <path id="Path_14110" data-name="Path 14110" d="M17.735,7.5v.825a2.151,2.151,0,0,1-4.3,0V7.5h-6.1v.825a2.144,2.144,0,0,1-2.151,2.151h0A2.144,2.144,0,0,1,3.034,8.325V7.5H0V26.03H20.74V7.5ZM19.3,24.675H1.444V12.626H19.3Z" transform="translate(0 -5.291)" fill="#953142"/>
+    </g>
+  </g>
+</svg>

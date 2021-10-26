@@ -1,0 +1,26 @@
+columns:
+    id:
+        label: id
+        type: number
+    button_img:
+        label: button_img
+        type: text
+        invisible: true
+    button_height:
+        label: button_height
+        type: number
+        invisible: true
+    button_width:
+        label: button_width
+        type: number
+        invisible: true
+    tooltip_title:
+        label: tooltip_title
+        type: text
+    tooltip_content:
+        label: tooltip_content
+        type: number
+    sort_order:
+        label: sort_order
+        type: number
+        invisible: true

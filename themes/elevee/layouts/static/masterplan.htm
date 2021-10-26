@@ -1,0 +1,59 @@
+layout = "default"
+
+[staticPage]
+useContent = 0
+
+[Agent]
+==
+
+{repeater name="about" tab="About" prompt="Add a Box"}
+  {variable name="title" label="Box Title" type="text" span="full"}{/variable}
+  {variable name="content" label="Box Text" type="richeditor" size="large" span="left"}{/variable}
+  {variable name="w" label="width" type="number" span="right"}{/variable}
+  {variable name="h" label="height" type="number" span="right"}{/variable}
+  {variable name="url" label="Link to URL (optional)" type="text" span="right"}{/variable}
+  {variable name="img" label="Image (Optional)" type="mediafinder" span="right"}{/variable}
+  {variable name="class" label="Custom CSS class (Optional)" type="text" span="right"}{/variable}
+  {variable name="order" label="Mobile Order" type="number" span="auto"}{/variable}
+  {variable name="wM" label="Mobile width" type="number" span="right"}{/variable}
+  {variable name="hM" label="Mobile height" type="number" span="right"}{/variable}
+{/repeater}
+{variable name="aboutText" label="Quote" type="richeditor" size="large" span="left" tab="Slider"}{/variable}
+{repeater name="images" label="Slider Images" tab="Slider" span="right" prompt="Add an Image"}
+  {variable name="img" label="Image" type="mediafinder" span="auto"}{/variable}
+{/repeater}
+
+{variable name="slideTitle" label="Slider Title" type="text" span="auto" tab="Slider"}{/variable}
+{variable name="slideText" label="Slider Text" type="richeditor" size="huge" span="left" tab="Slider"}{/variable}
+
+{% partial "htmlHeader" %}
+{% set hierarchy=['Inside Elevee', this.page.title]%}
+{% partial 'breadcrumbs' links = hierarchy %}
+
+<section class="section" id="masterplanHero">
+{% partial 'masterplan' %}
+</section>
+<section class="section" id="masterplanAbout">
+    <div class="container is-fluid">
+        {% partial 'gridBoxes' boxes=about %}
+    </div>
+    <div class="container is-narrow">
+        <br>
+        <div class="section__title">
+            {{aboutText | raw}}
+        </div>
+        <br>
+    </div>
+    {% partial 'masterplanSlider' images=images%}
+    <div class="container is-narrow" id="slideText">
+      <div class="columns">
+        <div class="column is-half">
+          <h2>{{slideTitle}}</h2>
+          {{slideText | raw}}
+        </div>
+      </div>
+    </div>
+</section>
+
+{% partial 'floatingButton' %}
+{% partial "htmlFooter" %}

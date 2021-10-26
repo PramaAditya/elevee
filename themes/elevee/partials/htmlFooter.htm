@@ -1,0 +1,43 @@
+    {% partial "footer" %}
+
+
+    
+    <!-- for JQuery (optional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <!-- for FontAwesome (optional) -->
+    <script src="https://kit.fontawesome.com/554be6089e.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{{'assets/js/main.js' | theme}}"></script>
+    <!-- for WOW.js (optional) -->
+    <script src="https://cdn.boomcdn.com/libs/wow-js/1.3.0/wow.min.js"></script>
+    <!-- for Cookies.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js" integrity="sha512-Meww2sXqNHxI1+5Dyh/9KAtvI9RZSA4c1K2k5iL02oiPO/RH3Q30L3M1albtqMg50u4gRTYdV4EXOQqXEI336A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+      const lightbox = GLightbox();
+    </script>
+
+    <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
+    <script>
+      const player = new Plyr('.player');
+    </script>
+
+    <script>
+      $('.has-dropdown').on('click',function(e){
+        $(this).toggleClass('is-open')
+        
+      })
+
+    </script>
+    <!-- Load Other Scripts -->
+    {% scripts %}
+
+    <!-- Load October Framework JS (for AJAX Requests) (optional) -->
+    {% framework %}
+    {% framework extras %}
+  
+  </body>
+</html>

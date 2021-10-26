@@ -1,0 +1,101 @@
+
+#unitDetails
+    p
+        font-family: $font-body
+
+#unitButtons
+    margin: 0 auto
+    align-items: center
+    .btn
+        text-align: center
+        margin: 0 20px
+        span
+            display: block
+            font-family: 'Gotham'
+            font-weight: 500
+            text-decoration: none
+        img
+            margin: 10px auto 0
+#floorPlans
+    @media screen and ( min-width: $tablet )
+        padding: 0 5*$gap
+    .amenities
+        margin-top: 160px
+        span
+            margin-top: 20px
+    .slide-nav
+        bottom: -80px !important
+        filter: none
+    .hero-slider
+        margin: auto
+        img
+            width: 100%
+            object-fit: contain
+
+#unitImages
+    // overflow-x: scroll
+    .placeholder
+        width: 100vw
+                
+#unitAgent
+    display: flex
+    align-items: center
+    justify-content: center
+
+    .agent-img
+        border-radius: 100px
+        margin-right: 20px
+    .agent-info
+        font-family: $font-heading
+        font-size: 1.25em
+        font-weight: 500
+    .agent-name
+        font-size: 1.75em
+    .agent-links
+        margin-top: .5em
+        a
+            text-decoration: none
+            margin-right: 1em
+
+@media screen and ( max-width: $tablet )
+    .amenities
+        display: flex
+        justify-content: center
+        margin-top: 2em
+        li
+            display: block
+            text-align: center
+            font-size: 10px
+            margin: 0 10px !important
+            img
+                width: 35px
+                height: 40px
+                display: block
+                object-fit: contain
+                margin: auto !important
+    #unitDetails
+        margin-top: 3rem
+        margin-bottom: 0rem
+    #unitAgent
+        .agent-info
+            font-size: 12px
+            .agent-name
+                font-size: 1.5em
+            .agent-links img
+                width: 20px
+                height: 20px
+        .agent-img
+            width: 50px
+            height: 50px
+    #unitButtons
+        font-size: 10px
+        display: flex
+        .btn
+            margin: 0 8px
+        img
+            height: 50px
+            width: 50px
+            object-fit: contain
+            margin-right: 20px
+    #floorPlans
+        margin-top: 2rem

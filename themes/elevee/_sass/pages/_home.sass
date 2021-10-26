@@ -1,0 +1,48 @@
+#aboutAlamSutera
+    color: white
+    .column
+        padding: 4rem
+        font-family: 'Gotham Book'
+        font-size: 22px
+        position: relative
+        .content
+            @media screen and ( min-width: $tablet  )
+                width: 50%
+                margin-right: -50%
+            >img
+                margin-bottom: 1.25em
+            h1,p
+                font-size: 1em
+                letter-spacing: 1.32px
+                line-height: 1.5
+        &.video
+            @media screen and ( min-width: $tablet  )
+                margin-left: -30%
+    @media screen and ( max-width: $tablet )
+        margin-top: 2em
+        margin-bottom: -10.5em
+        .columns
+            margin-left: 0rem
+            margin-right: 0rem
+        .mobile-player
+            margin-bottom: -100px
+            z-index: 40
+            padding-top: 0 !important
+        .column
+            padding: 1em
+            padding-top: 100px
+        .mobile2col
+            display: flex
+            align-items: center
+            >img
+                width: 40%
+            .le-content
+                padding: 0 1em
+                font-size: .5em
+        .button
+            font-size: .5em
+            margin: auto 
+            margin-top: 2em
+            display: block
+            width: 60%
+            margin-bottom: 2em
