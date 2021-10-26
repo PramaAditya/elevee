@@ -1,0 +1,11 @@
+name: AgentController
+modelClass: Balkat\Agent\Models\Agent
+form: $/balkat/agent/models/agent/fields.yaml
+defaultRedirect: balkat/agent/agentcontroller
+create:
+    redirect: 'balkat/agent/agentcontroller/update/:id'
+    redirectClose: balkat/agent/agentcontroller
+update:
+    redirect: balkat/agent/agentcontroller
+    redirectClose: balkat/agent/agentcontroller
+preview: {  }

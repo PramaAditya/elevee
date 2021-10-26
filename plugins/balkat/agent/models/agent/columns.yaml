@@ -1,0 +1,13 @@
+columns:
+    email:
+        label: Email
+        type: text
+    telephone:
+        label: 'Nomor Telepon'
+        type: text
+    whatsapp_link:
+        label: 'Tautan Whatsapp'
+        type: text
+    unique_id:
+        label: 'ID Unik Agent'
+        type: text

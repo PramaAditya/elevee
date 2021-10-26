@@ -1,0 +1,27 @@
+fields:
+    email:
+        label: Email
+        span: auto
+        placeholder: email@example.com
+        required: 1
+        type: text
+    telephone:
+        label: 'Nomor Telepon'
+        span: auto
+        required: 1
+        type: text
+    whatsapp_link:
+        label: 'Tautan Whatsapp'
+        span: auto
+        required: 1
+        type: text
+    photo:
+        label: 'Foto Agent'
+        span: auto
+        mode: file
+        type: mediafinder
+    unique_id:
+        label: 'ID Unik Agent'
+        span: auto
+        required: 1
+        type: text
