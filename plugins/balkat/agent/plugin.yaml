@@ -1,0 +1,11 @@
+plugin:
+    name: 'balkat.agent::lang.plugin.name'
+    description: 'balkat.agent::lang.plugin.description'
+    author: Balkat
+    icon: oc-icon-user-secret
+    homepage: ''
+navigation:
+    agent:
+        label: Agent
+        url: balkat/agent/agentcontroller
+        icon: icon-user-secret
