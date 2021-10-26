@@ -1,0 +1,38 @@
+.cModal
+    display: flex
+    opacity: 0
+    position: fixed
+    top: 0
+    left: -200vw
+    width: 100%
+    height: 100%
+    z-index: 900
+    align-items: center
+    justify-content: center
+    transition: opacity .5s ease-out
+    &__overlay
+        background: rgba(black, .7)
+        height: 100%
+        width: 100%
+        position: absolute
+        
+    &__box
+        position: relative
+        width: 90%
+        height: 75%
+        background: white
+        display: flex
+        align-items: center
+        justify-content: center
+    &__close
+        cursor: pointer
+        position: absolute
+        right: 20px
+        top: 20px
+        z-index: 300
+        
+
+    &.is-active
+        left: 0
+        opacity: 1
+        transition: opacity .5s ease-out

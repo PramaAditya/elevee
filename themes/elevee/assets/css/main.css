@@ -5926,7 +5926,8 @@ label.panel-block {
         margin-bottom: 10px;
         padding: 10px 30px 0px; }
       .facilitiesMap__overlays .popup .slide__content {
-        padding: 0px 30px 20px; }
+        padding: 0px 30px 20px;
+        font-size: 13px; }
       @media screen and (max-width: 769px) {
         .facilitiesMap__overlays .popup {
           padding: 20px 20px;
@@ -6199,6 +6200,42 @@ form.form .select {
     margin-top: 15px !important;
     background-image: url(../images/icon_message_color.svg); }
 
+.cModal {
+  display: flex;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: -200vw;
+  width: 100%;
+  height: 100%;
+  z-index: 900;
+  align-items: center;
+  justify-content: center;
+  transition: opacity .5s ease-out; }
+  .cModal__overlay {
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    position: absolute; }
+  .cModal__box {
+    position: relative;
+    width: 90%;
+    height: 75%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .cModal__close {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 300; }
+  .cModal.is-active {
+    left: 0;
+    opacity: 1;
+    transition: opacity .5s ease-out; }
+
 #aboutAlamSutera {
   color: white; }
   #aboutAlamSutera .column {
@@ -6324,14 +6361,49 @@ form.form .select {
       padding: 0 32px;
       text-align: center; } }
 
-#buildingSelector {
-  margin-top: 0; }
-
-@media screen and (max-width: 769px) {
-  #buildingSelector {
-    overflow-x: scroll; }
-  #buildingPlaceholder {
-    width: 200vw; } }
+.buildingsMap {
+  margin-top: 0;
+  position: relative;
+  padding: 0 20px; }
+  .buildingsMap__interactive {
+    position: relative; }
+  .buildingsMap__bg {
+    width: 100%; }
+  .buildingsMap__overlays {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 140; }
+  .buildingsMap .hotspot {
+    position: absolute;
+    opacity: 0;
+    transition: opacity .3s ease-out;
+    cursor: pointer; }
+    .buildingsMap .hotspot:hover {
+      opacity: 1; }
+  .buildingsMap .popup {
+    position: absolute;
+    width: 350px;
+    min-height: 300px;
+    color: white;
+    background: rgba(149, 49, 66, 0.8);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .buildingsMap .popup__title {
+      margin-top: 0;
+      font-family: "Quiche Sans";
+      font-weight: 500;
+      font-size: 30px;
+      margin-bottom: 10px; }
+    .buildingsMap .popup__more {
+      color: white;
+      margin-top: 15px;
+      font-weight: 500;
+      letter-spacing: 1px; }
 
 .masterplan-slider {
   transform: translateX(32px);
