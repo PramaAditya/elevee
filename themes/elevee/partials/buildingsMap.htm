@@ -37,25 +37,15 @@
         //close all other tooltips
         
 
-        $(".buildingsMap__overlays>.hotspot").not(this).removeClass("is-active")
-        $(".buildingsMap__overlays>.popup").not("#pop-" + $button.data("popup")).removeClass("is-active")
-        $button.toggleClass("is-active")
-        $tooltip.toggleClass("is-active")
-        
-        var offset = $button.position()
-        
-        
         Popper.createPopper($button.get(0), $tooltip.get(0), {
             placement: 'auto',
         });
     }
 
     $( ".buildingsMap__overlays>.hotspot" ).each(function( index ) {
-        $(this).click(function() {
 
             activateHotspot($(this))
             
-        });
     });
     
 
