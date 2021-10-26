@@ -5847,6 +5847,7 @@ label.panel-block {
   .facilitiesMap__overlays {
     z-index: 121; }
     .facilitiesMap__overlays .hotspot {
+      z-index: 123;
       position: absolute;
       width: 1.25%;
       opacity: .75;
@@ -5859,25 +5860,73 @@ label.panel-block {
           opacity: 1; } }
     .facilitiesMap__overlays .popup {
       position: absolute;
-      width: 250px;
-      min-height: 200px;
-      background-color: rgba(149, 49, 66, 0.95);
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      color: white;
-      padding: 50px 30px;
       opacity: 0;
       transition: opacity .3s ease-out;
-      z-index: 122; }
+      z-index: 122;
+      left: -100%;
+      transform: translateX(-100vw); }
       .facilitiesMap__overlays .popup.is-active {
-        opacity: 1; }
-      .facilitiesMap__overlays .popup .title {
+        opacity: 1;
+        z-index: 124; }
+      .facilitiesMap__overlays .popup__name {
+        color: #953142;
+        font-size: 30px;
+        font-weight: 500;
+        font-family: "Quiche Sans";
+        padding: 0 30px;
+        padding-bottom: 5px; }
+      .facilitiesMap__overlays .popup__box {
+        width: 300px;
+        min-height: 200px;
+        background-color: #953142;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        color: white;
+        padding: 0;
+        position: relative; }
+      .facilitiesMap__overlays .popup__navs {
+        left: 50%;
+        top: calc(300px - 40px);
+        transform: translateX(-50%);
+        width: calc(100% - 60px);
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px; }
+        .facilitiesMap__overlays .popup__navs img {
+          filter: brightness(100);
+          cursor: pointer; }
+          .facilitiesMap__overlays .popup__navs img.next {
+            transform: rotate(180deg); }
+        .facilitiesMap__overlays .popup__navs .position {
+          letter-spacing: 3px; }
+      .facilitiesMap__overlays .popup .slide__img {
+        position: relative;
+        width: 300px;
+        height: 300px; }
+        .facilitiesMap__overlays .popup .slide__img img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          position: relative; }
+        .facilitiesMap__overlays .popup .slide__img__overlay {
+          position: absolute;
+          background: transparent linear-gradient(180deg, #58293100 20%, #953142 95%) 0% 0% no-repeat padding-box;
+          width: 100%;
+          height: 105%;
+          top: 0;
+          left: 0; }
+      .facilitiesMap__overlays .popup .slide__title {
         font-family: "Quiche Sans";
         font-weight: 500;
-        font-size: 30px;
+        font-size: 20px;
         margin-top: 0;
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        padding: 10px 30px 0px; }
+      .facilitiesMap__overlays .popup .slide__content {
+        padding: 0px 30px 20px; }
       @media screen and (max-width: 769px) {
         .facilitiesMap__overlays .popup {
           padding: 20px 20px;
