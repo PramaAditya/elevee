@@ -1,0 +1,664 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pr",
+				"product-img-desktop"
+			],
+			[
+				"out",
+				"outofstock-image"
+			],
+			[
+				"margin-",
+				"margin-top"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"prod",
+				"product-icon-desktop"
+			],
+			[
+				"produ",
+				"product-icon-desktop"
+			],
+			[
+				"product",
+				"product-icon-desktop"
+			],
+			[
+				"pro",
+				"product-icon-desktop"
+			],
+			[
+				"lo",
+				"logo-icon"
+			],
+			[
+				"l",
+				"logo-icon"
+			],
+			[
+				"product-ic",
+				"product-icon-desktop"
+			],
+			[
+				"product-c",
+				"product-icon-desktop"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"SP",
+				"SP6HDW_Front"
+			],
+			[
+				"min",
+				"min-width\tproperty"
+			],
+			[
+				"visi",
+				"visible-md"
+			],
+			[
+				"visible",
+				"visible-lg"
+			],
+			[
+				"vis",
+				"visible-lg"
+			],
+			[
+				"vi",
+				"visible-md"
+			],
+			[
+				"tes",
+				"testimony-desktop"
+			],
+			[
+				"text",
+				"text-align\tproperty"
+			],
+			[
+				"bac",
+				"background-color\tproperty"
+			],
+			[
+				"back",
+				"background-color\tproperty"
+			],
+			[
+				"fo",
+				"font-size\tproperty"
+			],
+			[
+				"inline",
+				"inline-block\tdisplay"
+			],
+			[
+				"di",
+				"display\tproperty"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"paddi",
+				"padding-top\tproperty"
+			],
+			[
+				"padd",
+				"padding-right\tproperty"
+			],
+			[
+				"col",
+				"color\tproperty"
+			],
+			[
+				"ba",
+				"background-color\tproperty"
+			],
+			[
+				"co",
+				"cover\tbackground-size"
+			],
+			[
+				"wh",
+				"width\tproperty"
+			],
+			[
+				"cou",
+				"countries"
+			],
+			[
+				"va",
+				"var_dump"
+			],
+			[
+				"pub",
+				"public"
+			],
+			[
+				"url",
+				"urltoimage"
+			],
+			[
+				"sour",
+				"source_id"
+			],
+			[
+				"categ",
+				"category_id"
+			],
+			[
+				"New",
+				"NewsCategory"
+			],
+			[
+				"newscate",
+				"newscategory"
+			],
+			[
+				"ne",
+				"newssource"
+			],
+			[
+				"newssor",
+				"newssource"
+			],
+			[
+				"cate",
+				"categorylist"
+			],
+			[
+				"new",
+				"newscategory"
+			],
+			[
+				"News",
+				"NewsSource"
+			],
+			[
+				"res",
+				"response"
+			],
+			[
+				"ingre",
+				"ingredientnamesarray"
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"total_i",
+				"total_ingredient_usage"
+			],
+			[
+				"requ",
+				"requirementarray"
+			],
+			[
+				"total",
+				"totalproductionsurplus"
+			],
+			[
+				"totalpro",
+				"totalproduction"
+			],
+			[
+				"produc",
+				"productcogsmin"
+			],
+			[
+				"uom",
+				"uomlist"
+			],
+			[
+				"totalproduction",
+				"totalproductionsurplus"
+			],
+			[
+				"tota",
+				"total_production_surplus"
+			],
+			[
+				"Product",
+				"ProductInList"
+			],
+			[
+				"in",
+				"ingredient"
+			],
+			[
+				"end",
+				"end_date"
+			],
+			[
+				"beg",
+				"begin_date"
+			],
+			[
+				"month",
+				"monthcollection"
+			],
+			[
+				"be",
+				"begin_date"
+			],
+			[
+				"date",
+				"datecollection"
+			],
+			[
+				"strto",
+				"strtotime"
+			],
+			[
+				"crea",
+				"created_at"
+			],
+			[
+				"cre",
+				"created_at"
+			],
+			[
+				"ord",
+				"orderBy"
+			],
+			[
+				"qu",
+				"quantity_warehouse"
+			],
+			[
+				"count",
+				"country_id"
+			],
+			[
+				"qua",
+				"quantity_transit"
+			],
+			[
+				"Ingred",
+				"IngredientPrice"
+			],
+			[
+				"ingredient",
+				"ingredient_brand_id"
+			],
+			[
+				"ingredie",
+				"ingredient_brand_id"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"c",
+				"class\tAttr"
+			],
+			[
+				"te",
+				"text-align\tproperty"
+			],
+			[
+				"pri",
+				"print_r"
+			],
+			[
+				"t",
+				"th\tTag"
+			],
+			[
+				"th",
+				"thead\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": ".env",
+			"settings":
+			{
+				"buffer_size": 842,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/azkaihsannurrahman/elevee"
+	],
+	"file_history":
+	[
+		"/Users/azkaihsannurrahman/kanto/themes/kanto/pages/index.htm",
+		"/Users/azkaihsannurrahman/kanto-landing-page/woocommerce/product-searchform.php",
+		"/Users/azkaihsannurrahman/kanto-landing-page/footer-first.php",
+		"/Users/azkaihsannurrahman/kanto-landing-page/kanto.id",
+		"/Users/azkaihsannurrahman/kanto-landing-page/wp-config.php",
+		"/Users/azkaihsannurrahman/kanto-landing-page/kanto.id.conf",
+		"/Users/azkaihsannurrahman/kanto/.env",
+		"/Users/azkaihsannurrahman/kanto-landing-page/widget-areas.php",
+		"/Users/azkaihsannurrahman/audiocentre-new/themes/audio/partials/homepage/product.htm",
+		"/Users/azkaihsannurrahman/audiocentre-new/themes/audio/pages/index.htm",
+		"/Users/azkaihsannurrahman/audiocentre-new/themes/audio/layouts/default.htm",
+		"/Users/azkaihsannurrahman/dump-kanto-202110141547.sql",
+		"/Users/azkaihsannurrahman/audiocentre-new/themes/audio/partials/site/header.htm",
+		"/Users/azkaihsannurrahman/kanto/themes/kanto/pages/index.html",
+		"/Users/azkaihsannurrahman/kanto/plugins/balkat/product/models/product/columns.yaml",
+		"/Users/azkaihsannurrahman/kanto/themes/kanto/assets/js/productmobile.js",
+		"/Users/azkaihsannurrahman/audiocentre-new/themes/audio/theme.yaml",
+		"/Users/azkaihsannurrahman/kanto/themes/kanto/theme.yaml",
+		"/Users/azkaihsannurrahman/kanto-landing-page/index.html",
+		"/Users/azkaihsannurrahman/kanto-landing-page/assets/css/style.css",
+		"/Users/azkaihsannurrahman/kanto/plugins/balkat/product/models/Product.php",
+		"/Users/azkaihsannurrahman/kanto-landing-page/woocommerce/content-product-inner.php",
+		"/Users/azkaihsannurrahman/kanto-landing-page/woocommerce/single-product/related.php",
+		"/Users/azkaihsannurrahman/kanto-landing-page/woocommerce/content-product_cat.php",
+		"/Users/azkaihsannurrahman/kanto-landing-page/woocommerce/content-product.php",
+		"/Users/azkaihsannurrahman/kanto-landing-page/header-first.php",
+		"/Users/azkaihsannurrahman/kanto-landing-page/woocommerce/footer-first.php",
+		"/Users/azkaihsannurrahman/kanto-landing-page/woocommerce/content-product-archive.php",
+		"/Users/azkaihsannurrahman/kanto-landing-page/woocommerce/content-product-deals.php",
+		"/Users/azkaihsannurrahman/kanto-landing-page/.htaccess",
+		"/Users/azkaihsannurrahman/kanto-landing-page/assets/img/product/yu2mb_main-6.png",
+		"/Users/azkaihsannurrahman/audiocentre-new/footer-first.php",
+		"/Users/azkaihsannurrahman/kanto-landing-page/woocommerce/content-single-product.php",
+		"/Users/azkaihsannurrahman/kanto-landing-page/content-product-list.php",
+		"/Users/azkaihsannurrahman/kanto-landing-page/content-product.php",
+		"/Users/azkaihsannurrahman/kanto-landing-page/assets/css/default.css",
+		"/Users/azkaihsannurrahman/audiocentre-new/wp-config.php",
+		"/Users/azkaihsannurrahman/Downloads/ssh-key-2021-09-07.key",
+		"/Users/azkaihsannurrahman/Downloads/ssh-key-2021-09-07.key.pub",
+		"/Users/azkaihsannurrahman/hack-dashboard-platform/footer-first.php",
+		"/Users/azkaihsannurrahman/Work/Balkat/Audiocentre/outstock-html-package/outstock/home.html",
+		"/Users/azkaihsannurrahman/Downloads/Contoh Perhitungan untuk Artikel populer.txt",
+		"/Users/azkaihsannurrahman/news-aggregator-core-platform/app/Http/Controllers/CountryController.php",
+		"/Users/azkaihsannurrahman/news-aggregator-core-platform/app/Http/Controllers/NewsCategoryController.php",
+		"/Users/azkaihsannurrahman/news-aggregator-core-platform/app/News.php",
+		"/Users/azkaihsannurrahman/news-aggregator-core-platform/app/NewsCategory.php",
+		"/Users/azkaihsannurrahman/news-aggregator-core-platform/app/NewsSource.php",
+		"/Users/azkaihsannurrahman/news-aggregator-core-platform/app/Country.php",
+		"/Users/azkaihsannurrahman/news-aggregator-core-platform/app/Http/Controllers/NewsSourceController.php",
+		"/Users/azkaihsannurrahman/crp-api/app/User.php",
+		"/Users/azkaihsannurrahman/news-aggregator-core-platform/app/Console/Kernel.php",
+		"/Users/azkaihsannurrahman/news-aggregator-core-platform/database/migrations/2020_11_12_164324_create_news_table.php",
+		"/Users/azkaihsannurrahman/news-aggregator-core-platform/app/Console/Commands/NewsCron.php",
+		"/Users/azkaihsannurrahman/crp-api/app/Models/User.php",
+		"/Users/azkaihsannurrahman/news-aggregator-core-platform/database/migrations/2020_11_12_165521_news_relation.php",
+		"/Users/azkaihsannurrahman/news-aggregator-core-platform/database/seeders/DatabaseSeeder.php",
+		"/Users/azkaihsannurrahman/news-aggregator-core-platform/database/migrations/2020_11_12_164801_create_news_sources_table.php",
+		"/Users/azkaihsannurrahman/news-aggregator-core-platform/database/migrations/2020_11_12_182414_create_countries_table.php",
+		"/Users/azkaihsannurrahman/news-aggregator-core-platform/database/seeders/countries.sql",
+		"/Users/azkaihsannurrahman/news-aggregator-core-platform/database/seeders/CountrySeeder.php",
+		"/Users/azkaihsannurrahman/news-aggregator-core-platform/countries.sql",
+		"/Users/azkaihsannurrahman/news-aggregator-core-platform/database/migrations/2020_11_12_164906_create_news_categories_table.php",
+		"/Users/azkaihsannurrahman/crp-api/routes/api.php",
+		"/Users/azkaihsannurrahman/crp-api/app/Http/Controllers/AuthController.php",
+		"/Users/azkaihsannurrahman/crp-api/app/Http/Controllers/TableauController.php",
+		"/Users/azkaihsannurrahman/news-aggregator-core-platform/.env",
+		"/Users/azkaihsannurrahman/crp-api/database/migrations/2019_12_10_213249_create_group_dashboard_relations.php",
+		"/Users/azkaihsannurrahman/news-aggregator-core-platform/bootstrap/app.php",
+		"/Users/azkaihsannurrahman/news-aggregator-core-platform/bootstrap/.env",
+		"/Users/azkaihsannurrahman/Downloads/Inventory-Platform.postman_collection.json",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/app/Http/Controllers/IngredientController.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/app/Http/Controllers/IngredientPrintController.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/resources/views/prints/laporan_produksi_harian.blade.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/app/Http/Controllers/ProductionPrintReportController.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/app/Http/Controllers/FormulaController.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/resources/views/prints/daftar_harga_produk.blade.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/resources/views/prints/daftar_formula_produk.blade.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/app/Http/Controllers/ProductInController.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/app/Http/Controllers/ProductOutController.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/app/ProductIn.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/resources/views/prints/daftar_harga_bahan_baku.blade.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/app/Http/Controllers/ProductController.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/app/ProductOut.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/resources/views/prints/barangjadi_produk_keluar.blade.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/resources/views/prints/barangjadi_produk_masuk.blade.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/app/Http/Controllers/SuppliesOutController.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/app/Http/Controllers/IngredientTransitController.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/resources/views/prints/formulasi_bahan_baku.blade.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/app/SuppliesTransit.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/resources/views/prints/produksi_bahan_baku.blade.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/app/Http/Controllers/IngredientOutController.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/app/Http/Controllers/IngredientInController.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/app/IngredientOut.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/database/migrations/2020_10_06_090901_create_ingredient_transits_table.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/app/Http/Controllers/SuppliesTransitController.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/resources/views/prints/produksi_material_supplies.blade.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/resources/views/prints/formulasi_material_supplies.blade.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/resources/views/prints/gudang_material_supplies.blade.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/resources/views/prints/rencana_produksi.blade.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/app/IngredientTransit.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/app/SuppliesOut.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/app/Http/Controllers/ProductionPlanPrintController.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/bootstrap/app.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/resources/views/prints/gudang_bahan_baku.blade.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/app/Http/Controllers/ProductionPlanController.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/app/Http/Controllers/SuppliesInController.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/app/SuppliesIn.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/app/IngredientIn.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/app/ProductPrice.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/app/Http/Controllers/ReportController.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/app/Http/Controllers/ManagementDashboardController.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/app/Http/Controllers/ProductionIntervalReportController.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/database/seeds/DatabaseSeeder.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/.env",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/app/User.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/app/Http/Controllers/AuthController.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/database/seeds/RoleSeeder.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/app/Mail/PasswordResetRequest.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/app/Providers/AuthServiceProvider.php",
+		"/Users/azkaihsannurrahman/.bitnami/stackman/machines/xampp/volumes/root/htdocs/inventory-core-platform/app/Mail/PasswordResetNotification.php",
+		"/C/xampp/htdocs/inventory-core-platform/.env",
+		"/C/xampp/htdocs/inventory-core-platform/resources/views/emails/password_reset_request.blade.php",
+		"/C/xampp/htdocs/inventory-core-platform/resources/views/emails/password_reset_notification.blade.php",
+		"/C/xampp/htdocs/inventory-core-platform/app/Role.php",
+		"/C/xampp/htdocs/inventory-core-platform/app/FormulaGroup.php",
+		"/C/xampp/htdocs/inventory-core-platform/app/ProductBatchType.php",
+		"/C/xampp/htdocs/inventory-core-platform/app/ProductCategory.php",
+		"/C/xampp/htdocs/inventory-core-platform/app/SuppliesStockTransitTrack.php"
+	],
+	"find":
+	{
+		"height": 70.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": ".env",
+					"selected": true,
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 842,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 70.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "elevee.sublime-project",
+	"replace":
+	{
+		"height": 114.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 349.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

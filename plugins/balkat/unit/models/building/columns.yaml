@@ -1,0 +1,9 @@
+columns:
+    name:
+        label: 'Nama Building'
+        type: text
+        searchable: true
+        sortable: true
+    description:
+        label: Deskripsi
+        type: text     

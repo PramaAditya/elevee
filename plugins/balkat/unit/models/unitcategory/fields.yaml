@@ -1,0 +1,7 @@
+fields:
+    name:
+        label: 'Nama Kategori Unit'
+        span: auto
+        required: 1
+        placeholder: 'Nama Kategori Unit'
+        type: text

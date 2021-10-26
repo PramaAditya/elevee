@@ -19,7 +19,6 @@ return array(
     'Bus' => $vendorDir . '/october/rain/helpers/Bus.php',
     'Cache' => $vendorDir . '/october/rain/helpers/Cache.php',
     'Cms' => $vendorDir . '/october/rain/helpers/Cms.php',
-    'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'Config' => $vendorDir . '/october/rain/helpers/Config.php',
     'Cookie' => $vendorDir . '/october/rain/helpers/Cookie.php',
     'Crypt' => $vendorDir . '/october/rain/helpers/Crypt.php',

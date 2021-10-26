@@ -8,4 +8,17 @@ navigation:
     apartments:
         label: Apartments
         url: balkat/unit/units
-        icon: icon-life-ring
+        icon: icon-building-o
+        sideMenu:
+            unitcategory:
+                label: 'Kategori Unit'
+                url: balkat/unit/unitcategorycontroller
+                icon: icon-sitemap
+            building:
+                label: Building
+                url: balkat/unit/buildingcontroller
+                icon: icon-building-o
+            unit:
+                label: Unit
+                url: balkat/unit/units
+                icon: icon-building

@@ -1,10 +1,14 @@
 columns:
-    id:
-        label: id
-        type: number
     name:
-        label: name
+        label: 'Nama Unit'
         type: text
-    image:
-        label: image
+        searchable: true
+        sortable: true
+    'unitcategory[name]':
+        label: 'Kategori Unit'
+        type: text
+        name: Name
+        sortable: false
+    description:
+        label: 'Deskripsi Unit'
         type: text
