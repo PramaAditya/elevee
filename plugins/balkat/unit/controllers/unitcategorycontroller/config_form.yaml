@@ -1,0 +1,10 @@
+name: UnitCategoryController
+form: $/balkat/unit/models/unitcategory/fields.yaml
+modelClass: Balkat\Unit\Models\UnitCategory
+defaultRedirect: balkat/unit/unitcategorycontroller
+create:
+    redirect: 'balkat/unit/unitcategorycontroller/update/:id'
+    redirectClose: balkat/unit/unitcategorycontroller
+update:
+    redirect: balkat/unit/unitcategorycontroller
+    redirectClose: balkat/unit/unitcategorycontroller

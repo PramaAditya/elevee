@@ -1,10 +1,123 @@
 fields:
     name:
-        label: 'Unit Name'
+        label: 'Nama Unit'
+        span: auto
+        required: 1
+        type: text
+    unit_category_id:
+        label: 'Kategori Unit'
+        showSearch: true
+        span: auto
+        placeholder: 'Pilih Kategori Unit'
+        required: 1
+        type: dropdown
+    description:
+        label: 'Deskripsi Unit'
+        size: large
+        span: auto
+        required: 1
+        type: textarea
+    video_link:
+        label: 'Tautan Video'
         span: auto
         type: text
-    image:
-        label: Image
-        mode: file
+    tour_link:
+        label: 'Tautan Tour'
         span: auto
-        type: mediafinder
+        type: text
+    bedroom_total:
+        label: 'Jumlah Kamar Tidur'
+        span: auto
+        required: 1
+        type: number
+    bathroom_total:
+        label: 'Jumlah Kamar Mandi'
+        span: auto
+        required: 1
+        type: number
+    unit_area:
+        label: 'Luas Unit'
+        span: auto
+        required: 1
+        type: text
+    unit_floor:
+        label: 'Lantai Unit'
+        span: auto
+        required: 1
+        type: text
+    is_pet_allowed:
+        label: 'Apakah Pet Friendly?'
+        options:
+            - Tidak
+            - Ya
+        span: auto
+        required: 1
+        type: radio
+tabs:
+    fields:
+        hero_slider_image:
+            label: 'Image Slider Atas'
+            prompt: 'Tambah Gambar'
+            minItems: '1'
+            style: default
+            span: auto
+            type: repeater
+            tab: 'Gambar Slider Atas'
+            form:
+                fields:
+                    image:
+                        label: 'Gambar Slider'
+                        mode: image
+                        span: auto
+                        type: mediafinder
+        unit_slider_image:
+            label: 'Image Slider Bawah'
+            prompt: 'Tambah Gambar'
+            minItems: '1'
+            style: default
+            span: auto
+            type: repeater
+            tab: 'Gambar Slider Bawah'
+            form:
+                fields:
+                    image:
+                        label: 'Gambar Slider'
+                        mode: image
+                        span: auto
+                        type: mediafinder
+        floorplan_image:
+            label: 'Image Denah'
+            prompt: 'Tambah Gambar'
+            minItems: '1'
+            style: default
+            span: auto
+            type: repeater
+            tab: 'Gambar Denah'
+            form:
+                fields:
+                    image:
+                        label: 'Gambar Denah'
+                        mode: image
+                        span: auto
+                        type: mediafinder
+        specification:
+            label: 'Spesifikasi Unit'
+            prompt: 'Tambah Spesifikasi'
+            minItems: '1'
+            style: default
+            span: auto
+            type: repeater
+            tab: 'Spesifikasi Unit'
+            form:
+                fields:
+                    label:
+                        label: 'Label Spesifikasi'
+                        span: auto
+                        required: 1
+                        type: text
+                    value:
+                        label: 'Isi Spesifikasi'
+                        size: large
+                        span: auto
+                        required: 1
+                        type: textarea

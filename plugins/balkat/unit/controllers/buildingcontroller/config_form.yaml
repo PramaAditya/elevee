@@ -1,0 +1,10 @@
+name: BuildingController
+form: $/balkat/unit/models/building/fields.yaml
+modelClass: Balkat\Unit\Models\Building
+defaultRedirect: balkat/unit/buildingcontroller
+create:
+    redirect: 'balkat/unit/buildingcontroller/update/:id'
+    redirectClose: balkat/unit/buildingcontroller
+update:
+    redirect: balkat/unit/buildingcontroller
+    redirectClose: balkat/unit/buildingcontroller
