@@ -1,0 +1,13 @@
+columns:
+    title:
+        label: 'Judul Video'
+        type: text
+        searchable: true
+        sortable: true
+    link_youtube:
+        label: 'Tautan Youtube'
+        type: text
+    description:
+        label: 'Deskripsi Video'
+        type: text
+        searchable: true

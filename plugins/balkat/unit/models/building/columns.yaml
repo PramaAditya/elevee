@@ -6,4 +6,4 @@ columns:
         sortable: true
     description:
         label: Deskripsi
-        type: text     
+        type: text  

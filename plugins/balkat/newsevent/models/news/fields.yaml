@@ -1,0 +1,47 @@
+fields:
+    title:
+        label: 'Judul Berita'
+        span: auto
+        required: 1
+        type: text
+    published_date:
+        label: 'Tanggal Publish'
+        mode: date
+        span: auto
+        required: 1
+        type: datepicker
+    content:
+        label: 'Isi Berita'
+        size: large
+        span: auto
+        required: 1
+        type: richeditor
+tabs:
+    fields:
+        pictures:
+            label: 'Gambar Berita'
+            prompt: 'Tambah Gambar'
+            minItems: '1'
+            style: default
+            span: auto
+            type: repeater
+            tab: 'Gambar Berita'
+            form:
+                fields:
+                    picture:
+                        label: Gambar
+                        mode: file
+                        span: auto
+                        required: 1
+                        type: mediafinder
+        thumbnail:
+            label: 'Thumbnail Berita'
+            mode: image
+            span: auto
+            type: mediafinder
+            tab: Thumbnail
+        link_youtube:
+            label: 'Tautan Youtube'
+            span: auto
+            type: text
+            tab: 'Tautan Youtube'

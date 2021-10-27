@@ -1,0 +1,18 @@
+fields:
+    name:
+        label: 'Nama Brosur'
+        span: auto
+        required: 1
+        type: text
+    picture:
+        label: 'Gambar Brosur'
+        mode: image
+        span: auto
+        required: 1
+        type: mediafinder
+    file_pdf:
+        label: 'File Brosur'
+        span: auto
+        mode: file
+        required: 1
+        type: mediafinder

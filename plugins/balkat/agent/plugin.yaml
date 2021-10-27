@@ -6,6 +6,6 @@ plugin:
     homepage: ''
 navigation:
     agent:
-        label: Agent
+        label: Agents
         url: balkat/agent/agentcontroller
         icon: icon-user-secret

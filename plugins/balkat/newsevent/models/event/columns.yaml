@@ -1,0 +1,14 @@
+columns:
+    title:
+        label: 'Judul Event'
+        type: text
+        searchable: true
+        sortable: true
+    date:
+        label: 'Tanggal Event'
+        type: date
+        sortable: true
+    time:
+        label: 'Jam Event'
+        type: time
+        sortable: true

@@ -1,0 +1,11 @@
+plugin:
+    name: 'balkat.video::lang.plugin.name'
+    description: 'balkat.video::lang.plugin.description'
+    author: Balkat
+    icon: oc-icon-file-video-o
+    homepage: ''
+navigation:
+    video:
+        label: Videos
+        url: balkat/video/videocontroller
+        icon: icon-file-video-o

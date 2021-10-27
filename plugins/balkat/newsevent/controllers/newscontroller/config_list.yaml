@@ -1,0 +1,12 @@
+list: $/balkat/newsevent/models/news/columns.yaml
+modelClass: Balkat\NewsEvent\Models\News
+title: NewsController
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'balkat/newsevent/newscontroller/update/:id'

@@ -1,0 +1,8 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table balkat_newsevent_event'
+    - builder_table_create_balkat_newsevent_event.php
+1.0.3:
+    - 'Created table balkat_newsevent_news'
+    - builder_table_create_balkat_newsevent_news.php

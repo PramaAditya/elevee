@@ -1,0 +1,11 @@
+plugin:
+    name: 'balkat.brochure::lang.plugin.name'
+    description: 'balkat.brochure::lang.plugin.description'
+    author: Balkat
+    icon: oc-icon-paperclip
+    homepage: ''
+navigation:
+    brochure:
+        label: Brochures
+        url: balkat/brochure/brochurecontroller
+        icon: icon-paperclip

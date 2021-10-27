@@ -1,0 +1,20 @@
+plugin:
+    name: 'balkat.newsevent::lang.plugin.name'
+    description: 'balkat.newsevent::lang.plugin.description'
+    author: Balkat
+    icon: oc-icon-newspaper-o
+    homepage: ''
+navigation:
+    news-event:
+        label: 'News & Event'
+        url: /
+        icon: icon-newspaper-o
+        sideMenu:
+            event:
+                label: Event
+                url: balkat/newsevent/eventcontroller
+                icon: icon-delicious
+            news:
+                label: News
+                url: balkat/newsevent/newscontroller
+                icon: icon-newspaper-o

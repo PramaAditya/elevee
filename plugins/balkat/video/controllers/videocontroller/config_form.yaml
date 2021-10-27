@@ -1,0 +1,10 @@
+name: VideoController
+form: $/balkat/video/models/video/fields.yaml
+modelClass: Balkat\Video\Models\Video
+defaultRedirect: balkat/video/videocontroller
+create:
+    redirect: 'balkat/video/videocontroller/update/:id'
+    redirectClose: balkat/video/videocontroller
+update:
+    redirect: balkat/video/videocontroller
+    redirectClose: balkat/video/videocontroller

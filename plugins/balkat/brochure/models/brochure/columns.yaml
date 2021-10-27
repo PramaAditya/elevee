@@ -1,0 +1,14 @@
+columns:
+    name:
+        label: 'Nama Brosur'
+        type: text
+        searchable: true
+        sortable: true
+    picture:
+        label: 'Gambar Brosur'
+        type: image
+        sortable: false
+        width: 150
+        height: 150
+        options:
+            quality: 80

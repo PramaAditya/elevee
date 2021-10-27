@@ -1,0 +1,12 @@
+list: $/balkat/video/models/video/columns.yaml
+modelClass: Balkat\Video\Models\Video
+title: VideoController
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'balkat/video/videocontroller/update/:id'

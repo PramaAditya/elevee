@@ -1,0 +1,22 @@
+fields:
+    title:
+        label: 'Judul Video'
+        span: auto
+        required: 1
+        type: text
+    link_youtube:
+        label: 'Tautan Youtube'
+        span: auto
+        required: 1
+        type: text
+    description:
+        label: 'Deskripsi Video'
+        size: ''
+        span: auto
+        required: 1
+        type: textarea
+    thumbnail:
+        label: 'Thumbnail Video'
+        span: auto
+        mode: file
+        type: mediafinder

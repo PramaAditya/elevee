@@ -1,0 +1,10 @@
+name: EventController
+form: $/balkat/newsevent/models/event/fields.yaml
+modelClass: Balkat\NewsEvent\Models\Event
+defaultRedirect: balkat/newsevent/eventcontroller
+create:
+    redirect: 'balkat/newsevent/eventcontroller/update/:id'
+    redirectClose: balkat/newsevent/eventcontroller
+update:
+    redirect: balkat/newsevent/eventcontroller
+    redirectClose: balkat/newsevent/eventcontroller

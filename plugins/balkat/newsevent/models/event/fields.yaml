@@ -1,0 +1,43 @@
+fields:
+    title:
+        label: 'Judul Event'
+        span: auto
+        required: 1
+        type: text
+    date:
+        label: 'Tanggal Event'
+        mode: date
+        span: auto
+        required: 1
+        type: datepicker
+    time:
+        label: 'Waktu Event'
+        mode: time
+        span: auto
+        required: 1
+        type: datepicker
+    content:
+        label: 'Deskripsi Event'
+        size: large
+        span: auto
+        required: 1
+        stretch: 0
+        type: richeditor
+tabs:
+    fields:
+        pictures:
+            label: 'Gambar Event'
+            prompt: 'Add new item'
+            minItems: '1'
+            style: default
+            span: auto
+            type: repeater
+            tab: 'Gambar Event'
+            form:
+                fields:
+                    picture:
+                        label: 'Media finder'
+                        span: auto
+                        mode: image
+                        required: 1
+                        type: mediafinder

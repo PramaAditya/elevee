@@ -45,3 +45,6 @@
 1.0.16:
     - 'Updated table balkat_unit_building'
     - builder_table_update_balkat_unit_building.php
+1.0.17:
+    - 'Updated table balkat_unit_building'
+    - builder_table_update_balkat_unit_building_2.php

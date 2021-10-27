@@ -1,0 +1,11 @@
+columns:
+    title:
+        label: 'Judul Berita'
+        type: text
+        searchable: true
+        sortable: true
+    published_date:
+        label: 'Tanggal Publish'
+        type: date
+        searchable: false
+        sortable: true

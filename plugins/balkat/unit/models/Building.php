@@ -22,7 +22,7 @@ class Building extends Model
     public $rules = [
     ];
 
-    protected $jsonable = ['units']; 
+    protected $jsonable = ['units', 'specifications']; 
 
     public function getUnitsOptions($value, $formData)
     {
@@ -33,5 +33,9 @@ class Building extends Model
         }
         return $result;
     }
+
+    public $hasMany = [
+        'units_building' => [\Balkat\Unit\Models\Unit::class, 'key' => 'id', 'other_key' => 'units']
+    ];
 
 }

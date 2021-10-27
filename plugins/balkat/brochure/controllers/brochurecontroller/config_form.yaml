@@ -1,0 +1,10 @@
+name: BrochureController
+form: $/balkat/brochure/models/brochure/fields.yaml
+modelClass: Balkat\Brochure\Models\Brochure
+defaultRedirect: balkat/brochure/brochurecontroller
+create:
+    redirect: 'balkat/brochure/brochurecontroller/update/:id'
+    redirectClose: balkat/brochure/brochurecontroller
+update:
+    redirect: balkat/brochure/brochurecontroller
+    redirectClose: balkat/brochure/brochurecontroller
