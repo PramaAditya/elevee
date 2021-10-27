@@ -1,8 +1,47 @@
-#buildingSelector
+.buildingsMap
     margin-top: 0
-
-@media screen and ( max-width: $tablet )
-    #buildingSelector
-       overflow-x: scroll 
-    #buildingPlaceholder
-        width: 200vw
+    position: relative
+    padding: 0 20px
+    &__interactive
+        position: relative
+    &__bg
+        width: 100%
+    &__overlays
+        position: absolute
+        top: 0
+        left: 0
+        height: 100%
+        width: 100%
+        z-index: 140
+    .hotspot
+        position: absolute
+        opacity: 0
+        transition: opacity .3s ease-out
+        cursor: pointer
+        &.is-active
+            opacity: 1
+        &:hover
+            opacity: 1
+    .popup
+        position: absolute
+        width: 350px
+        min-height: 300px
+        color: white
+        background: rgba($maroon, .8)
+        padding: 25px
+        display: none
+        flex-direction: column
+        justify-content: center
+        &.is-active
+            display: flex
+        &__title
+            margin-top: 0
+            font-family: $font-heading
+            font-weight: 500
+            font-size: 30px
+            margin-bottom: 10px
+        &__more
+            color: white
+            margin-top: 15px
+            font-weight: 500
+            letter-spacing: 1px 

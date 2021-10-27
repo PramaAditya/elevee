@@ -1,0 +1,24 @@
+<div id="facilitiesMapModal" class="cModal">
+	<div class="cModal__overlay"></div>
+	
+	<div class="cModal__box">
+		<img src="{{'assets/images/modal_close_btn.svg' | theme}}" height="30" width="30" alt="" class="cModal__close">
+		{% partial "facilitiesMap" %}
+	</div>
+	
+	
+</div>
+
+{% put scripts %}
+<script>
+    $modal = $('#facilitiesMapModal')
+	$closeBtn = $('.cModal__close')
+	$openBtn = $('#siteButton')
+	$closeBtn.on('click',function(){
+		$modal.removeClass('is-active')
+	}) 
+	$openBtn.on('click',function(){
+		$modal.addClass('is-active')
+	}) 
+</script>
+{% endput %}

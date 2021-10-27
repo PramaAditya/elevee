@@ -1,7 +1,13 @@
 columns:
+    name:
+        label: 'Nama Agent'
+        type: text
+        searchable: true
+        sortable: true
     email:
         label: Email
         type: text
+        searchable: true
     telephone:
         label: 'Nomor Telepon'
         type: text

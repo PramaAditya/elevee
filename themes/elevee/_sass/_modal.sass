@@ -1,0 +1,89 @@
+.bModal
+    display: flex
+    opacity: 0
+    position: fixed
+    top: 0
+    left: -200vw
+    width: 100%
+    height: 100%
+    z-index: 900
+    align-items: center
+    justify-content: center
+    transition: opacity .5s ease-out
+    &__overlay
+        background: rgba(black, .7)
+        height: 100%
+        width: 100%
+        position: absolute
+    &.is-active
+        left: 0
+        opacity: 1
+        transition: opacity .5s ease-out
+    &__close
+        cursor: pointer
+        position: absolute
+        right: 0px
+        top: - 50px
+        z-index: 300
+        filter: brightness(100)
+    &__box
+        position: relative
+        width: 90%
+        height: 70%
+        // background: white
+        display: flex
+        align-items: center
+    &__image
+        height: 100%
+        margin-right: 10px
+    &__form_container
+        height: 100%
+        width: 100%
+        flex-grow: 1
+        display: flex
+        align-items: center
+        padding: 0 7%
+    &__form
+        *
+            color: white !important
+        
+    
+
+.cModal
+    display: flex
+    opacity: 0
+    position: fixed
+    top: 0
+    left: -200vw
+    width: 100%
+    height: 100%
+    z-index: 900
+    align-items: center
+    justify-content: center
+    transition: opacity .5s ease-out
+    &__overlay
+        background: rgba(black, .7)
+        height: 100%
+        width: 100%
+        position: absolute
+        
+    &__box
+        position: relative
+        width: 90%
+        height: 75%
+        background: white
+        display: flex
+        align-items: center
+        justify-content: center
+    &__close
+        cursor: pointer
+        position: absolute
+        right: 20px
+        top: 20px
+        z-index: 300
+        
+
+    &.is-active
+        left: 0
+        opacity: 1
+        transition: opacity .5s ease-out

@@ -1,0 +1,36 @@
+<div id="brochureModal" class="bModal">
+	<div class="bModal__overlay"></div>
+	
+	<div class="bModal__box">
+		<img src="{{'assets/images/modal_close_btn.svg' | theme}}" height="30" width="30" alt="" class="bModal__close">
+		<img src="//via.placeholder.com/300x400" alt="" class="bModal__image" id="brochureImage">
+		<div class="has-bg bModal__form_container">
+			<div class="bModal__form">
+			 	<h2>FILL IN DETAILS TO DOWNLOAD BROCHURE</h2>
+			</div>
+		</div>
+	</div>
+	
+	
+</div>
+
+{% put scripts %}
+<script>
+    $modal = $('#brochureModal')
+	$closeBtn = $('.bModal__close')
+	$openBtn = $('.brochure')
+	$closeBtn.on('click',function(){
+		$modal.removeClass('is-active')
+	}) 
+	$openBtn.on('click',function(){
+		$brochure = $(this)
+		// Get the clicked brochure name and image
+		$brochureName = $brochure.data("name")
+		$brochureImage = $brochure.data("image")
+		$('#brochureImage').attr('src',$brochureImage);
+
+		$modal.addClass('is-active')
+
+	}) 
+</script>
+{% endput %}

@@ -6,3 +6,6 @@
 1.0.3:
     - 'Updated table balkat_agent_agent'
     - builder_table_update_balkat_agent_agent.php
+1.0.4:
+    - 'Updated table balkat_agent_agent'
+    - builder_table_update_balkat_agent_agent_2.php
