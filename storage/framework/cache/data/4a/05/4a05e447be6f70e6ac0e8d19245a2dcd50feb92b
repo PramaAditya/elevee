@@ -1,0 +1,119 @@
+1635388319a:1:{s:13:"navMobile.htm";a:5:{s:8:"fileName";s:13:"navMobile.htm";s:7:"content";s:1976:"<!-- Main container -->
+<nav class="nav-{{this.page.id}} navMobile" id="navMobile">
+	<div class="container is-narrow">
+        <div class="columns is-vcentered is-gapless is-mobile ">
+            <div class="column is-2"></div>
+            <div class="column is-8 has-text-centered">
+                <a href="/">
+                    <img src="{{'assets/images/elevee.png' | theme}}" alt="" height="120" width="213" class="alam-sutera logo">
+                </a>
+            </div>
+            <div class="column is-2 navMobile__menu">
+                <div class="navMobile__button openBtn" id="openBtn">
+                    MENU
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</nav>
+{% if this.page.id != 'index' %}
+<nav class="nav-sticky navMobile">
+	<div class="container is-narrow">
+        <div class="columns is-vcentered is-gapless is-mobile">
+
+            <div class="column is-2"></div>
+            <div class="column is-8 has-text-centered">
+                <a href="/">
+                    <img src="{{'assets/images/elevee.png' | theme}}" alt="" height="120" width="213" class="alam-sutera logo">
+                </a>
+            </div>
+            <div class="column is-2 navMobile__menu">
+                <div class="navMobile__button openBtn" id="openBtn">
+                    MENU
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</nav>
+{% endif %}
+{% put scripts %}
+<script>
+    $navSticky = $('.nav-sticky')
+
+    var topofDiv = $("#navMobile").offset().top; //gets offset of header
+    var height = $("#navMobile").outerHeight(); //gets height of header
+
+    $(window).scroll(function(){
+        if($(window).scrollTop() > (topofDiv + height)){
+            $navSticky.addClass('is-active');
+        }
+        else{
+            $navSticky.removeClass('is-active');
+        }
+    });
+
+
+    $('#homePadding').css('height', height)
+</script>
+{% endput %}";s:5:"mtime";i:1631507280;s:6:"markup";s:1976:"<!-- Main container -->
+<nav class="nav-{{this.page.id}} navMobile" id="navMobile">
+	<div class="container is-narrow">
+        <div class="columns is-vcentered is-gapless is-mobile ">
+            <div class="column is-2"></div>
+            <div class="column is-8 has-text-centered">
+                <a href="/">
+                    <img src="{{'assets/images/elevee.png' | theme}}" alt="" height="120" width="213" class="alam-sutera logo">
+                </a>
+            </div>
+            <div class="column is-2 navMobile__menu">
+                <div class="navMobile__button openBtn" id="openBtn">
+                    MENU
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</nav>
+{% if this.page.id != 'index' %}
+<nav class="nav-sticky navMobile">
+	<div class="container is-narrow">
+        <div class="columns is-vcentered is-gapless is-mobile">
+
+            <div class="column is-2"></div>
+            <div class="column is-8 has-text-centered">
+                <a href="/">
+                    <img src="{{'assets/images/elevee.png' | theme}}" alt="" height="120" width="213" class="alam-sutera logo">
+                </a>
+            </div>
+            <div class="column is-2 navMobile__menu">
+                <div class="navMobile__button openBtn" id="openBtn">
+                    MENU
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</nav>
+{% endif %}
+{% put scripts %}
+<script>
+    $navSticky = $('.nav-sticky')
+
+    var topofDiv = $("#navMobile").offset().top; //gets offset of header
+    var height = $("#navMobile").outerHeight(); //gets height of header
+
+    $(window).scroll(function(){
+        if($(window).scrollTop() > (topofDiv + height)){
+            $navSticky.addClass('is-active');
+        }
+        else{
+            $navSticky.removeClass('is-active');
+        }
+    });
+
+
+    $('#homePadding').css('height', height)
+</script>
+{% endput %}";s:4:"code";N;}}

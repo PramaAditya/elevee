@@ -1,0 +1,110 @@
+1635388318a:1:{s:20:"static/brochures.htm";a:8:{s:8:"fileName";s:20:"static/brochures.htm";s:7:"content";s:2040:"layout = "default"
+
+[staticPage]
+useContent = 0
+default = 0
+
+[Agent]
+
+==
+{variable name="introBrochures" label="Brochure Intro" type="richeditor" size="huge" span="full" tab="Content"}{/variable}
+{variable name="introVideo" label="Video Intro" type="richeditor" size="huge" span="full" tab="Content"}{/variable}
+
+{% partial "htmlHeader" %}
+{% set hierarchy=["UPDATES",this.page.title]%}
+{% partial 'breadcrumbs' links = hierarchy %}
+
+<section class="section" id="brochureIntro">
+    <div class="container is-narrow">
+        <div class="columns">
+            <div class="column is-4">
+                {{introBrochures | raw}}
+            </div>
+        </div>
+        {% partial 'brochuresSlider' %}
+    </div>
+</section>
+
+<section class="section" id="videoIntro">
+    <div class="container is-narrow">
+        <div class="columns">
+            <div class="column is-4">
+                {{introVideo | raw}}
+            </div>
+        </div>
+        <div class="columns is-vcentered" id="featuredVideo">
+            <a href="https://www.youtube.com/watch?v=QrxqMo_N-LE" class="glightbox column is-4 video-thumbnail">
+                <img src="https://img.youtube.com/vi/QrxqMo_N-LE/0.jpg" class="image" alt="">
+                <span class="play-btn"></span>
+            </a>
+            <div class="column video-text">
+                <div class="video-title">
+                    Have Fun with Your Family
+                </div>
+                <div class="video-info">
+                    145 views - 1 weeks ago
+                </div>
+                <div class="video-description">
+                    EleVee by Alam Sutera - https://connect.elevee.id <br>
+                    Bringing nature to your doorstep, you deserve to feel amazing everyday
+                </div>
+            </div>
+        </div>
+        <h3 class="slider-title">Popular uploads</h3>
+        {% partial 'videosSlider' %}
+    </div>
+</section>
+
+
+{% partial 'floatingButton' %}
+{% partial "htmlFooter" %}";s:5:"mtime";i:1629973585;s:6:"markup";s:1958:"{variable name="introBrochures" label="Brochure Intro" type="richeditor" size="huge" span="full" tab="Content"}{/variable}
+{variable name="introVideo" label="Video Intro" type="richeditor" size="huge" span="full" tab="Content"}{/variable}
+
+{% partial "htmlHeader" %}
+{% set hierarchy=["UPDATES",this.page.title]%}
+{% partial 'breadcrumbs' links = hierarchy %}
+
+<section class="section" id="brochureIntro">
+    <div class="container is-narrow">
+        <div class="columns">
+            <div class="column is-4">
+                {{introBrochures | raw}}
+            </div>
+        </div>
+        {% partial 'brochuresSlider' %}
+    </div>
+</section>
+
+<section class="section" id="videoIntro">
+    <div class="container is-narrow">
+        <div class="columns">
+            <div class="column is-4">
+                {{introVideo | raw}}
+            </div>
+        </div>
+        <div class="columns is-vcentered" id="featuredVideo">
+            <a href="https://www.youtube.com/watch?v=QrxqMo_N-LE" class="glightbox column is-4 video-thumbnail">
+                <img src="https://img.youtube.com/vi/QrxqMo_N-LE/0.jpg" class="image" alt="">
+                <span class="play-btn"></span>
+            </a>
+            <div class="column video-text">
+                <div class="video-title">
+                    Have Fun with Your Family
+                </div>
+                <div class="video-info">
+                    145 views - 1 weeks ago
+                </div>
+                <div class="video-description">
+                    EleVee by Alam Sutera - https://connect.elevee.id <br>
+                    Bringing nature to your doorstep, you deserve to feel amazing everyday
+                </div>
+            </div>
+        </div>
+        <h3 class="slider-title">Popular uploads</h3>
+        {% partial 'videosSlider' %}
+    </div>
+</section>
+
+
+{% partial 'floatingButton' %}
+{% partial "htmlFooter" %}";s:4:"code";N;s:6:"layout";s:7:"default";s:10:"staticPage";a:2:{s:10:"useContent";s:1:"0";s:7:"default";s:1:"0";}s:5:"Agent";a:0:{}}}

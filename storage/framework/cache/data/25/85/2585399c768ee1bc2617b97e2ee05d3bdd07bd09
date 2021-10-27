@@ -1,0 +1,300 @@
+1635416784a:1:{s:15:"unitSummary.htm";a:6:{s:8:"fileName";s:15:"unitSummary.htm";s:7:"content";s:7061:"[Agent]
+==
+{% for item in 1..3 %}
+
+
+	<div class="unitsum columns is-gapless" id="unitGroup-{{loop.index}}">
+		<div class="column is-5">
+			<div class="unitsum__detail">
+                <div class="select is-big">
+                    <select>
+                        <option>Vivre 1</option>
+                        <option>Vivre 2</option>
+                    </select>
+                </div>
+                <p>
+                    {{'Levee’s two-bedroom units have ample space for a couple or small family. The arrangement of each room is even designed with natural light exposure throughout the unit so you can live comfortably, feel nature, and feel at home. If you need more space, we provide choices of various unit sizes as well as various directions unit facing. Because for us, your needs are our priority.'}}
+                </p>
+                {% if Agent.isDesktop() %}
+                    <ul class="amenities">
+                        <li>
+                            <img src="{{'assets/images/icon_bed.svg' | theme}}" width="60" height="60" alt="Icon">
+                            {{'3'}} Bedroom
+                        </li>
+                        <li>
+                            <img src="{{'assets/images/icon_bath.svg' | theme}}" width="60" height="60" alt="Icon">
+                            {{'2'}} Bathroom
+                        </li>
+                        <li>
+                            <img src="{{'assets/images/icon_area.svg' | theme}}" width="60" height="60" alt="Icon">
+                            {{'138'}}-{{'138'}}m<sup>2</sup>
+                        </li>
+                        <li>
+                            <img src="{{'assets/images/icon_floor.svg' | theme}}" width="60" height="60" alt="Icon">
+                            Floor: {{'3'}}-{{'50'}}
+                        </li>
+                        <li>
+                            <img src="{{'assets/images/icon_pet.svg' | theme}}" width="60" height="60" alt="Icon">
+                            Pet Friendly Available
+                        </li>
+                    </ul>
+                {% else %}
+                    <ul class="amenities">
+                        <li>
+                            <img src="{{'assets/images/icon_bed.svg' | theme}}" width="60" height="60" alt="Icon">
+                            {{'3'}} BR
+                        </li>
+                        <li>
+                            <img src="{{'assets/images/icon_bath.svg' | theme}}" width="60" height="60" alt="Icon">
+                            {{'2'}} BR
+                        </li>
+                        <li>
+                            <img src="{{'assets/images/icon_area.svg' | theme}}" width="60" height="60" alt="Icon">
+                            {{'138'}}-{{'138'}}m<sup>2</sup>
+                        </li>
+                        <li>
+                            <img src="{{'assets/images/icon_floor.svg' | theme}}" width="60" height="60" alt="Icon">
+                            FL: {{'3'}}-{{'50'}}
+                        </li>
+                        <li>
+                            <img src="{{'assets/images/icon_pet.svg' | theme}}" width="60" height="60" alt="Icon">
+                            PET
+                        </li>
+                    </ul>
+                {% endif %}
+                
+            </div>
+		</div>
+		
+        {% if Agent.isDesktop() %}
+            <div class="column is-7 unitsum__gallery">
+                <img src="{{'assets/images/room_tour_btn.svg' | theme}}" data-tour="{{'https://360.elevee.id/show-unit/index.html'}}" alt="Room Tour" width="98" height="129" class="roomTourButton">
+                <div class="unitsum__slides">
+                    {% for image in 1..5 %}
+                        <img src="{{'render/unit/vivre/master.jpg' | media}}" width="1000" height="1000" alt="Room Image">
+                    {% endfor %}
+                </div>
+                <div class="unitsum__nav has-bg">
+                    <a href="{{'#'}}">UNIT DETAILS</a>
+                    <div class="slide-nav">
+                        <img src="{{'assets/images/long_arrow.svg' | theme}}" width="50" height="17" class="prev" alt="prev">
+                        <div class="position"></div>
+                        <img src="{{'assets/images/long_arrow.svg' | theme}}" width="50" height="17" class="next" alt="next">
+                    </div>
+                </div>
+            </div>
+        {% else %}
+            <div class="column is-7 unitsum__gallery">
+                <div class="unitsum__slides">
+                    {% for image in 1..5 %}
+                        <img src="{{'render/unit/vivre/master.jpg' | media}}" width="1000" height="1000" alt="Room Image">
+                    {% endfor %}
+                </div>
+                <div class="slide-nav">
+                        <img src="{{'assets/images/long_arrow.svg' | theme}}" width="50" height="17" class="prev" alt="prev">
+                        <div class="position"></div>
+                        <img src="{{'assets/images/long_arrow.svg' | theme}}" width="50" height="17" class="next" alt="next">
+                    </div>
+                <div class="unitsum__links columns is-mobile is-vcentered">
+                    <div class="column has-text-centered">
+                        <a href="{{'#'}}">UNIT<br>DETAILS</a>
+                    </div>
+                    <div class="column has-text-centered">
+                        <div id="roomTourBtn">
+                            <span>ROOM<br>TOUR</span>
+                            <img src="{{'assets/images/room_tour_icon.svg' | theme}}" data-tour="{{'https://360.elevee.id/show-unit/index.html'}}" alt="Room Tour" width="40" height="40">
+                        </div>
+                        
+                    </div>
+                
+                </div>
+            </div>
+        {% endif %}
+	</div>
+
+{% endfor %}
+
+
+{% put scripts %}
+<script>
+$(document).ready(function () {
+    $('.unitsum').each(function () {
+        var $slickElement = $(this).find('.unitsum__slides')
+        var $status = $(this).find('.position')
+        
+        $slickElement.on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
+            //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+            var i = (currentSlide ? currentSlide : 0) + 1;
+            $status.text(i + '/' + slick.slideCount);
+        })
+
+        $slickElement.slick({
+            nextArrow: $(this).find('.next'),
+            prevArrow: $(this).find('.prev'),
+            responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            }
+            ]
+        })
+        
+    });
+
+});
+</script>
+{% endput %}
+";s:5:"mtime";i:1635330340;s:6:"markup";s:7046:"{% for item in 1..3 %}
+
+
+	<div class="unitsum columns is-gapless" id="unitGroup-{{loop.index}}">
+		<div class="column is-5">
+			<div class="unitsum__detail">
+                <div class="select is-big">
+                    <select>
+                        <option>Vivre 1</option>
+                        <option>Vivre 2</option>
+                    </select>
+                </div>
+                <p>
+                    {{'Levee’s two-bedroom units have ample space for a couple or small family. The arrangement of each room is even designed with natural light exposure throughout the unit so you can live comfortably, feel nature, and feel at home. If you need more space, we provide choices of various unit sizes as well as various directions unit facing. Because for us, your needs are our priority.'}}
+                </p>
+                {% if Agent.isDesktop() %}
+                    <ul class="amenities">
+                        <li>
+                            <img src="{{'assets/images/icon_bed.svg' | theme}}" width="60" height="60" alt="Icon">
+                            {{'3'}} Bedroom
+                        </li>
+                        <li>
+                            <img src="{{'assets/images/icon_bath.svg' | theme}}" width="60" height="60" alt="Icon">
+                            {{'2'}} Bathroom
+                        </li>
+                        <li>
+                            <img src="{{'assets/images/icon_area.svg' | theme}}" width="60" height="60" alt="Icon">
+                            {{'138'}}-{{'138'}}m<sup>2</sup>
+                        </li>
+                        <li>
+                            <img src="{{'assets/images/icon_floor.svg' | theme}}" width="60" height="60" alt="Icon">
+                            Floor: {{'3'}}-{{'50'}}
+                        </li>
+                        <li>
+                            <img src="{{'assets/images/icon_pet.svg' | theme}}" width="60" height="60" alt="Icon">
+                            Pet Friendly Available
+                        </li>
+                    </ul>
+                {% else %}
+                    <ul class="amenities">
+                        <li>
+                            <img src="{{'assets/images/icon_bed.svg' | theme}}" width="60" height="60" alt="Icon">
+                            {{'3'}} BR
+                        </li>
+                        <li>
+                            <img src="{{'assets/images/icon_bath.svg' | theme}}" width="60" height="60" alt="Icon">
+                            {{'2'}} BR
+                        </li>
+                        <li>
+                            <img src="{{'assets/images/icon_area.svg' | theme}}" width="60" height="60" alt="Icon">
+                            {{'138'}}-{{'138'}}m<sup>2</sup>
+                        </li>
+                        <li>
+                            <img src="{{'assets/images/icon_floor.svg' | theme}}" width="60" height="60" alt="Icon">
+                            FL: {{'3'}}-{{'50'}}
+                        </li>
+                        <li>
+                            <img src="{{'assets/images/icon_pet.svg' | theme}}" width="60" height="60" alt="Icon">
+                            PET
+                        </li>
+                    </ul>
+                {% endif %}
+                
+            </div>
+		</div>
+		
+        {% if Agent.isDesktop() %}
+            <div class="column is-7 unitsum__gallery">
+                <img src="{{'assets/images/room_tour_btn.svg' | theme}}" data-tour="{{'https://360.elevee.id/show-unit/index.html'}}" alt="Room Tour" width="98" height="129" class="roomTourButton">
+                <div class="unitsum__slides">
+                    {% for image in 1..5 %}
+                        <img src="{{'render/unit/vivre/master.jpg' | media}}" width="1000" height="1000" alt="Room Image">
+                    {% endfor %}
+                </div>
+                <div class="unitsum__nav has-bg">
+                    <a href="{{'#'}}">UNIT DETAILS</a>
+                    <div class="slide-nav">
+                        <img src="{{'assets/images/long_arrow.svg' | theme}}" width="50" height="17" class="prev" alt="prev">
+                        <div class="position"></div>
+                        <img src="{{'assets/images/long_arrow.svg' | theme}}" width="50" height="17" class="next" alt="next">
+                    </div>
+                </div>
+            </div>
+        {% else %}
+            <div class="column is-7 unitsum__gallery">
+                <div class="unitsum__slides">
+                    {% for image in 1..5 %}
+                        <img src="{{'render/unit/vivre/master.jpg' | media}}" width="1000" height="1000" alt="Room Image">
+                    {% endfor %}
+                </div>
+                <div class="slide-nav">
+                        <img src="{{'assets/images/long_arrow.svg' | theme}}" width="50" height="17" class="prev" alt="prev">
+                        <div class="position"></div>
+                        <img src="{{'assets/images/long_arrow.svg' | theme}}" width="50" height="17" class="next" alt="next">
+                    </div>
+                <div class="unitsum__links columns is-mobile is-vcentered">
+                    <div class="column has-text-centered">
+                        <a href="{{'#'}}">UNIT<br>DETAILS</a>
+                    </div>
+                    <div class="column has-text-centered">
+                        <div id="roomTourBtn">
+                            <span>ROOM<br>TOUR</span>
+                            <img src="{{'assets/images/room_tour_icon.svg' | theme}}" data-tour="{{'https://360.elevee.id/show-unit/index.html'}}" alt="Room Tour" width="40" height="40">
+                        </div>
+                        
+                    </div>
+                
+                </div>
+            </div>
+        {% endif %}
+	</div>
+
+{% endfor %}
+
+
+{% put scripts %}
+<script>
+$(document).ready(function () {
+    $('.unitsum').each(function () {
+        var $slickElement = $(this).find('.unitsum__slides')
+        var $status = $(this).find('.position')
+        
+        $slickElement.on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
+            //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+            var i = (currentSlide ? currentSlide : 0) + 1;
+            $status.text(i + '/' + slick.slideCount);
+        })
+
+        $slickElement.slick({
+            nextArrow: $(this).find('.next'),
+            prevArrow: $(this).find('.prev'),
+            responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            }
+            ]
+        })
+        
+    });
+
+});
+</script>
+{% endput %}";s:4:"code";N;s:5:"Agent";a:0:{}}}

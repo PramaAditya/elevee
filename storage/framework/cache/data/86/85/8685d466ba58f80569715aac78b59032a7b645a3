@@ -1,0 +1,147 @@
+1635388319a:1:{s:14:"navDesktop.htm";a:5:{s:8:"fileName";s:14:"navDesktop.htm";s:7:"content";s:3493:"<!-- Main container -->
+<nav class="nav-{{this.page.id}} navDesktop" id="navDesktop">
+	<div class="container is-narrow">
+        <div class="columns is-vcentered is-gapless">
+            <div class="column">
+                <a href="https://alam-sutera.com" target="_blank"><img src="{{'assets/images/alam_sutera.png' | theme}}" alt="" height="100" width="267" class="alam-sutera logo"></a>
+            </div>
+            <div class="column has-text-centered">
+                <a href="/">
+                    <img src="{{'assets/images/elevee.png' | theme}}" alt="" height="120" width="213" class="alam-sutera logo">
+                </a>
+            </div>
+            <div class="column navDesktop__menu">
+                <a href=""><img src="{{'assets/images/btn_download.svg' | theme}}" alt="" width="40" height="40" class="navDesktop__button" data-tippy-content="Download Brochures"></a>
+                <a href=""><img src="{{'assets/images/btn_phone.svg' | theme}}" alt="" width="40" height="40" class="navDesktop__button" data-tippy-content="Contact Us"></a>
+                <a href=""><img src="{{'assets/images/btn_360.svg' | theme}}" alt="" width="40" height="40" class="navDesktop__button" data-tippy-content="Virtual Tour"></a>
+                
+                <div class="navDesktop__button openBtn" id="openBtn">
+                    MENU
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</nav>
+{% if this.page.id != 'index' %}
+<nav class="nav-sticky navDesktop">
+	<div class="container is-narrow">
+        <div class="columns is-vcentered is-gapless">
+            <div class="column">
+                <a href="https://alam-sutera.com" target="_blank"><img src="{{'assets/images/alam_sutera.png' | theme}}" alt="" height="100" width="267" class="alam-sutera logo"></a>
+            </div>
+            <div class="column has-text-centered">
+                <a href="/">
+                    <img src="{{'assets/images/elevee.png' | theme}}" alt="" height="120" width="213" class="alam-sutera logo">
+                </a>
+            </div>
+            <div class="column navDesktop__menu">
+                <a href=""><img src="{{'assets/images/btn_download.svg' | theme}}" alt="" width="40" height="40" class="navDesktop__button" data-tippy-content="Download Brochures"></a>
+                <a href=""><img src="{{'assets/images/btn_phone.svg' | theme}}" alt="" width="40" height="40" class="navDesktop__button" data-tippy-content="Contact Us"></a>
+                <a href=""><img src="{{'assets/images/btn_360.svg' | theme}}" alt="" width="40" height="40" class="navDesktop__button" data-tippy-content="Virtual Tour"></a>
+                
+                <div class="navDesktop__button openBtn" id="openBtn">
+                    MENU
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</nav>
+{% endif %}
+{% put scripts %}
+<script>
+    $navSticky = $('.nav-sticky')
+
+    var topofDiv = $("#navDesktop").offset().top; //gets offset of header
+    var height = $("#navDesktop").outerHeight(); //gets height of header
+
+    $(window).scroll(function(){
+        if($(window).scrollTop() > (topofDiv + height)){
+            $navSticky.addClass('is-active');
+        }
+        else{
+            $navSticky.removeClass('is-active');
+        }
+    });
+
+
+    $('#homePadding').css('height', height)
+</script>
+<script>
+    tippy('[data-tippy-content]');
+</script>
+{% endput %}";s:5:"mtime";i:1632807411;s:6:"markup";s:3493:"<!-- Main container -->
+<nav class="nav-{{this.page.id}} navDesktop" id="navDesktop">
+	<div class="container is-narrow">
+        <div class="columns is-vcentered is-gapless">
+            <div class="column">
+                <a href="https://alam-sutera.com" target="_blank"><img src="{{'assets/images/alam_sutera.png' | theme}}" alt="" height="100" width="267" class="alam-sutera logo"></a>
+            </div>
+            <div class="column has-text-centered">
+                <a href="/">
+                    <img src="{{'assets/images/elevee.png' | theme}}" alt="" height="120" width="213" class="alam-sutera logo">
+                </a>
+            </div>
+            <div class="column navDesktop__menu">
+                <a href=""><img src="{{'assets/images/btn_download.svg' | theme}}" alt="" width="40" height="40" class="navDesktop__button" data-tippy-content="Download Brochures"></a>
+                <a href=""><img src="{{'assets/images/btn_phone.svg' | theme}}" alt="" width="40" height="40" class="navDesktop__button" data-tippy-content="Contact Us"></a>
+                <a href=""><img src="{{'assets/images/btn_360.svg' | theme}}" alt="" width="40" height="40" class="navDesktop__button" data-tippy-content="Virtual Tour"></a>
+                
+                <div class="navDesktop__button openBtn" id="openBtn">
+                    MENU
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</nav>
+{% if this.page.id != 'index' %}
+<nav class="nav-sticky navDesktop">
+	<div class="container is-narrow">
+        <div class="columns is-vcentered is-gapless">
+            <div class="column">
+                <a href="https://alam-sutera.com" target="_blank"><img src="{{'assets/images/alam_sutera.png' | theme}}" alt="" height="100" width="267" class="alam-sutera logo"></a>
+            </div>
+            <div class="column has-text-centered">
+                <a href="/">
+                    <img src="{{'assets/images/elevee.png' | theme}}" alt="" height="120" width="213" class="alam-sutera logo">
+                </a>
+            </div>
+            <div class="column navDesktop__menu">
+                <a href=""><img src="{{'assets/images/btn_download.svg' | theme}}" alt="" width="40" height="40" class="navDesktop__button" data-tippy-content="Download Brochures"></a>
+                <a href=""><img src="{{'assets/images/btn_phone.svg' | theme}}" alt="" width="40" height="40" class="navDesktop__button" data-tippy-content="Contact Us"></a>
+                <a href=""><img src="{{'assets/images/btn_360.svg' | theme}}" alt="" width="40" height="40" class="navDesktop__button" data-tippy-content="Virtual Tour"></a>
+                
+                <div class="navDesktop__button openBtn" id="openBtn">
+                    MENU
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</nav>
+{% endif %}
+{% put scripts %}
+<script>
+    $navSticky = $('.nav-sticky')
+
+    var topofDiv = $("#navDesktop").offset().top; //gets offset of header
+    var height = $("#navDesktop").outerHeight(); //gets height of header
+
+    $(window).scroll(function(){
+        if($(window).scrollTop() > (topofDiv + height)){
+            $navSticky.addClass('is-active');
+        }
+        else{
+            $navSticky.removeClass('is-active');
+        }
+    });
+
+
+    $('#homePadding').css('height', height)
+</script>
+<script>
+    tippy('[data-tippy-content]');
+</script>
+{% endput %}";s:4:"code";N;}}

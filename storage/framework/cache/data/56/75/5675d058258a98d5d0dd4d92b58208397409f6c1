@@ -1,0 +1,1 @@
+1635343805a:1:{s:7:"columns";a:3:{s:4:"name";a:4:{s:5:"label";s:9:"Nama Unit";s:4:"type";s:4:"text";s:10:"searchable";b:1;s:8:"sortable";b:1;}s:18:"unitcategory[name]";a:4:{s:5:"label";s:13:"Kategori Unit";s:4:"type";s:4:"text";s:4:"name";s:4:"Name";s:8:"sortable";b:0;}s:11:"description";a:2:{s:5:"label";s:14:"Deskripsi Unit";s:4:"type";s:4:"text";}}}

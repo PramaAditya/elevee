@@ -1,0 +1,69 @@
+1635388319a:1:{s:11:"newsBox.htm";a:5:{s:8:"fileName";s:11:"newsBox.htm";s:7:"content";s:1227:"<div class="news-box">
+    <img src="{{'assets/images/placeholder_news.jpg' | theme}}" alt="News Image" class="news-img">
+    <a href="{{'newsDetail' | page({'slug':'1'})}}" class="news-detail has-bg">
+        <h1 class="news-title">
+            Bagaimana trend property
+            di tahun 2021?
+        </h1>
+        <div class="news-excerpt">
+            <p>
+                Apakah 2021 menjadi tahun yang tepat untuk memiliki sebuah property? Saksikan selengkapnya bagaimana opportunity dan pendapat eksklusif langsung dari CEO of Indonesia Property Watch, Ali Tranghanda mengenai dunia property di tahun 2021.
+            </p>
+        </div>
+        <div class="news-date">
+        <img src="{{'assets/images/icon_date.svg' | theme}}" alt="date" class="icon">Kamis, 25 Maret 2021
+        </div>
+        <div class="news-time">
+        <img src="{{'assets/images/icon_time.svg' | theme}}" alt="date" class="icon">19:00 WIB
+        </div>
+    </a>
+</div>
+
+{% if Agent.isMobile %}
+{% put scripts %}
+
+<script>
+      $('.news-box').on('click',function(e){
+        $('.news-box').removeClass('is-open')
+        $(this).addClass('is-open')
+        
+      })
+
+</script>
+
+{% endput %}
+{% endif %}";s:5:"mtime";i:1631772008;s:6:"markup";s:1227:"<div class="news-box">
+    <img src="{{'assets/images/placeholder_news.jpg' | theme}}" alt="News Image" class="news-img">
+    <a href="{{'newsDetail' | page({'slug':'1'})}}" class="news-detail has-bg">
+        <h1 class="news-title">
+            Bagaimana trend property
+            di tahun 2021?
+        </h1>
+        <div class="news-excerpt">
+            <p>
+                Apakah 2021 menjadi tahun yang tepat untuk memiliki sebuah property? Saksikan selengkapnya bagaimana opportunity dan pendapat eksklusif langsung dari CEO of Indonesia Property Watch, Ali Tranghanda mengenai dunia property di tahun 2021.
+            </p>
+        </div>
+        <div class="news-date">
+        <img src="{{'assets/images/icon_date.svg' | theme}}" alt="date" class="icon">Kamis, 25 Maret 2021
+        </div>
+        <div class="news-time">
+        <img src="{{'assets/images/icon_time.svg' | theme}}" alt="date" class="icon">19:00 WIB
+        </div>
+    </a>
+</div>
+
+{% if Agent.isMobile %}
+{% put scripts %}
+
+<script>
+      $('.news-box').on('click',function(e){
+        $('.news-box').removeClass('is-open')
+        $(this).addClass('is-open')
+        
+      })
+
+</script>
+
+{% endput %}
+{% endif %}";s:4:"code";N;}}

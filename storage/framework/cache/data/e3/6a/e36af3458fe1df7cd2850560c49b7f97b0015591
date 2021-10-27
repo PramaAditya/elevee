@@ -1,0 +1,123 @@
+1635388319a:1:{s:14:"newsDetail.htm";a:9:{s:8:"fileName";s:14:"newsDetail.htm";s:7:"content";s:3599:"layout = "default"
+url = "/news/:slug"
+title = "News"
+[Agent]
+==
+{% set hierarchy=['Updates','News & Events', this.page.title]%}
+{% partial 'breadcrumbs' links = hierarchy %}
+
+<section class="section nDetail">
+    <div class="container is-narrow">
+        <div class="columns is-variable is-8">
+            <div class="column is-half">
+                <img src="{{'joe_taslim/DSC07391.jpg' | media}}" class="image nDetail__image" alt="">
+            </div>
+            <div class="column">
+                <h1 class="nDetail__title">
+                    Have Fun with Your Family
+                </h1>
+                <div class="nDetail__content">
+                    <p>Kesibukan seringkali membuat waktu bersama keluarga menjadi renggang dan terkadang untuk menghilangkan kepenatan serta jenuh biasanya kita mengajak keluarga ke luar rumah, seperti ke mall atau ke luar kota.</p>
+                    <p>Akan tetapi ketika pandemi virus covid-19 masih melanda, kita diwajibkan harus berdiam di rumah. Untuk Anda yang sudah berkeluarga tentunya harus memutar otak bagaimana caranya agar kita dan keluarga tidak merasa bosan dan punya kegiatan menyenangkan dirumah.</p>
+                    <p>Berdiam diri di rumah agar tidak terpapar virus corona bukan berarti bisa bermalas-malasan dan tidak berolahraga. Melakukan olahraga rutin justru dapat membantu meningkatkan daya tahan tubuh agar tidak mudah terpapar virus dan penyakit.</p>
+                    <p>Memiliki apartemen yang mempunyai beragam fasilitas dalam menunjang kegiatan termasuk berolahraga merupakan hal yang wajib. EleVee Penthouses &amp; Residences merupakan pilihan yang tepat. Beragam fasilitas unggulan bisa Anda nikmati bersama keluarga, seperti Indoor Gym, Jogging Trail, Sky Yoga Deck, Infinity Pool, Pet Yard, dan masih banyak lagi.</p>
+                    <p>Program We Talk Real Estate kali ini berjudul Have Fun with Your Family yang membahas pentingnya arti kebahagiaan bersama keluarga dengan Guest speaker Ivan Susanto (Senior Sales Manager of EleVee). Kira-kira seperti apa ya pembahasannya?</p>
+                </div>
+                <div class="nDetail__date">
+                    Thursday, 25 Maret 2021
+                </div>
+                {# <div class="nDetail__time">
+                    19:00
+                </div> #}
+                <div class="nDetail__video">
+                    <h3>
+                    VIDEO SELENGKAPNYA
+                    </h3>
+                    <a href="https://www.youtube.com/watch?v=QrxqMo_N-LE" class="glightbox nDetail__vThumbnail">
+                        <img src="https://img.youtube.com/vi/QrxqMo_N-LE/0.jpg" alt="" class="">
+                        <span class="play-btn"></span>
+                    </a>
+                    
+                </div>
+                {# <div class="nDetail__social">
+                    <h3>
+                     HUBUNGI KAMI
+                    </h3>
+                    <div class="social-links">
+                        {% for social in this.theme.social_medias %}
+                            <a href="{{social.url}}"><img src="{{social.icon | media}}" alt=""></a>    
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="nDetail__reminder">
+                    <h3>
+                     NEWS REMINDER
+                    </h3>
+                    <input type="submit" class="button is-line" value="SUBMIT">
+                </div> #}
+                
+            </div>
+        </div>
+
+    </div>
+
+</section>
+";s:5:"mtime";i:1629999183;s:6:"markup";s:3527:"{% set hierarchy=['Updates','News & Events', this.page.title]%}
+{% partial 'breadcrumbs' links = hierarchy %}
+
+<section class="section nDetail">
+    <div class="container is-narrow">
+        <div class="columns is-variable is-8">
+            <div class="column is-half">
+                <img src="{{'joe_taslim/DSC07391.jpg' | media}}" class="image nDetail__image" alt="">
+            </div>
+            <div class="column">
+                <h1 class="nDetail__title">
+                    Have Fun with Your Family
+                </h1>
+                <div class="nDetail__content">
+                    <p>Kesibukan seringkali membuat waktu bersama keluarga menjadi renggang dan terkadang untuk menghilangkan kepenatan serta jenuh biasanya kita mengajak keluarga ke luar rumah, seperti ke mall atau ke luar kota.</p>
+                    <p>Akan tetapi ketika pandemi virus covid-19 masih melanda, kita diwajibkan harus berdiam di rumah. Untuk Anda yang sudah berkeluarga tentunya harus memutar otak bagaimana caranya agar kita dan keluarga tidak merasa bosan dan punya kegiatan menyenangkan dirumah.</p>
+                    <p>Berdiam diri di rumah agar tidak terpapar virus corona bukan berarti bisa bermalas-malasan dan tidak berolahraga. Melakukan olahraga rutin justru dapat membantu meningkatkan daya tahan tubuh agar tidak mudah terpapar virus dan penyakit.</p>
+                    <p>Memiliki apartemen yang mempunyai beragam fasilitas dalam menunjang kegiatan termasuk berolahraga merupakan hal yang wajib. EleVee Penthouses &amp; Residences merupakan pilihan yang tepat. Beragam fasilitas unggulan bisa Anda nikmati bersama keluarga, seperti Indoor Gym, Jogging Trail, Sky Yoga Deck, Infinity Pool, Pet Yard, dan masih banyak lagi.</p>
+                    <p>Program We Talk Real Estate kali ini berjudul Have Fun with Your Family yang membahas pentingnya arti kebahagiaan bersama keluarga dengan Guest speaker Ivan Susanto (Senior Sales Manager of EleVee). Kira-kira seperti apa ya pembahasannya?</p>
+                </div>
+                <div class="nDetail__date">
+                    Thursday, 25 Maret 2021
+                </div>
+                {# <div class="nDetail__time">
+                    19:00
+                </div> #}
+                <div class="nDetail__video">
+                    <h3>
+                    VIDEO SELENGKAPNYA
+                    </h3>
+                    <a href="https://www.youtube.com/watch?v=QrxqMo_N-LE" class="glightbox nDetail__vThumbnail">
+                        <img src="https://img.youtube.com/vi/QrxqMo_N-LE/0.jpg" alt="" class="">
+                        <span class="play-btn"></span>
+                    </a>
+                    
+                </div>
+                {# <div class="nDetail__social">
+                    <h3>
+                     HUBUNGI KAMI
+                    </h3>
+                    <div class="social-links">
+                        {% for social in this.theme.social_medias %}
+                            <a href="{{social.url}}"><img src="{{social.icon | media}}" alt=""></a>    
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="nDetail__reminder">
+                    <h3>
+                     NEWS REMINDER
+                    </h3>
+                    <input type="submit" class="button is-line" value="SUBMIT">
+                </div> #}
+                
+            </div>
+        </div>
+
+    </div>
+
+</section>";s:4:"code";N;s:6:"layout";s:7:"default";s:3:"url";s:11:"/news/:slug";s:5:"title";s:4:"News";s:5:"Agent";a:0:{}}}

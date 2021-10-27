@@ -1,0 +1,61 @@
+1635388319a:1:{s:15:"menuDesktop.htm";a:6:{s:8:"fileName";s:15:"menuDesktop.htm";s:7:"content";s:1129:"[menu menuDesktop]
+start = "id-1"
+activeNode = "id-1"
+listItemClasses = "item"
+primaryClasses = "nav nav-pills"
+secondaryClasses = "dropdown-menu"
+numberOfLevels = 2
+==
+<div id="overlay"></div>
+<div id="menu" class="menuDesktop has-bg columns">
+	<img src="{{'assets/images/close_btn_text.svg' | theme}}" height="35" width="150" alt="close" id="closeBtn" class="menuDesktop__close">
+	<img src="{{'assets/images/menu_img.jpg' | theme}}" alt="" class="menuDesktop__img column is-5">
+	<div class="menuDesktop__container column">
+		<a href="{{url | app}}"><img src="{{'assets/images/logo_white.svg' | theme}}" height="117" width="208" alt="Elevee" class="menuDesktop__logo"></a>
+		
+		{% component 'menuDesktop' %}
+	</div>
+</div>
+
+{% put scripts %}
+<script>
+	$mainMenu = $('#menu')
+	$overlay = $('#overlay')
+	$closeBtn = $('#closeBtn')
+	$openBtn = $('.openBtn')
+	$closeBtn.on('click',function(){
+		$mainMenu.removeClass('is-active')
+		$overlay.removeClass('is-active')
+	}) 
+	$openBtn.on('click',function(){
+		$mainMenu.addClass('is-active')
+		$overlay.addClass('is-active')
+	}) 
+</script>
+{% endput %}";s:5:"mtime";i:1629993944;s:6:"markup";s:952:"<div id="overlay"></div>
+<div id="menu" class="menuDesktop has-bg columns">
+	<img src="{{'assets/images/close_btn_text.svg' | theme}}" height="35" width="150" alt="close" id="closeBtn" class="menuDesktop__close">
+	<img src="{{'assets/images/menu_img.jpg' | theme}}" alt="" class="menuDesktop__img column is-5">
+	<div class="menuDesktop__container column">
+		<a href="{{url | app}}"><img src="{{'assets/images/logo_white.svg' | theme}}" height="117" width="208" alt="Elevee" class="menuDesktop__logo"></a>
+		
+		{% component 'menuDesktop' %}
+	</div>
+</div>
+
+{% put scripts %}
+<script>
+	$mainMenu = $('#menu')
+	$overlay = $('#overlay')
+	$closeBtn = $('#closeBtn')
+	$openBtn = $('.openBtn')
+	$closeBtn.on('click',function(){
+		$mainMenu.removeClass('is-active')
+		$overlay.removeClass('is-active')
+	}) 
+	$openBtn.on('click',function(){
+		$mainMenu.addClass('is-active')
+		$overlay.addClass('is-active')
+	}) 
+</script>
+{% endput %}";s:4:"code";N;s:16:"menu menuDesktop";a:6:{s:5:"start";s:4:"id-1";s:10:"activeNode";s:4:"id-1";s:15:"listItemClasses";s:4:"item";s:14:"primaryClasses";s:13:"nav nav-pills";s:16:"secondaryClasses";s:13:"dropdown-menu";s:14:"numberOfLevels";s:1:"2";}}}

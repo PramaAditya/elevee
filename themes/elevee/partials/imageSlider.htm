@@ -1,8 +1,8 @@
 <div class="image-slider">
 	<div class="slides-container">
 		{% for slide in slides %}
-			<a href="{{slide.img | media}}" class="glightbox slide" data-gallery="gallery1">
-				<img src="{{slide.img | media}}" alt="">
+			<a href="{{slide.image | media}}" class="glightbox slide" data-gallery="gallery1">
+				<img src="{{slide.image | media}}" alt="">
 			</a>
 		{% endfor %}
 	</div>

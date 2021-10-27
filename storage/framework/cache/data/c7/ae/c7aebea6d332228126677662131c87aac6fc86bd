@@ -1,0 +1,318 @@
+1635395382a:1:{s:8:"unit.htm";a:11:{s:8:"fileName";s:8:"unit.htm";s:7:"content";s:6894:"url = "/unit/:id"
+layout = "default"
+title = "Unit"
+
+[Agent]
+
+[builderDetails unitDetail]
+modelClass = "Balkat\Unit\Models\Unit"
+identifierValue = "{{ :id }}"
+modelKeyColumn = "id"
+displayColumn = "id"
+notFoundMessage = "Record not found"
+
+[builderList unitList]
+modelClass = "Balkat\Unit\Models\Unit"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "id"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+{% set unit = unitDetail.record %}
+{% set units = unitList.records %}
+
+{% set hierarchy=['Inside Elevee', this.page.title]%}
+{% put scripts %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+{% endput %}
+{% partial 'breadcrumbs' links = hierarchy %}
+
+
+{% partial 'heroSlider' slides=unit.hero_slider_image %}
+
+<section class="section" id="unitDetails">
+    <div class="container is-narrow">
+        {% if Agent.isDesktop() %}
+            <div class="columns">
+                <div class="column is-4" id="unitVariants">
+                    <div class="select is-big">
+                        <select name="forma" onchange="location = this.value;">
+                            {% for u in units %}
+                                <option value="{{ 'unit' | page({'id' : u.id}) }}" {% if (unit.id == u.id) %}selected{% endif %}>
+                                    {{u.name}}
+                                </option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <p>{{unit.description | raw}}</p>
+                </div>
+                <div class="column is-4" id="unitAgent">
+                    <img src="https://via.placeholder.com/100" alt="" class="agent-img">
+                    <div class="agent-info">
+                        <div>Hi I'm</div>
+                        <div class="agent-name">Ellen Aretha</div>
+                        <div>How can I help you</div>
+                        <div class="agent-links">
+                            <a href="">
+                                <img src="{{'assets/images/icon_wa_color.svg' | theme}}" height="35" width="35" alt="">
+                            </a>
+                            <a href="">
+                                <img src="{{'assets/images/icon_email_color.svg' | theme}}" height="35" width="35" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-4" id="unitButtons">
+                    <a href="{{unit.video_link}}"class="btn">
+                        <span>Watch Video</span>
+                        <img src="{{'assets/images/icon_youtube.svg' | theme}}" width="72" height="100" alt="">
+                    </a>
+                    <a href="{{unit.tour_link}}" class="btn">
+                        <span>Virtual Tour</span>
+                        <img src="{{'assets/images/icon_360_2.svg' | theme}}" width="72" height="100" alt="">
+                    </a>
+                </div>
+            </div>
+        {% else %}
+            <div class="columns is-mobile is-multiline">
+                <div class="column is-6" id="unitAgent">
+                    <img src="https://via.placeholder.com/100" alt="" class="agent-img">
+                    <div class="agent-info">
+                        <div>Hi I'm</div>
+                        <div class="agent-name">Ellen Aretha</div>
+                        <div>How can I help you</div>
+                        <div class="agent-links">
+                            <a href="">
+                                <img src="{{'assets/images/icon_wa_color.svg' | theme}}" height="35" width="35" alt="">
+                            </a>
+                            <a href="">
+                                <img src="{{'assets/images/icon_email_color.svg' | theme}}" height="35" width="35" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column" id="unitButtons">
+                    <a href="{{unit.video_link}}"class="btn">
+                        <span>Watch Video</span>
+                        <img src="{{'assets/images/icon_youtube.svg' | theme}}" width="72" height="100" alt="">
+                    </a>
+                    <a href="{{unit.tour_link}}" class="btn">
+                        <span>Virtual Tour</span>
+                        <img src="{{'assets/images/icon_360_2.svg' | theme}}" width="72" height="100" alt="">
+                    </a>
+                </div>
+                <div class="column is-11" id="unitVariants">
+                    <div class="select is-big">
+                        <select>
+                            <option>Vivre 1</option>
+                            <option>Vivre 2</option>
+                        </select>
+                    </div>
+                    <p>
+                        {{unit.description}}
+                    </p>
+                </div>
+                
+            </div>
+        {% endif %}
+    </div>
+</section>
+
+<section class="section" id="floorPlans">
+    <div class="container is-narrow">
+        {% partial 'heroSlider' slides=unit.floorplan_image %}
+    </div>
+    <ul class="amenities is-horizontal">
+        <li>
+            <img src="{{'assets/images/icon_bed.svg' | theme}}" width="60" height="60" alt="Icon">
+            <span>{{'3'}} BR</span>
+        </li>
+        <li>
+            <img src="{{'assets/images/icon_bath.svg' | theme}}" width="60" height="60" alt="Icon">
+            <span>{{'3'}} BR</span>
+        </li>
+        <li>
+            <img src="{{'assets/images/icon_area.svg' | theme}}" width="60" height="60" alt="Icon">
+            <span>{{'138'}}-{{'138'}}m<sup>2</sup></span>
+        </li>
+        <li>
+            <img src="{{'assets/images/icon_floor.svg' | theme}}" width="60" height="60" alt="Icon">
+            <span>FL: {{'3'}}-{{'50'}}</span>
+        </li>
+        <li>
+            <img src="{{'assets/images/icon_pet.svg' | theme}}" width="60" height="60" alt="Icon">
+            <span>PET</span>
+        </li>
+    </ul>
+</section>
+<div class="section" id="unitImages">
+    {% partial "imageSlider" slides=unit.unit_slider_image %}
+</div>
+<section class="section" id="unitSpec">
+    <div class="container is-narrow">
+        <h2 class="section__title">
+            Specifications
+        </h2>
+        {% partial 'unitSpecs' specs=unit.specification %}
+    </div>
+    
+</section>
+
+
+
+
+
+
+
+
+{% partial 'floatingButton' %}";s:5:"mtime";i:1635308980;s:6:"markup";s:6395:"{% set unit = unitDetail.record %}
+{% set units = unitList.records %}
+
+{% set hierarchy=['Inside Elevee', this.page.title]%}
+{% put scripts %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+{% endput %}
+{% partial 'breadcrumbs' links = hierarchy %}
+
+
+{% partial 'heroSlider' slides=unit.hero_slider_image %}
+
+<section class="section" id="unitDetails">
+    <div class="container is-narrow">
+        {% if Agent.isDesktop() %}
+            <div class="columns">
+                <div class="column is-4" id="unitVariants">
+                    <div class="select is-big">
+                        <select name="forma" onchange="location = this.value;">
+                            {% for u in units %}
+                                <option value="{{ 'unit' | page({'id' : u.id}) }}" {% if (unit.id == u.id) %}selected{% endif %}>
+                                    {{u.name}}
+                                </option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <p>{{unit.description | raw}}</p>
+                </div>
+                <div class="column is-4" id="unitAgent">
+                    <img src="https://via.placeholder.com/100" alt="" class="agent-img">
+                    <div class="agent-info">
+                        <div>Hi I'm</div>
+                        <div class="agent-name">Ellen Aretha</div>
+                        <div>How can I help you</div>
+                        <div class="agent-links">
+                            <a href="">
+                                <img src="{{'assets/images/icon_wa_color.svg' | theme}}" height="35" width="35" alt="">
+                            </a>
+                            <a href="">
+                                <img src="{{'assets/images/icon_email_color.svg' | theme}}" height="35" width="35" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-4" id="unitButtons">
+                    <a href="{{unit.video_link}}"class="btn">
+                        <span>Watch Video</span>
+                        <img src="{{'assets/images/icon_youtube.svg' | theme}}" width="72" height="100" alt="">
+                    </a>
+                    <a href="{{unit.tour_link}}" class="btn">
+                        <span>Virtual Tour</span>
+                        <img src="{{'assets/images/icon_360_2.svg' | theme}}" width="72" height="100" alt="">
+                    </a>
+                </div>
+            </div>
+        {% else %}
+            <div class="columns is-mobile is-multiline">
+                <div class="column is-6" id="unitAgent">
+                    <img src="https://via.placeholder.com/100" alt="" class="agent-img">
+                    <div class="agent-info">
+                        <div>Hi I'm</div>
+                        <div class="agent-name">Ellen Aretha</div>
+                        <div>How can I help you</div>
+                        <div class="agent-links">
+                            <a href="">
+                                <img src="{{'assets/images/icon_wa_color.svg' | theme}}" height="35" width="35" alt="">
+                            </a>
+                            <a href="">
+                                <img src="{{'assets/images/icon_email_color.svg' | theme}}" height="35" width="35" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column" id="unitButtons">
+                    <a href="{{unit.video_link}}"class="btn">
+                        <span>Watch Video</span>
+                        <img src="{{'assets/images/icon_youtube.svg' | theme}}" width="72" height="100" alt="">
+                    </a>
+                    <a href="{{unit.tour_link}}" class="btn">
+                        <span>Virtual Tour</span>
+                        <img src="{{'assets/images/icon_360_2.svg' | theme}}" width="72" height="100" alt="">
+                    </a>
+                </div>
+                <div class="column is-11" id="unitVariants">
+                    <div class="select is-big">
+                        <select>
+                            <option>Vivre 1</option>
+                            <option>Vivre 2</option>
+                        </select>
+                    </div>
+                    <p>
+                        {{unit.description}}
+                    </p>
+                </div>
+                
+            </div>
+        {% endif %}
+    </div>
+</section>
+
+<section class="section" id="floorPlans">
+    <div class="container is-narrow">
+        {% partial 'heroSlider' slides=unit.floorplan_image %}
+    </div>
+    <ul class="amenities is-horizontal">
+        <li>
+            <img src="{{'assets/images/icon_bed.svg' | theme}}" width="60" height="60" alt="Icon">
+            <span>{{'3'}} BR</span>
+        </li>
+        <li>
+            <img src="{{'assets/images/icon_bath.svg' | theme}}" width="60" height="60" alt="Icon">
+            <span>{{'3'}} BR</span>
+        </li>
+        <li>
+            <img src="{{'assets/images/icon_area.svg' | theme}}" width="60" height="60" alt="Icon">
+            <span>{{'138'}}-{{'138'}}m<sup>2</sup></span>
+        </li>
+        <li>
+            <img src="{{'assets/images/icon_floor.svg' | theme}}" width="60" height="60" alt="Icon">
+            <span>FL: {{'3'}}-{{'50'}}</span>
+        </li>
+        <li>
+            <img src="{{'assets/images/icon_pet.svg' | theme}}" width="60" height="60" alt="Icon">
+            <span>PET</span>
+        </li>
+    </ul>
+</section>
+<div class="section" id="unitImages">
+    {% partial "imageSlider" slides=unit.unit_slider_image %}
+</div>
+<section class="section" id="unitSpec">
+    <div class="container is-narrow">
+        <h2 class="section__title">
+            Specifications
+        </h2>
+        {% partial 'unitSpecs' specs=unit.specification %}
+    </div>
+    
+</section>
+
+
+
+
+
+
+
+
+{% partial 'floatingButton' %}";s:4:"code";N;s:3:"url";s:9:"/unit/:id";s:6:"layout";s:7:"default";s:5:"title";s:4:"Unit";s:5:"Agent";a:0:{}s:25:"builderDetails unitDetail";a:5:{s:10:"modelClass";s:23:"Balkat\Unit\Models\Unit";s:15:"identifierValue";s:9:"{{ :id }}";s:14:"modelKeyColumn";s:2:"id";s:13:"displayColumn";s:2:"id";s:15:"notFoundMessage";s:16:"Record not found";}s:20:"builderList unitList";a:8:{s:10:"modelClass";s:23:"Balkat\Unit\Models\Unit";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:2:"id";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}

@@ -4,9 +4,10 @@
 		<div class="buildingsMap__overlays">
 			<img 
             src="{{'assets/images/buildings/1.png' | theme}}" 
-            style="width:27.8%; left:1.52%; top: 51%"
+            style="width:27.6%; left:1.52%; top: 51%"
+            data-link="{{'building' | page}}"
             data-popup="1"
-            class="hotspot">
+            class="hotspot is-active">
             <div class="popup" id="pop-1">
                 <h4 class="popup__title">
                     South Tower 2
@@ -14,9 +15,9 @@
                 <div class="popup__desc">
                     The tower was built in the middle of the area and presents several types of dwellings with a very comfortable and high class room decoration concept, namely type 2 beds and also type 3 beds with a range of 10 dwellings per floor.
                 </div>
-                <a href="#" class="popup__more">
+                {# <a href="#" class="popup__more">
                 MORE DETAILS
-                </a>
+                </a> #}
             </div>
 		</div>
 	</div>
@@ -25,7 +26,7 @@
 {% put scripts %}
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
 
-
+    
     <script>
 
     var is_pop_up_active = false
@@ -34,12 +35,22 @@
         $button = $hotspot
         $tooltip = $("#pop-" + $button.data("popup")) 
         
-        //close all other tooltips
+        
         
 
-        Popper.createPopper($button.get(0), $tooltip.get(0), {
+        var popperInstance = Popper.createPopper($button.get(0), $tooltip.get(0), {
             placement: 'auto',
         });
+
+        // Hover Show and Hide
+        $hotspot.on('mouseenter',function(){
+            $tooltip.addClass("is-active")
+            popperInstance.update()
+        })
+
+        $hotspot.on('mouseleave',function(){
+            $tooltip.removeClass("is-active")
+        })
     }
 
     $( ".buildingsMap__overlays>.hotspot" ).each(function( index ) {

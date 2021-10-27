@@ -1,6 +1,6 @@
 <section class="section specs">
 	<div class="columns">
-		<div class="column is-half">
+		{# <div class="column is-half">
 			<ul class="specs__list">
 				<li>
 					<p class="specs__title">Structure</p>
@@ -127,7 +127,23 @@
 					</div>
 				</li>
 			</ul>
-		</div>
+		</div> #}
+		{% for specs_batch in specs | batch(6) %}		
+			<div class="column is-half">
+				<ul class="specs__list">
+					{% for spec in specs_batch %}
+					<li>
+						<p class="specs__title">{{spec.label}}</p>
+						<div class="specs__content">
+							<p>
+								{{spec.value | raw}}
+							</p>
+						</div>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+		{% endfor %}
 	</div>
 
 

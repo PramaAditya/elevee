@@ -1,0 +1,159 @@
+1635388319a:1:{s:16:"eventsDetail.htm";a:9:{s:8:"fileName";s:16:"eventsDetail.htm";s:7:"content";s:3417:"layout = "default"
+url = "/events/:slug"
+title = "Events"
+[Agent]
+==
+{% set hierarchy=['Updates','News & Events', this.page.title]%}
+{% partial 'breadcrumbs' links = hierarchy %}
+
+<section class="section nDetail">
+    <div class="container is-narrow">
+        <div class="columns is-variable is-8">
+            <div class="column is-half">
+                <img src="https://via.placeholder.com/400x600" class="image nDetail__image" alt="">
+            </div>
+            <div class="column">
+                <h1 class="nDetail__title">
+                    Tanya-tanya Soal Hunan dengan Revano Satria
+                </h1>
+                <div class="nDetail__content">
+                    <p>Mau tanya-tanya langsung dengan arsitek langganan selebriti Indonesia?</p>
+                    <p>Saksikan We Talk LIVE Instagram bersama Revano Satria untuk bahas tips dan trik design hunian nyaman untuk keluarga</p>
+                </div>
+                <div class="nDetail__date">
+                    Thursday, 25 Maret 2021
+                </div>
+                <div class="nDetail__time">
+                    19:00
+                </div>
+                {# <div class="nDetail__video">
+                    <h3>
+                    VIDEO SELENGKAPNYA
+                    </h3>
+                    <div class="nDetail__vThumbnail">
+                        <img src="http://via.placeholder.com/1920x1080" alt="" class="">
+                        <span class="play-btn"></span>
+                    </div>
+                    
+                </div> #}
+                <div class="nDetail__social">
+                    <h3>
+                     HUBUNGI KAMI
+                    </h3>
+                    <div class="social-links">
+                        {% for social in this.theme.social_medias %}
+                            <a href="{{social.url}}"><img src="{{social.icon | media}}" alt=""></a>    
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="nDetail__reminder">
+                    <h3>
+                     NEWS REMINDER
+                    </h3>
+                    <form class="form" action="">
+                
+                        <div class="field">
+                            <div class="control name">
+                                <input class="input" type="text" placeholder="Enter your name" name="Name">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control email">
+                                <input class="input" type="email" placeholder="Your Email" name="Email">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control phone">
+                                <input class="input" type="tel" placeholder="Enter your phone number" name="Phone">
+                            </div>
+                        </div>
+                        
+                        <div class="has-text-right">
+                            <input type="submit" class="button is-line" value="SUBMIT">
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+</section>
+";s:5:"mtime";i:1629993222;s:6:"markup";s:3341:"{% set hierarchy=['Updates','News & Events', this.page.title]%}
+{% partial 'breadcrumbs' links = hierarchy %}
+
+<section class="section nDetail">
+    <div class="container is-narrow">
+        <div class="columns is-variable is-8">
+            <div class="column is-half">
+                <img src="https://via.placeholder.com/400x600" class="image nDetail__image" alt="">
+            </div>
+            <div class="column">
+                <h1 class="nDetail__title">
+                    Tanya-tanya Soal Hunan dengan Revano Satria
+                </h1>
+                <div class="nDetail__content">
+                    <p>Mau tanya-tanya langsung dengan arsitek langganan selebriti Indonesia?</p>
+                    <p>Saksikan We Talk LIVE Instagram bersama Revano Satria untuk bahas tips dan trik design hunian nyaman untuk keluarga</p>
+                </div>
+                <div class="nDetail__date">
+                    Thursday, 25 Maret 2021
+                </div>
+                <div class="nDetail__time">
+                    19:00
+                </div>
+                {# <div class="nDetail__video">
+                    <h3>
+                    VIDEO SELENGKAPNYA
+                    </h3>
+                    <div class="nDetail__vThumbnail">
+                        <img src="http://via.placeholder.com/1920x1080" alt="" class="">
+                        <span class="play-btn"></span>
+                    </div>
+                    
+                </div> #}
+                <div class="nDetail__social">
+                    <h3>
+                     HUBUNGI KAMI
+                    </h3>
+                    <div class="social-links">
+                        {% for social in this.theme.social_medias %}
+                            <a href="{{social.url}}"><img src="{{social.icon | media}}" alt=""></a>    
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="nDetail__reminder">
+                    <h3>
+                     NEWS REMINDER
+                    </h3>
+                    <form class="form" action="">
+                
+                        <div class="field">
+                            <div class="control name">
+                                <input class="input" type="text" placeholder="Enter your name" name="Name">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control email">
+                                <input class="input" type="email" placeholder="Your Email" name="Email">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control phone">
+                                <input class="input" type="tel" placeholder="Enter your phone number" name="Phone">
+                            </div>
+                        </div>
+                        
+                        <div class="has-text-right">
+                            <input type="submit" class="button is-line" value="SUBMIT">
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+</section>";s:4:"code";N;s:6:"layout";s:7:"default";s:3:"url";s:13:"/events/:slug";s:5:"title";s:6:"Events";s:5:"Agent";a:0:{}}}

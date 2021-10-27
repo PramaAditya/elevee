@@ -1,0 +1,97 @@
+1635388319a:1:{s:14:"newsSlider.htm";a:5:{s:8:"fileName";s:14:"newsSlider.htm";s:7:"content";s:1470:"<div class="news-slider">
+	<div class="slides-container">
+		{% for i in 1..5 %}
+			{% partial 'newsBox'%}
+		{% endfor %}
+        
+	</div>
+    <div class="slide-nav">
+        <img src="{{'assets/images/long_arrow.svg' | theme}}" width="50" height="17" class="prev" alt="prev">
+        <div class="position"></div>
+        <img src="{{'assets/images/long_arrow.svg' | theme}}" width="50" height="17" class="next" alt="next">
+    </div>
+</div>
+
+{% put scripts %}
+<script>
+$('.news-slider').each(function () {
+    var $slickElement = $(this).find('.slides-container')
+    var $status = $(this).find('.position')
+    
+    $slickElement.on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
+        //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+        var i = (currentSlide ? currentSlide : 0) + 1;
+        $status.text(i + '/' + slick.slideCount);
+    })
+
+    $slickElement.slick({
+        nextArrow: $(this).find('.next'),
+        prevArrow: $(this).find('.prev'),
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        lazyLoad: 'ondemand',
+        responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false
+            }
+        }
+        ]
+    })
+    
+});
+</script>
+{% endput %}";s:5:"mtime";i:1631771083;s:6:"markup";s:1470:"<div class="news-slider">
+	<div class="slides-container">
+		{% for i in 1..5 %}
+			{% partial 'newsBox'%}
+		{% endfor %}
+        
+	</div>
+    <div class="slide-nav">
+        <img src="{{'assets/images/long_arrow.svg' | theme}}" width="50" height="17" class="prev" alt="prev">
+        <div class="position"></div>
+        <img src="{{'assets/images/long_arrow.svg' | theme}}" width="50" height="17" class="next" alt="next">
+    </div>
+</div>
+
+{% put scripts %}
+<script>
+$('.news-slider').each(function () {
+    var $slickElement = $(this).find('.slides-container')
+    var $status = $(this).find('.position')
+    
+    $slickElement.on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
+        //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+        var i = (currentSlide ? currentSlide : 0) + 1;
+        $status.text(i + '/' + slick.slideCount);
+    })
+
+    $slickElement.slick({
+        nextArrow: $(this).find('.next'),
+        prevArrow: $(this).find('.prev'),
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        lazyLoad: 'ondemand',
+        responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false
+            }
+        }
+        ]
+    })
+    
+});
+</script>
+{% endput %}";s:4:"code";N;}}

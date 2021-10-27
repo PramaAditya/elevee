@@ -1,0 +1,9 @@
+1635388318a:1:{s:13:"brochures.htm";a:7:{s:8:"fileName";s:13:"brochures.htm";s:7:"content";s:334:"[viewBag]
+title = "Brochures"
+url = "/brochures"
+layout = "static/brochures"
+is_hidden = 0
+navigation_hidden = 0
+introBrochures = "<p>Download the E-Brochures here to know more about EleVee Penthouses and Residences</p>"
+introVideo = "<p>Watch our related video here to know more about EleVee Penthouses and Residences</p>"
+==";s:5:"mtime";i:1629881183;s:6:"markup";s:0:"";s:4:"code";N;s:7:"viewBag";a:7:{s:5:"title";s:9:"Brochures";s:3:"url";s:10:"/brochures";s:6:"layout";s:16:"static/brochures";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";s:14:"introBrochures";s:88:"<p>Download the E-Brochures here to know more about EleVee Penthouses and Residences</p>";s:10:"introVideo";s:87:"<p>Watch our related video here to know more about EleVee Penthouses and Residences</p>";}s:12:"parsedMarkup";s:0:"";}}

@@ -1,0 +1,345 @@
+1635388318a:1:{s:17:"facilitiesMap.htm";a:5:{s:8:"fileName";s:17:"facilitiesMap.htm";s:7:"content";s:7260:"<div class="facilitiesMap" id="facilitiesMap">
+    
+        {% if is_popup %}
+        <div class="facilitiesMap__text">
+            <h1 class="section__title">
+                {{header}}
+            </h1>
+            <p class="section__subtitle">
+                {{subheader}}
+            </p>
+        </div>
+        {% else %}
+            <img src="{{'assets/images/facilites_virtual_tour_btn.svg' | theme}}" alt="Virtual Tour" id="facilityVirtualTourBtn">
+        {% endif %}
+        
+    
+    <div class="facilitiesMap__overlays">
+        <img aria-describedby="tooltip" src="{{'assets/images/hotspot_circle.svg' | theme}}" width="24" height="24" class="hotspot" data-popup="1" style="top:64.2%;left:8.75%;">
+        <div role="tooltip" class="popup" id="pop-1">
+            <div class="popup__name">
+                Sky Facilities
+            </div>
+            <div class="popup__box">
+                
+                <div class="popup__slides">
+                    <div class="slide">
+                        <div class="slide__img">
+                            <img src="https://via.placeholder.com/300" alt="">
+                            <div class="slide__img__overlay"></div>
+                        </div>
+                        
+                        <h4 class="slide__title">
+                            Rooftop Lounge
+                        </h4>
+                        <div class="slide__content">
+                            <p>
+                                An exclusive lounge is provided for you at the peak of the tower. Maybe a particular proposal is needed too.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide__img">
+                            <img src="https://via.placeholder.com/300" alt="">
+                            <div class="slide__img__overlay"></div>
+                        </div>
+                        
+                        <h4 class="slide__title">
+                            Rooftop Lounge
+                        </h4>
+                        <div class="slide__content">
+                            <p>
+                                An exclusive lounge is provided for you at the peak of the tower. Maybe a particular proposal is needed too.
+                                An exclusive lounge is provided for you at the peak of the tower. Maybe a particular proposal is needed too.
+                                An exclusive lounge is provided for you at the peak of the tower. Maybe a particular proposal is needed too.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup__navs">
+                    <img src="{{'assets/images/long_arrow.svg' | theme}}" width="50" height="17" class="prev" alt="prev">
+                    <div class="position"></div>
+                    <img src="{{'assets/images/long_arrow.svg' | theme}}" width="50" height="17" class="next" alt="next">
+                </div>
+            </div>
+        </div>
+        <img aria-describedby="tooltip" src="{{'assets/images/hotspot_circle.svg' | theme}}" width="24" height="24" class="hotspot" data-popup="2" style="top:44.2%;left:18.75%;">
+        <div role="tooltip" class="popup" id="pop-2">
+            <div class="popup__name">
+                Sky Facilities
+            </div>
+            <div class="popup__box">
+                
+                <div class="popup__slides">
+                    
+                    <div class="slide">
+                        <div class="slide__img">
+                            <img src="https://via.placeholder.com/300" alt="">
+                            <div class="slide__img__overlay"></div>
+                        </div>
+                        
+                        <h4 class="slide__title">
+                            Rooftop Lounge
+                        </h4>
+                        <div class="slide__content">
+                            <p>
+                                An exclusive lounge is provided for you at the peak of the tower. Maybe a particular proposal is needed too.
+                                An exclusive lounge is provided for you at the peak of the tower. Maybe a particular proposal is needed too.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup__navs">
+                    <img src="{{'assets/images/long_arrow.svg' | theme}}" width="50" height="17" class="prev" alt="prev">
+                    <div class="position"></div>
+                    <img src="{{'assets/images/long_arrow.svg' | theme}}" width="50" height="17" class="next" alt="next">
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="{{'assets/images/facilities_map_bg.svg' | theme }}" height="1080" width="1920" alt="Facilities Map" class="facilitiesMap__bg">
+
+</div>
+
+
+{% put scripts %}
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+
+
+    <script>
+
+    var is_pop_up_active = false
+
+    function activateHotspot($hotspot) {
+        $button = $hotspot
+        $tooltip = $("#pop-" + $button.data("popup")) 
+        
+        //close all other tooltips
+        
+
+        $(".facilitiesMap__overlays>.hotspot").not(this).removeClass("is-active")
+        $(".facilitiesMap__overlays>.popup").not("#pop-" + $button.data("popup")).removeClass("is-active")
+        $button.toggleClass("is-active")
+        $tooltip.toggleClass("is-active")
+        
+        var offset = $button.position()
+        
+        
+        Popper.createPopper($button.get(0), $tooltip.get(0), {
+            placement: 'auto',
+        });
+    }
+
+    $( ".facilitiesMap__overlays>.hotspot" ).each(function( index ) {
+            $(this).click(function() {
+
+            activateHotspot($(this))
+            
+        });
+    });
+    
+
+    </script>
+{% endput %}
+
+{% put scripts %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+$(document).ready(function () {
+    $('.popup').each(function () {
+        var $slickElement = $(this).find('.popup__slides')
+        var $status = $(this).find('.position')
+        
+        $slickElement.on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
+            //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+            if (slick.slideCount > 1){
+                var i = (currentSlide ? currentSlide : 0) + 1;
+                $status.text(i + '/' + slick.slideCount);
+            }
+        })
+
+        $slickElement.slick({
+            nextArrow: $(this).find('.next'),
+            prevArrow: $(this).find('.prev'),
+            fade: true,
+            adaptiveHeight: true
+        })
+        
+    });
+
+});
+</script>
+{% endput %}";s:5:"mtime";i:1635297790;s:6:"markup";s:7260:"<div class="facilitiesMap" id="facilitiesMap">
+    
+        {% if is_popup %}
+        <div class="facilitiesMap__text">
+            <h1 class="section__title">
+                {{header}}
+            </h1>
+            <p class="section__subtitle">
+                {{subheader}}
+            </p>
+        </div>
+        {% else %}
+            <img src="{{'assets/images/facilites_virtual_tour_btn.svg' | theme}}" alt="Virtual Tour" id="facilityVirtualTourBtn">
+        {% endif %}
+        
+    
+    <div class="facilitiesMap__overlays">
+        <img aria-describedby="tooltip" src="{{'assets/images/hotspot_circle.svg' | theme}}" width="24" height="24" class="hotspot" data-popup="1" style="top:64.2%;left:8.75%;">
+        <div role="tooltip" class="popup" id="pop-1">
+            <div class="popup__name">
+                Sky Facilities
+            </div>
+            <div class="popup__box">
+                
+                <div class="popup__slides">
+                    <div class="slide">
+                        <div class="slide__img">
+                            <img src="https://via.placeholder.com/300" alt="">
+                            <div class="slide__img__overlay"></div>
+                        </div>
+                        
+                        <h4 class="slide__title">
+                            Rooftop Lounge
+                        </h4>
+                        <div class="slide__content">
+                            <p>
+                                An exclusive lounge is provided for you at the peak of the tower. Maybe a particular proposal is needed too.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide__img">
+                            <img src="https://via.placeholder.com/300" alt="">
+                            <div class="slide__img__overlay"></div>
+                        </div>
+                        
+                        <h4 class="slide__title">
+                            Rooftop Lounge
+                        </h4>
+                        <div class="slide__content">
+                            <p>
+                                An exclusive lounge is provided for you at the peak of the tower. Maybe a particular proposal is needed too.
+                                An exclusive lounge is provided for you at the peak of the tower. Maybe a particular proposal is needed too.
+                                An exclusive lounge is provided for you at the peak of the tower. Maybe a particular proposal is needed too.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup__navs">
+                    <img src="{{'assets/images/long_arrow.svg' | theme}}" width="50" height="17" class="prev" alt="prev">
+                    <div class="position"></div>
+                    <img src="{{'assets/images/long_arrow.svg' | theme}}" width="50" height="17" class="next" alt="next">
+                </div>
+            </div>
+        </div>
+        <img aria-describedby="tooltip" src="{{'assets/images/hotspot_circle.svg' | theme}}" width="24" height="24" class="hotspot" data-popup="2" style="top:44.2%;left:18.75%;">
+        <div role="tooltip" class="popup" id="pop-2">
+            <div class="popup__name">
+                Sky Facilities
+            </div>
+            <div class="popup__box">
+                
+                <div class="popup__slides">
+                    
+                    <div class="slide">
+                        <div class="slide__img">
+                            <img src="https://via.placeholder.com/300" alt="">
+                            <div class="slide__img__overlay"></div>
+                        </div>
+                        
+                        <h4 class="slide__title">
+                            Rooftop Lounge
+                        </h4>
+                        <div class="slide__content">
+                            <p>
+                                An exclusive lounge is provided for you at the peak of the tower. Maybe a particular proposal is needed too.
+                                An exclusive lounge is provided for you at the peak of the tower. Maybe a particular proposal is needed too.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup__navs">
+                    <img src="{{'assets/images/long_arrow.svg' | theme}}" width="50" height="17" class="prev" alt="prev">
+                    <div class="position"></div>
+                    <img src="{{'assets/images/long_arrow.svg' | theme}}" width="50" height="17" class="next" alt="next">
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="{{'assets/images/facilities_map_bg.svg' | theme }}" height="1080" width="1920" alt="Facilities Map" class="facilitiesMap__bg">
+
+</div>
+
+
+{% put scripts %}
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+
+
+    <script>
+
+    var is_pop_up_active = false
+
+    function activateHotspot($hotspot) {
+        $button = $hotspot
+        $tooltip = $("#pop-" + $button.data("popup")) 
+        
+        //close all other tooltips
+        
+
+        $(".facilitiesMap__overlays>.hotspot").not(this).removeClass("is-active")
+        $(".facilitiesMap__overlays>.popup").not("#pop-" + $button.data("popup")).removeClass("is-active")
+        $button.toggleClass("is-active")
+        $tooltip.toggleClass("is-active")
+        
+        var offset = $button.position()
+        
+        
+        Popper.createPopper($button.get(0), $tooltip.get(0), {
+            placement: 'auto',
+        });
+    }
+
+    $( ".facilitiesMap__overlays>.hotspot" ).each(function( index ) {
+            $(this).click(function() {
+
+            activateHotspot($(this))
+            
+        });
+    });
+    
+
+    </script>
+{% endput %}
+
+{% put scripts %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+$(document).ready(function () {
+    $('.popup').each(function () {
+        var $slickElement = $(this).find('.popup__slides')
+        var $status = $(this).find('.position')
+        
+        $slickElement.on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
+            //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+            if (slick.slideCount > 1){
+                var i = (currentSlide ? currentSlide : 0) + 1;
+                $status.text(i + '/' + slick.slideCount);
+            }
+        })
+
+        $slickElement.slick({
+            nextArrow: $(this).find('.next'),
+            prevArrow: $(this).find('.prev'),
+            fade: true,
+            adaptiveHeight: true
+        })
+        
+    });
+
+});
+</script>
+{% endput %}";s:4:"code";N;}}

@@ -1,0 +1,23 @@
+1635388318a:1:{s:15:"breadcrumbs.htm";a:5:{s:8:"fileName";s:15:"breadcrumbs.htm";s:7:"content";s:256:"<ul class="breadcrumbs">
+    <li>
+        <a href="{{url | app}}">
+        Home
+        </a>    
+    </li>
+    {% for link in links %}
+    <li {% if loop.last %}class="current"{% endif %}>
+        {{link}}   
+    </li>    
+    {% endfor %}
+</ul>";s:5:"mtime";i:1629965898;s:6:"markup";s:256:"<ul class="breadcrumbs">
+    <li>
+        <a href="{{url | app}}">
+        Home
+        </a>    
+    </li>
+    {% for link in links %}
+    <li {% if loop.last %}class="current"{% endif %}>
+        {{link}}   
+    </li>    
+    {% endfor %}
+</ul>";s:4:"code";N;}}

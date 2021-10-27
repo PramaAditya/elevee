@@ -1,0 +1,98 @@
+1635388319a:1:{s:23:"menudesktop/default.htm";a:5:{s:8:"fileName";s:23:"menudesktop/default.htm";s:7:"content";s:1519:"{# <div class="menuDesktop__primary">
+	Has Dropdown
+	<ul class="menuDesktop__secondary">
+		<li>
+			<a href="">Secondary</a>
+		</li>
+		<li>
+			<a href="">Secondary</a>
+		</li>
+	</ul>
+
+</div>
+<div class="menuDesktop__primary">
+	<a href="">
+		Primarys
+	</a>
+
+</div> #}
+
+{% if parentNode and parentNode.getChildCount %}
+	{% set thisPage =  (this.page.id | page) %}
+	{% set slug = this.param.slug %}
+
+	{% for primaryNav in parentNode.getChildren %}
+		{% if primaryNav.enabled %}
+			{% if primaryNav.getChildCount and numberOfLevels > 1 %}
+				<div class="menuDesktop__primary">
+					<a href="{{url | app}}{{ primaryNav.getLinkHref }}" target="{{ primaryNav.getLinkTarget }}">
+						{{primaryNav.title}}
+					</a>
+					<ul class="menuDesktop__secondary">
+						{% for secondaryNav in primaryNav.getChildren %}
+							<li class="{% if (thisPage == primaryNav.getLinkHref or slug in primaryNav.getLinkHref) %} is-active {% endif %}">
+								<a href="{{url | app}}{{ secondaryNav.getLinkHref }}" target="{{ secondaryNav.getLinkTarget }}">{{ secondaryNav.title }}</a>
+							</li>
+
+						{% endfor %}
+					</ul>
+				</div>
+			{% else %}
+				<div class="menuDesktop__primary {% if (thisPage == primaryNav.getLinkHref or slug in primaryNav.getLinkHref) %} is-active {% endif %}">
+					<a href="{{url | app}}{{ primaryNav.getLinkHref }}" target="{{ primaryNav.getLinkTarget }}">
+						{{primaryNav.title}}
+					</a>
+				</div>
+			{% endif %}
+		{% endif %}
+	{% endfor %}
+{% endif %}
+";s:5:"mtime";i:1631508825;s:6:"markup";s:1517:"{# <div class="menuDesktop__primary">
+	Has Dropdown
+	<ul class="menuDesktop__secondary">
+		<li>
+			<a href="">Secondary</a>
+		</li>
+		<li>
+			<a href="">Secondary</a>
+		</li>
+	</ul>
+
+</div>
+<div class="menuDesktop__primary">
+	<a href="">
+		Primarys
+	</a>
+
+</div> #}
+
+{% if parentNode and parentNode.getChildCount %}
+	{% set thisPage =  (this.page.id | page) %}
+	{% set slug = this.param.slug %}
+
+	{% for primaryNav in parentNode.getChildren %}
+		{% if primaryNav.enabled %}
+			{% if primaryNav.getChildCount and numberOfLevels > 1 %}
+				<div class="menuDesktop__primary">
+					<a href="{{url | app}}{{ primaryNav.getLinkHref }}" target="{{ primaryNav.getLinkTarget }}">
+						{{primaryNav.title}}
+					</a>
+					<ul class="menuDesktop__secondary">
+						{% for secondaryNav in primaryNav.getChildren %}
+							<li class="{% if (thisPage == primaryNav.getLinkHref or slug in primaryNav.getLinkHref) %} is-active {% endif %}">
+								<a href="{{url | app}}{{ secondaryNav.getLinkHref }}" target="{{ secondaryNav.getLinkTarget }}">{{ secondaryNav.title }}</a>
+							</li>
+
+						{% endfor %}
+					</ul>
+				</div>
+			{% else %}
+				<div class="menuDesktop__primary {% if (thisPage == primaryNav.getLinkHref or slug in primaryNav.getLinkHref) %} is-active {% endif %}">
+					<a href="{{url | app}}{{ primaryNav.getLinkHref }}" target="{{ primaryNav.getLinkTarget }}">
+						{{primaryNav.title}}
+					</a>
+				</div>
+			{% endif %}
+		{% endif %}
+	{% endfor %}
+{% endif %}";s:4:"code";N;}}

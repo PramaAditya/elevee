@@ -1,0 +1,11 @@
+1635388903a:1:{s:15:"brochureBox.htm";a:5:{s:8:"fileName";s:15:"brochureBox.htm";s:7:"content";s:335:"<div class="brochure has-text-centered" data-image="{{'assets/images/brochure_placeholder.jpg' |theme}}" data-name="Brochure One">
+    <img src="{{'assets/images/brochure_placeholder.jpg' |theme}}" alt="">
+    <div class="brochure__button">
+        <img src="{{'assets/images/btn_download.svg' | theme}}" alt="">
+    </div>
+</div>";s:5:"mtime";i:1635302474;s:6:"markup";s:335:"<div class="brochure has-text-centered" data-image="{{'assets/images/brochure_placeholder.jpg' |theme}}" data-name="Brochure One">
+    <img src="{{'assets/images/brochure_placeholder.jpg' |theme}}" alt="">
+    <div class="brochure__button">
+        <img src="{{'assets/images/btn_download.svg' | theme}}" alt="">
+    </div>
+</div>";s:4:"code";N;}}

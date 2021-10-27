@@ -1,0 +1,59 @@
+1635388318a:1:{s:14:"htmlHeader.htm";a:5:{s:8:"fileName";s:14:"htmlHeader.htm";s:7:"content";s:1239:"<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{this.page.title}}</title>
+    <link rel="stylesheet" href="{{'assets/css/main.css' | theme}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- For WOW.js (optional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> 
+    
+    <!-- Load Other Styles -->
+    {% styles %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
+
+
+  </head>
+  <body id="{{this.page.id}}" >
+    
+    {% if Agent.isDesktop() %}
+      {% partial 'navDesktop.htm' %}
+      {% partial 'menuDesktop.htm' %}
+    {% else %}
+      {% partial 'navMobile.htm' %}
+      {% partial 'menuMobile.htm' %}
+    {% endif %}
+
+    ";s:5:"mtime";i:1629994408;s:6:"markup";s:1231:"<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{this.page.title}}</title>
+    <link rel="stylesheet" href="{{'assets/css/main.css' | theme}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- For WOW.js (optional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> 
+    
+    <!-- Load Other Styles -->
+    {% styles %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
+
+
+  </head>
+  <body id="{{this.page.id}}" >
+    
+    {% if Agent.isDesktop() %}
+      {% partial 'navDesktop.htm' %}
+      {% partial 'menuDesktop.htm' %}
+    {% else %}
+      {% partial 'navMobile.htm' %}
+      {% partial 'menuMobile.htm' %}
+    {% endif %}";s:4:"code";N;}}

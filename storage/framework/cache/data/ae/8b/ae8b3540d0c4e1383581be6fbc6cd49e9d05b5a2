@@ -1,0 +1,59 @@
+1635394380a:1:{s:15:"imageSlider.htm";a:5:{s:8:"fileName";s:15:"imageSlider.htm";s:7:"content";s:919:"<div class="image-slider">
+	<div class="slides-container">
+		{% for slide in slides %}
+			<a href="{{slide.image | media}}" class="glightbox slide" data-gallery="gallery1">
+				<img src="{{slide.image | media}}" alt="">
+			</a>
+		{% endfor %}
+	</div>
+</div>
+
+{% put scripts %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+$(document).ready(function () {
+    $('.image-slider').each(function () {
+        var $slickElement = $(this).find('.slides-container')
+        $slickElement.slick({
+			infinite: true,
+			variableWidth: true,
+			arrows: false,
+			autoplay: true,
+			autoplaySpeed: 0,
+			speed: 10000,
+			cssEase: 'linear'
+		})
+    });
+	
+});
+</script>
+{% endput %}";s:5:"mtime";i:1635307940;s:6:"markup";s:919:"<div class="image-slider">
+	<div class="slides-container">
+		{% for slide in slides %}
+			<a href="{{slide.image | media}}" class="glightbox slide" data-gallery="gallery1">
+				<img src="{{slide.image | media}}" alt="">
+			</a>
+		{% endfor %}
+	</div>
+</div>
+
+{% put scripts %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+$(document).ready(function () {
+    $('.image-slider').each(function () {
+        var $slickElement = $(this).find('.slides-container')
+        $slickElement.slick({
+			infinite: true,
+			variableWidth: true,
+			arrows: false,
+			autoplay: true,
+			autoplaySpeed: 0,
+			speed: 10000,
+			cssEase: 'linear'
+		})
+    });
+	
+});
+</script>
+{% endput %}";s:4:"code";N;}}

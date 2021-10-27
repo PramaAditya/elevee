@@ -1,0 +1,102 @@
+1635417085a:1:{s:12:"building.htm";a:11:{s:8:"fileName";s:12:"building.htm";s:7:"content";s:1634:"url = "/building/:id"
+layout = "default"
+title = "Building"
+
+[Agent]
+
+[builderList buildingList]
+modelClass = "Balkat\Unit\Models\Building"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "id"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+
+[builderDetails buildingDetail]
+modelClass = "Balkat\Unit\Models\Building"
+identifierValue = "{{ :id }}"
+modelKeyColumn = "id"
+displayColumn = "id"
+notFoundMessage = "Record not found"
+==
+{% set hierarchy=['Inside Elevee', this.page.title]%}
+{% put scripts %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+{% endput %}
+{% partial 'breadcrumbs' links = hierarchy %}
+{% partial 'buildingsMap'%}
+
+{% set currBuilding = buildingDetail.record %}
+{% set buildings = buildingList.records %}
+
+
+
+<section class="section" id="availableUnits">
+    <div class="container is-narrow">
+        <h2 class="section__title">
+            Available Units 
+        </h2>
+        <p>
+        {{ dump(currBuilding.units[0]) }}
+        </p>
+    </div>
+    {% partial 'unitSummary'%}
+</section>
+<section class="section" id="BuildingSpec">
+    <div class="container is-narrow">
+        <h2 class="section__title">
+            Building Specifications
+        </h2>
+        {% partial 'buildingSpecs' spec=[] %}
+    </div>
+</section>
+
+
+
+
+
+
+
+
+{% partial 'floatingButton' %}";s:5:"mtime";i:1635330682;s:6:"markup";s:1111:"{% set hierarchy=['Inside Elevee', this.page.title]%}
+{% put scripts %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+{% endput %}
+{% partial 'breadcrumbs' links = hierarchy %}
+{% partial 'buildingsMap'%}
+
+{% set currBuilding = buildingDetail.record %}
+{% set buildings = buildingList.records %}
+
+
+
+<section class="section" id="availableUnits">
+    <div class="container is-narrow">
+        <h2 class="section__title">
+            Available Units 
+        </h2>
+        <p>
+        {{ dump(currBuilding.units[0]) }}
+        </p>
+    </div>
+    {% partial 'unitSummary'%}
+</section>
+<section class="section" id="BuildingSpec">
+    <div class="container is-narrow">
+        <h2 class="section__title">
+            Building Specifications
+        </h2>
+        {% partial 'buildingSpecs' spec=[] %}
+    </div>
+</section>
+
+
+
+
+
+
+
+
+{% partial 'floatingButton' %}";s:4:"code";N;s:3:"url";s:13:"/building/:id";s:6:"layout";s:7:"default";s:5:"title";s:8:"Building";s:5:"Agent";a:0:{}s:24:"builderList buildingList";a:8:{s:10:"modelClass";s:27:"Balkat\Unit\Models\Building";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:2:"id";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}s:29:"builderDetails buildingDetail";a:5:{s:10:"modelClass";s:27:"Balkat\Unit\Models\Building";s:15:"identifierValue";s:9:"{{ :id }}";s:14:"modelKeyColumn";s:2:"id";s:13:"displayColumn";s:2:"id";s:15:"notFoundMessage";s:16:"Record not found";}}}

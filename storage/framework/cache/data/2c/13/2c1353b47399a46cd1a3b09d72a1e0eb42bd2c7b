@@ -1,0 +1,34 @@
+1635388318a:1:{s:14:"masterplan.htm";a:7:{s:8:"fileName";s:14:"masterplan.htm";s:7:"content";s:1819:"[viewBag]
+title = "Master Plan"
+url = "/masterplan"
+layout = "static/masterplan"
+is_hidden = 0
+navigation_hidden = 0
+about[0][title] = ""
+about[0][content] = ""
+about[0][w] = 2
+about[0][h] = 2
+about[0][url] = ""
+about[0][img] = "/joe_taslim/DSC03862.jpg"
+about[0][class] = "img-only no-hover"
+about[0][order] = 1
+about[0][wM] = 2
+about[0][hM] = 1
+about[1][title] = "Strategic and Convenient"
+about[1][content] = "<p>Levee is located in the center of Alam Sutera Downtown. A 5 minutes stroll will bring you to the Mall @Alam Sutera and a 5 minutes drive to the IKEA showroom.</p><p>With the development of the massive infrastructure in Jakarta, EleVee is well connected to any part of the cities you need to go to.</p><p>The Soekarno-Hatta International Airport, the Jakarta CBD, and the southern part of Jakarta city are all within reach.</p>"
+about[1][w] = 2
+about[1][h] = 2
+about[1][url] = ""
+about[1][img] = ""
+about[1][class] = "vcentered"
+about[1][order] = 2
+about[1][wM] = 2
+about[1][hM] = 2
+aboutText = "<p style=\"text-align: center;\">New kind of sustainable and green<br>living for young generation.</p>"
+images[0][img] = "/joe_taslim/DSC07535.jpg"
+images[1][img] = "/joe_taslim/DSC06801.jpg"
+images[2][img] = "/joe_taslim/DSC04090.jpg"
+images[3][img] = "/joe_taslim/DSC04328.jpg"
+slideTitle = "Bringing Forest to Your Home"
+slideText = "<p>Levee Penthouses &amp; Residences are designed specifically to meet the needs of long-term family housing, especially for professionals, families, students and all those who crave quality housing in the green area of Alam Sutera.</p><p>Specifically designed by Broadway Maylan, a renowned architect consultant from the UK, EleVee Penthouses &amp; Residences has a concept that maximizes exposure to natural light and fresh air.</p>"
+==";s:5:"mtime";i:1632285478;s:6:"markup";s:0:"";s:4:"code";N;s:7:"viewBag";a:10:{s:5:"title";s:11:"Master Plan";s:3:"url";s:11:"/masterplan";s:6:"layout";s:17:"static/masterplan";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";s:5:"about";a:2:{i:0;a:10:{s:5:"title";s:0:"";s:7:"content";s:0:"";s:1:"w";s:1:"2";s:1:"h";s:1:"2";s:3:"url";s:0:"";s:3:"img";s:24:"/joe_taslim/DSC03862.jpg";s:5:"class";s:17:"img-only no-hover";s:5:"order";s:1:"1";s:2:"wM";s:1:"2";s:2:"hM";s:1:"1";}i:1;a:10:{s:5:"title";s:24:"Strategic and Convenient";s:7:"content";s:429:"<p>Levee is located in the center of Alam Sutera Downtown. A 5 minutes stroll will bring you to the Mall @Alam Sutera and a 5 minutes drive to the IKEA showroom.</p><p>With the development of the massive infrastructure in Jakarta, EleVee is well connected to any part of the cities you need to go to.</p><p>The Soekarno-Hatta International Airport, the Jakarta CBD, and the southern part of Jakarta city are all within reach.</p>";s:1:"w";s:1:"2";s:1:"h";s:1:"2";s:3:"url";s:0:"";s:3:"img";s:0:"";s:5:"class";s:9:"vcentered";s:5:"order";s:1:"2";s:2:"wM";s:1:"2";s:2:"hM";s:1:"2";}}s:9:"aboutText";s:100:"<p style="text-align: center;">New kind of sustainable and green<br>living for young generation.</p>";s:6:"images";a:4:{i:0;a:1:{s:3:"img";s:24:"/joe_taslim/DSC07535.jpg";}i:1;a:1:{s:3:"img";s:24:"/joe_taslim/DSC06801.jpg";}i:2;a:1:{s:3:"img";s:24:"/joe_taslim/DSC04090.jpg";}i:3;a:1:{s:3:"img";s:24:"/joe_taslim/DSC04328.jpg";}}s:10:"slideTitle";s:28:"Bringing Forest to Your Home";s:9:"slideText";s:434:"<p>Levee Penthouses &amp; Residences are designed specifically to meet the needs of long-term family housing, especially for professionals, families, students and all those who crave quality housing in the green area of Alam Sutera.</p><p>Specifically designed by Broadway Maylan, a renowned architect consultant from the UK, EleVee Penthouses &amp; Residences has a concept that maximizes exposure to natural light and fresh air.</p>";}s:12:"parsedMarkup";s:0:"";}}

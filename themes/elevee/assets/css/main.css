@@ -6200,6 +6200,53 @@ form.form .select {
     margin-top: 15px !important;
     background-image: url(../images/icon_message_color.svg); }
 
+.bModal {
+  display: flex;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: -200vw;
+  width: 100%;
+  height: 100%;
+  z-index: 900;
+  align-items: center;
+  justify-content: center;
+  transition: opacity .5s ease-out; }
+  .bModal__overlay {
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    position: absolute; }
+  .bModal.is-active {
+    left: 0;
+    opacity: 1;
+    transition: opacity .5s ease-out; }
+  .bModal__close {
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    top: -50px;
+    z-index: 300;
+    filter: brightness(100); }
+  .bModal__box {
+    position: relative;
+    width: 90%;
+    height: 70%;
+    display: flex;
+    align-items: center; }
+  .bModal__image {
+    height: 100%;
+    margin-right: 10px; }
+  .bModal__form_container {
+    height: 100%;
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 7%; }
+  .bModal__form * {
+    color: white !important; }
+
 .cModal {
   display: flex;
   opacity: 0;
@@ -6381,6 +6428,8 @@ form.form .select {
     opacity: 0;
     transition: opacity .3s ease-out;
     cursor: pointer; }
+    .buildingsMap .hotspot.is-active {
+      opacity: 1; }
     .buildingsMap .hotspot:hover {
       opacity: 1; }
   .buildingsMap .popup {
@@ -6390,9 +6439,11 @@ form.form .select {
     color: white;
     background: rgba(149, 49, 66, 0.8);
     padding: 25px;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center; }
+    .buildingsMap .popup.is-active {
+      display: flex; }
     .buildingsMap .popup__title {
       margin-top: 0;
       font-family: "Quiche Sans";

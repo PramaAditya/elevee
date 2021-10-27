@@ -1,0 +1,59 @@
+1635388319a:1:{s:14:"menuMobile.htm";a:6:{s:8:"fileName";s:14:"menuMobile.htm";s:7:"content";s:1017:"[menu menuMobile]
+start = "id-1"
+activeNode = "id-1"
+listItemClasses = "item"
+primaryClasses = "nav nav-pills"
+secondaryClasses = "dropdown-menu"
+numberOfLevels = 2
+==
+<div id="overlay"></div>
+<div id="menu" class="menuMobile has-bg columns">
+	<img src="{{'assets/images/close_x.svg' | theme}}" height="20" width="20" alt="close" id="closeBtn" class="menuMobile__close">
+	<div class="menuMobile__container column">
+		<a href="{{url | app}}" class="menuMobile__logo"><img src="{{'assets/images/logo_white.svg' | theme}}" height="117" width="208" alt="Elevee" ></a>
+		
+		{% component 'menuMobile' %}
+	</div>
+</div>
+
+{% put scripts %}
+<script>
+	$mainMenu = $('#menu')
+	$overlay = $('#overlay')
+	$closeBtn = $('#closeBtn')
+	$openBtn = $('.openBtn')
+	$closeBtn.on('click',function(){
+		$mainMenu.removeClass('is-active')
+		$overlay.removeClass('is-active')
+	}) 
+	$openBtn.on('click',function(){
+		$mainMenu.addClass('is-active')
+		$overlay.addClass('is-active')
+	}) 
+</script>
+{% endput %}";s:5:"mtime";i:1631508879;s:6:"markup";s:841:"<div id="overlay"></div>
+<div id="menu" class="menuMobile has-bg columns">
+	<img src="{{'assets/images/close_x.svg' | theme}}" height="20" width="20" alt="close" id="closeBtn" class="menuMobile__close">
+	<div class="menuMobile__container column">
+		<a href="{{url | app}}" class="menuMobile__logo"><img src="{{'assets/images/logo_white.svg' | theme}}" height="117" width="208" alt="Elevee" ></a>
+		
+		{% component 'menuMobile' %}
+	</div>
+</div>
+
+{% put scripts %}
+<script>
+	$mainMenu = $('#menu')
+	$overlay = $('#overlay')
+	$closeBtn = $('#closeBtn')
+	$openBtn = $('.openBtn')
+	$closeBtn.on('click',function(){
+		$mainMenu.removeClass('is-active')
+		$overlay.removeClass('is-active')
+	}) 
+	$openBtn.on('click',function(){
+		$mainMenu.addClass('is-active')
+		$overlay.addClass('is-active')
+	}) 
+</script>
+{% endput %}";s:4:"code";N;s:15:"menu menuMobile";a:6:{s:5:"start";s:4:"id-1";s:10:"activeNode";s:4:"id-1";s:15:"listItemClasses";s:4:"item";s:14:"primaryClasses";s:13:"nav nav-pills";s:16:"secondaryClasses";s:13:"dropdown-menu";s:14:"numberOfLevels";s:1:"2";}}}

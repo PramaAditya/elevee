@@ -1,0 +1,10 @@
+1635388318a:1:{s:11:"contact.htm";a:7:{s:8:"fileName";s:11:"contact.htm";s:7:"content";s:465:"[viewBag]
+title = "Contact Us"
+url = "/contact"
+layout = "static/contact"
+is_hidden = 0
+navigation_hidden = 0
+heroImage = "/img_placeholder.jpg"
+heroText = "We would love to give you a guided tour of EleVee Penthouses & Residences"
+contactText = "<p>If you missed it you can take the <a href=\"/\" rel=\"noopener noreferrer\" target=\"_blank\">virtual tour here</a> but if you would like to visit in person, please contact us or drop in for a chat.</p>"
+==";s:5:"mtime";i:1629832884;s:6:"markup";s:0:"";s:4:"code";N;s:7:"viewBag";a:8:{s:5:"title";s:10:"Contact Us";s:3:"url";s:8:"/contact";s:6:"layout";s:14:"static/contact";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";s:9:"heroImage";s:20:"/img_placeholder.jpg";s:8:"heroText";s:73:"We would love to give you a guided tour of EleVee Penthouses & Residences";s:11:"contactText";s:199:"<p>If you missed it you can take the <a href="/" rel="noopener noreferrer" target="_blank">virtual tour here</a> but if you would like to visit in person, please contact us or drop in for a chat.</p>";}s:12:"parsedMarkup";s:0:"";}}

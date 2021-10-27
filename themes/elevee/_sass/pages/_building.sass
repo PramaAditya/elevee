@@ -18,6 +18,8 @@
         opacity: 0
         transition: opacity .3s ease-out
         cursor: pointer
+        &.is-active
+            opacity: 1
         &:hover
             opacity: 1
     .popup
@@ -27,9 +29,11 @@
         color: white
         background: rgba($maroon, .8)
         padding: 25px
-        display: flex
+        display: none
         flex-direction: column
         justify-content: center
+        &.is-active
+            display: flex
         &__title
             margin-top: 0
             font-family: $font-heading

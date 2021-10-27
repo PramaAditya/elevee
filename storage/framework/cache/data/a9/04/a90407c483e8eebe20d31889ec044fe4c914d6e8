@@ -1,0 +1,268 @@
+1635388318a:1:{s:17:"buildingSpecs.htm";a:5:{s:8:"fileName";s:17:"buildingSpecs.htm";s:7:"content";s:3416:"<section class="section specs">
+	<div class="columns">
+		<div class="column is-half">
+			<ul class="specs__list">
+				<li>
+					<p class="specs__title">Structure</p>
+					<div class="specs__content">
+						<p>
+							Reinforced concrete frame with bored pile foundation
+						</p>
+					</div>
+				</li>
+				<li>
+					<p class="specs__title">Exterior Wall</p>
+					<div class="specs__content">
+						<p>
+							Weatherproof paint on plastered brick wall / lightweight brick wall / precast panel
+						</p>
+					</div>
+				</li>
+				<li>
+					<p class="specs__title">Interior Wall</p>
+					<div class="specs__content">
+						<p>
+							Interior paint on plastered lightweight brick wall
+						</p>
+					</div>
+				</li>
+				<li>
+					<p class="specs__title">Flooring</p>
+					<div class="specs__content">
+						<p>
+							Homogeneous Tiles & Ceramic Tiles General HT 100x100 cm; Bedroom HT 100x100cm; Entrance Threshold HT 100x100cm; Balcony 15x60cm; Master Bathroom HT 60x60cm; Wall HT 30x60cm; Common Bathroom HT 60x60 cm; Wall HT 30x60cm; AC Ledge 40x40cm; Public Corridor Typical Floor 40x40cm; Service Area 40x40cm; Maid’s bedroom and bathroom HT 60x60cm.
+						</p>
+					</div>
+				</li>
+				<li>
+					<p class="specs__title">General Area Ceiling</p>
+					<div class="specs__content">
+						<p>
+							Gypsum Board
+						</p>
+					</div>
+				</li>
+				<li>
+					<p class="specs__title">Bathroom Ceiling</p>
+					<div class="specs__content">
+						<p>
+							Doors and Gypsum Water Resistant
+						</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="column is-half">
+			<ul class="specs__list">
+				<li>
+					<p class="specs__title">Sanitary</p>
+					<div class="specs__content">
+						<p>
+							Toto & Kohler (Penthouse)
+						</p>
+					</div>
+				</li>
+				<li>
+					<p class="specs__title">Top Table</p>
+					<div class="specs__content">
+						<p>
+							Marble / Solid Surface
+						</p>
+					</div>
+				</li>
+				<li>
+					<p class="specs__title">Kitchen Set & Appliances</p>
+					<div class="specs__content">
+						<p>
+							Provided
+						</p>
+					</div>
+				</li>
+				<li>
+					<p class="specs__title">Main Door</p>
+					<div class="specs__content">
+						<p>
+							Melamine finishing (main door) and wood paint (internal doors) on engineering door system.
+						</p>
+					</div>
+				</li>
+				<li>
+					<p class="specs__title">Ext Windows & Door</p>
+					<div class="specs__content">
+						<p>
+							Powder coated aluminum with glass
+						</p>
+					</div>
+				</li>
+				<li>
+					<p class="specs__title">Drying Area Door</p>
+					<div class="specs__content">
+						<p>
+							Aluminum Door with Louvre / Grill
+						</p>
+					</div>
+				</li>
+				<li>
+					<p class="specs__title">Smart Home</p>
+					<div class="specs__content">
+						<p>
+							Smart cloud camera, smart switch, smart magnetic contact sensor, smart IR Transmitter
+						</p>
+					</div>
+				</li>
+				<li>
+					<p class="specs__title">Air Conditioner</p>
+					<div class="specs__content">
+						<p>
+							Provided
+						</p>
+					</div>
+				</li>
+				<li>
+					<p class="specs__title">Electricity</p>
+					<div class="specs__content">
+						<p>
+							2BR: 4400 VA; 3BR: 5500 VA; 2BR PH: 5500 VA; 3BR PH: 7040 VA
+						</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
+</section>
+";s:5:"mtime";i:1630034177;s:6:"markup";s:3414:"<section class="section specs">
+	<div class="columns">
+		<div class="column is-half">
+			<ul class="specs__list">
+				<li>
+					<p class="specs__title">Structure</p>
+					<div class="specs__content">
+						<p>
+							Reinforced concrete frame with bored pile foundation
+						</p>
+					</div>
+				</li>
+				<li>
+					<p class="specs__title">Exterior Wall</p>
+					<div class="specs__content">
+						<p>
+							Weatherproof paint on plastered brick wall / lightweight brick wall / precast panel
+						</p>
+					</div>
+				</li>
+				<li>
+					<p class="specs__title">Interior Wall</p>
+					<div class="specs__content">
+						<p>
+							Interior paint on plastered lightweight brick wall
+						</p>
+					</div>
+				</li>
+				<li>
+					<p class="specs__title">Flooring</p>
+					<div class="specs__content">
+						<p>
+							Homogeneous Tiles & Ceramic Tiles General HT 100x100 cm; Bedroom HT 100x100cm; Entrance Threshold HT 100x100cm; Balcony 15x60cm; Master Bathroom HT 60x60cm; Wall HT 30x60cm; Common Bathroom HT 60x60 cm; Wall HT 30x60cm; AC Ledge 40x40cm; Public Corridor Typical Floor 40x40cm; Service Area 40x40cm; Maid’s bedroom and bathroom HT 60x60cm.
+						</p>
+					</div>
+				</li>
+				<li>
+					<p class="specs__title">General Area Ceiling</p>
+					<div class="specs__content">
+						<p>
+							Gypsum Board
+						</p>
+					</div>
+				</li>
+				<li>
+					<p class="specs__title">Bathroom Ceiling</p>
+					<div class="specs__content">
+						<p>
+							Doors and Gypsum Water Resistant
+						</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="column is-half">
+			<ul class="specs__list">
+				<li>
+					<p class="specs__title">Sanitary</p>
+					<div class="specs__content">
+						<p>
+							Toto & Kohler (Penthouse)
+						</p>
+					</div>
+				</li>
+				<li>
+					<p class="specs__title">Top Table</p>
+					<div class="specs__content">
+						<p>
+							Marble / Solid Surface
+						</p>
+					</div>
+				</li>
+				<li>
+					<p class="specs__title">Kitchen Set & Appliances</p>
+					<div class="specs__content">
+						<p>
+							Provided
+						</p>
+					</div>
+				</li>
+				<li>
+					<p class="specs__title">Main Door</p>
+					<div class="specs__content">
+						<p>
+							Melamine finishing (main door) and wood paint (internal doors) on engineering door system.
+						</p>
+					</div>
+				</li>
+				<li>
+					<p class="specs__title">Ext Windows & Door</p>
+					<div class="specs__content">
+						<p>
+							Powder coated aluminum with glass
+						</p>
+					</div>
+				</li>
+				<li>
+					<p class="specs__title">Drying Area Door</p>
+					<div class="specs__content">
+						<p>
+							Aluminum Door with Louvre / Grill
+						</p>
+					</div>
+				</li>
+				<li>
+					<p class="specs__title">Smart Home</p>
+					<div class="specs__content">
+						<p>
+							Smart cloud camera, smart switch, smart magnetic contact sensor, smart IR Transmitter
+						</p>
+					</div>
+				</li>
+				<li>
+					<p class="specs__title">Air Conditioner</p>
+					<div class="specs__content">
+						<p>
+							Provided
+						</p>
+					</div>
+				</li>
+				<li>
+					<p class="specs__title">Electricity</p>
+					<div class="specs__content">
+						<p>
+							2BR: 4400 VA; 3BR: 5500 VA; 2BR PH: 5500 VA; 3BR PH: 7040 VA
+						</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
+</section>";s:4:"code";N;}}
